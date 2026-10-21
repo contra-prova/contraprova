@@ -14,7 +14,7 @@
 :root{
   --papel:#F4F5F1; --superficie:#FFFFFF; --tinta:#1A1F2B; --tinta-2:#4A5163; --linha:#D9DCD3;
   --acento:#1F4FB8; --acento-suave:#E3EAF8;
-  --v-verdadeiro:#1E7A4C; --v-falso:#C2321F; --v-meio:#B4610B; --v-contexto:#6B4BA8; --v-dado:#1F4FB8; --v-neutro:#5C6375;
+  --v-verdadeiro:#1E7A4C; --v-falso:#C2321F; --v-meio:#B4610B; --v-contexto:#6B4BA8; --v-dado:#1F4FB8; --v-neutro:#5C6375; --gov-b:#A6845A; --gov-l:#4F6E96; --gov-t:#9AA0AA;
   --fonte-titulo:'Bricolage Grotesque', 'Arial Narrow', system-ui, sans-serif;
   --fonte-corpo:'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --fonte-dado:'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
@@ -22,12 +22,12 @@
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
   --papel:#12151C; --superficie:#1B2029; --tinta:#E9ECF2; --tinta-2:#A9B0C0; --linha:#2E3542;
   --acento:#7FA2F0; --acento-suave:#1E2A44;
-  --v-verdadeiro:#4FC48A; --v-falso:#FF7A66; --v-meio:#F0A54C; --v-contexto:#B79BF0; --v-dado:#7FA2F0; --v-neutro:#9AA2B4;
+  --v-verdadeiro:#4FC48A; --v-falso:#FF7A66; --v-meio:#F0A54C; --v-contexto:#B79BF0; --v-dado:#7FA2F0; --v-neutro:#9AA2B4; --gov-b:#C9A877; --gov-l:#7E9CC4; --gov-t:#6E7584;
   color-scheme:dark } }
 :root[data-theme="dark"]{
   --papel:#12151C; --superficie:#1B2029; --tinta:#E9ECF2; --tinta-2:#A9B0C0; --linha:#2E3542;
   --acento:#7FA2F0; --acento-suave:#1E2A44;
-  --v-verdadeiro:#4FC48A; --v-falso:#FF7A66; --v-meio:#F0A54C; --v-contexto:#B79BF0; --v-dado:#7FA2F0; --v-neutro:#9AA2B4;
+  --v-verdadeiro:#4FC48A; --v-falso:#FF7A66; --v-meio:#F0A54C; --v-contexto:#B79BF0; --v-dado:#7FA2F0; --v-neutro:#9AA2B4; --gov-b:#C9A877; --gov-l:#7E9CC4; --gov-t:#6E7584;
   color-scheme:dark }
 
 *{box-sizing:border-box}
@@ -80,6 +80,18 @@ header.topo{display:grid;gap:6px;padding-block:8px 18px}
 .ficha details p{margin:8px 0 0;color:var(--tinta-2);font-size:16px;max-width:65ch}
 .fonte{font-size:14px;color:var(--tinta-2);display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline}
 .fonte .ref{font-family:var(--fonte-dado);font-size:12px}
+.serie{margin:2px 0 0;display:grid;gap:4px;font-variant-numeric:tabular-nums}
+.serie figcaption{font-size:13px;color:var(--tinta-2);margin-bottom:2px}
+.serie .lin{display:grid;grid-template-columns:3.4em 1fr 6.2em;align-items:center;gap:8px;font-size:14px}
+.serie .ano{font-family:var(--fonte-dado);font-size:12px;color:var(--tinta-2)}
+.serie .trilho{height:12px;background:var(--papel);border-radius:3px;overflow:hidden}
+.serie .barra{display:block;height:100%;border-radius:3px}
+.serie .barra.neg{background-image:repeating-linear-gradient(135deg,transparent 0 3px,var(--superficie) 3px 5px)}
+.serie .val{text-align:right;font-family:var(--fonte-dado);font-size:12px}
+.g-B{background:var(--gov-b)} .g-L{background:var(--gov-l)} .g-T{background:var(--gov-t)}
+.serie .leg{display:flex;gap:4px 14px;flex-wrap:wrap;font-size:13px;color:var(--tinta-2);margin-top:4px}
+.serie .leg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.serie .nota{margin:2px 0 0;font-size:13px;color:var(--tinta-2)}
 .vazio{border:2px dashed var(--linha);border-radius:12px;padding:18px;color:var(--tinta-2)}
 .mais{justify-self:center;margin-top:8px;height:44px}
 
@@ -152,7 +164,7 @@ footer p{margin:0;max-width:70ch}
     INSUSTENTAVEL:'Não há prova pública que confirme.',
     DADO:'Informação de referência, sem frase a julgar.'
   };
-  var STOP = ' a o e de da do das dos em no na nos nas um uma que com por para pra pro os as ao aos se foi ser sao era eh esta esse essa isso isto ele ela eles elas voce voces eu nos meu minha seu sua mais muito ja nao sim tem ter como qual quais quanto quantos quando onde porque pq governo brasil '.split(' ').reduce(function(m,w){ if(w) m[w]=1; return m; },{});
+  var STOP = ' a o e de da do das dos em no na nos nas um uma que com por para pra pro os as ao aos se foi ser sao era eh esta esse essa isso isto ele ela eles elas voce voces eu nos meu minha seu sua mais muito ja nao sim tem ter como qual quais quanto quantos quando onde porque pq governo brasil disparou disparar explodiu explodir aumentou aumentar subiu subir caiu cair piorou piorar melhorou mandato gestao periodo epoca hoje agora ano anos esta estao virou ficou vai sera esta '.split(' ').reduce(function(m,w){ if(w) m[w]=1; return m; },{});
 
   function norm(t){ return String(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9%]+/g,' ').trim(); }
   function tokens(t){ return norm(t).split(' ').filter(function(w){ return w && !STOP[w] && (w.length>2 || /\d/.test(w)); }); }
@@ -184,7 +196,7 @@ footer p{margin:0;max-width:70ch}
       if(melhor>0) achados++;
       total += melhor;
     });
-    return total * (achados / q.length);
+    return total * (0.4 + 0.6 * achados / q.length) * (f.tipo==='indicador' ? 1.15 : 1);
   }
 
   var estado = { q:'', quem:'Todos', tema:'Todos', limite:POR_PAGINA };
@@ -214,9 +226,22 @@ footer p{margin:0;max-width:70ch}
       '<span class="quem">'+esc(quem)+'</span><span class="tema">'+esc(f.tema)+'</span></div>'+
       '<blockquote>'+(ehPergunta ? esc(f.frase) : '“'+esc(f.frase)+'”')+'</blockquote>'+
       '<p class="resumo">'+esc(f.resumo)+'</p>'+
+      (f.serie ? grafico(f) : '')+
       (f.dado ? '<details><summary>Mais contexto</summary><p>'+esc(f.dado)+'</p></details>' : '')+
       '<div class="fonte"><span>Fonte: <a href="'+esc(f.link)+'" target="_blank" rel="noopener">'+esc(f.fonte)+'</a></span><span class="ref">'+esc(f.ref)+'</span></div>';
     return a;
+  }
+
+  function fmt(v){ var a=Math.abs(v); var s = a>=1000 ? Math.round(a).toLocaleString('pt-BR') : a.toLocaleString('pt-BR',{maximumFractionDigits:2}); return (v<0?'−':'')+s; }
+  function grafico(f){
+    var max = Math.max.apply(null, f.serie.map(function(x){ return Math.abs(x[1]); }));
+    var temB = f.serie.some(function(x){return x[2]==='B';}), temL = f.serie.some(function(x){return x[2]==='L';}), temT = f.serie.some(function(x){return x[2]==='T';});
+    var linhas = f.serie.map(function(x){
+      var w = max ? Math.max(2, Math.round(Math.abs(x[1])/max*100)) : 0;
+      return '<div class="lin"><span class="ano">'+esc(x[0])+'</span><span class="trilho"><span class="barra g-'+x[2]+(x[1]<0?' neg':'')+'" style="width:'+w+'%"></span></span><span class="val">'+fmt(x[1])+'</span></div>';
+    }).join('');
+    var leg = (temT?'<span><i class="g-T"></i>Temer</span>':'')+(temB?'<span><i class="g-B"></i>Governo Bolsonaro</span>':'')+(temL?'<span><i class="g-L"></i>Governo Lula</span>':'');
+    return '<figure class="serie"><figcaption>'+esc(f.unidade||'')+'</figcaption>'+linhas+'<div class="leg">'+leg+'</div>'+(f.nota?'<p class="nota">'+esc(f.nota)+'</p>':'')+'</figure>';
   }
 
   function filtradas(){
@@ -260,7 +285,8 @@ footer p{margin:0;max-width:70ch}
   el('mais').addEventListener('click', function(){ estado.limite += POR_PAGINA; render(); });
 
   function textoFicha(f){
-    return 'Tema: '+f.tema+'. Autor da frase: '+f.quem+'. Frase verificada: '+f.frase+' Veredito: '+f.veredito+'. Resumo: '+f.resumo+' Detalhe: '+(f.dado||'')+' Fonte: '+f.fonte+' ('+f.ref+').';
+    var s = f.serie ? ' Série ('+(f.unidade||'')+'): '+f.serie.map(function(x){ return x[0]+'='+x[1]+(x[2]==='L'?' (Lula)':x[2]==='B'?' (Bolsonaro)':' (Temer)'); }).join('; ')+'. '+(f.nota||'') : '';
+    return 'Tema: '+f.tema+'. Autor da frase: '+f.quem+'. Frase verificada: '+f.frase+' Veredito: '+f.veredito+'. Resumo: '+f.resumo+s+' Detalhe: '+(f.dado||'')+' Fonte: '+f.fonte+' ('+f.ref+').';
   }
 
   function caixa(html){ var c = el('caixa-ia'); c.innerHTML = html; c.hidden = false; }

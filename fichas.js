@@ -4,6 +4,106 @@
 // Para incluir uma ficha nova, copie um bloco, troque o id e preencha os campos.
 window.FICHAS_ATUALIZADAS_EM = '21/10/2026';
 window.FICHAS = [
+// ---------------- PAINÉIS DE INDICADORES (série por governo) ----------------
+// Respondem a alegações genéricas do tipo "X disparou", "Y explodiu", "Z nunca esteve tão ruim".
+// serie: [ano, valor, governo] com governo B (Bolsonaro, 2019-2022), L (Lula, 2023-2026) ou T (Temer).
+{ id:'ind-inflacao', tipo:'indicador', tema:'Inflação e preços', quem:'Dado oficial', frase:'A inflação disparou no governo Lula?', veredito:'FALSO',
+  resumo:'Não. O IPCA foi de 4,62% em 2023, 4,83% em 2024 e 4,26% em 2025, abaixo dos 10,06% de 2021. Em quatro anos de Bolsonaro a inflação acumulou 26,9%; nos três primeiros anos de Lula, 14,3%.',
+  dado:'A inflação voltou a subir em 2026 e chegou a 4,58% em 12 meses em setembro, acima do teto da meta (4,5%). A alta de 2021 teve causas globais (pandemia, energia, commodities) e a de 2022 foi contida em parte por cortes de impostos sobre combustíveis às vésperas da eleição. A inflação de alimentos tem ficha própria.',
+  unidade:'% ao ano (IPCA)', serie:[[2019,4.31,'B'],[2020,4.52,'B'],[2021,10.06,'B'],[2022,5.79,'B'],[2023,4.62,'L'],[2024,4.83,'L'],[2025,4.26,'L'],['2026*',4.58,'L']],
+  nota:'2026: acumulado em 12 meses até setembro.',
+  fonte:'IBGE, IPCA', link:'https://www.dadosdemercado.com.br/indices/ipca', ref:'2019 a set/2026',
+  termos:'inflacao ipca precos carestia custo de vida caro cara mercado supermercado disparou aumentou explodiu meta de inflacao compras' },
+
+{ id:'ind-desemprego', tipo:'indicador', tema:'Emprego e renda', quem:'Dado oficial', frase:'O desemprego aumentou no governo Lula?', veredito:'FALSO',
+  resumo:'Não. A taxa média anual caiu de 9,3% em 2022 para 7,8% em 2023, 6,6% em 2024 e 5,6% em 2025, a menor da série iniciada em 2012.',
+  dado:'No trimestre de junho a agosto de 2026 a taxa foi de 5,3%. A taxa sobe todo início de ano por motivo sazonal. A informalidade segue alta, perto de 38% dos ocupados.',
+  unidade:'% da força de trabalho, média anual', serie:[[2019,12.0,'B'],[2020,13.8,'B'],[2021,13.2,'B'],[2022,9.3,'B'],[2023,7.8,'L'],[2024,6.6,'L'],[2025,5.6,'L'],['2026*',5.3,'L']],
+  nota:'2026: trimestre de junho a agosto.',
+  fonte:'IBGE, PNAD Contínua', link:'https://oimparcial.com.br/noticias/2026/02/desemprego-cai-para-56-em-2025-e-atinge-menor-nivel-da-serie-historica/', ref:'2019 a ago/2026',
+  termos:'desemprego desempregados sem emprego emprego trabalho vagas desocupacao aumentou subiu disparou' },
+
+{ id:'ind-pib', tipo:'indicador', tema:'Economia', quem:'Dado oficial', frase:'A economia piorou no governo Lula?', veredito:'FALSO',
+  resumo:'Não no conjunto do mandato. O PIB cresceu 2,9% em 2023, 3,4% em 2024 e 2,3% em 2025, média perto de 2,9% ao ano, contra cerca de 1,4% ao ano no governo anterior.',
+  dado:'Houve desaceleração em 2026: alta de 0,5% no 2º trimestre e 1,9% em 12 meses, com a indústria praticamente parada (0,1% no trimestre) e investimento menor (16,1% do PIB). O resultado do governo anterior inclui a queda de 2020, causada pela pandemia.',
+  unidade:'% de crescimento do PIB no ano', serie:[[2019,1.2,'B'],[2020,-3.3,'B'],[2021,4.8,'B'],[2022,3.0,'B'],[2023,2.9,'L'],[2024,3.4,'L'],[2025,2.3,'L'],['2026*',1.9,'L']],
+  nota:'2026: acumulado em quatro trimestres até junho.',
+  fonte:'IBGE, Contas Nacionais', link:'https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45968-pib-cresce-2-3-em-2025-e-fecha-o-ano-em-r-12-7-trilhoes', ref:'2019 a jun/2026',
+  termos:'economia pib crescimento recessao parada estagnada piorou quebrou pais quebrado crise' },
+
+{ id:'ind-selic', tipo:'indicador', tema:'Economia', quem:'Dado oficial', frase:'Os juros dispararam no governo Lula?', veredito:'FALTA_CONTEXTO',
+  resumo:'A Selic chegou a 15% em 2025, maior nível desde 2006, e está em 13,75%. Mas o ciclo de alta começou em 2021, no governo anterior, e a taxa já estava em 13,75% em dezembro de 2022.',
+  dado:'O Banco Central tem autonomia por lei desde 2021 e define a Selic pelo Copom. Até 2024 foi presidido por Roberto Campos Neto, indicado por Bolsonaro; desde 2025, por Gabriel Galípolo, indicado por Lula. Os juros altos encarecem crédito e aumentam o custo da dívida pública.',
+  unidade:'% ao ano, fim de cada ano', serie:[[2019,4.50,'B'],[2020,2.00,'B'],[2021,9.25,'B'],[2022,13.75,'B'],[2023,11.75,'L'],[2024,12.25,'L'],[2025,15.00,'L'],['2026*',13.75,'L']],
+  nota:'2026: taxa vigente desde setembro.',
+  fonte:'Banco Central (Copom)', link:'https://atlaspublico.com.br/bcb/noticias/copom-reduz-selic-para-13-75pct-ao-ano-em-decisao-unanime-87748', ref:'2019 a set/2026',
+  termos:'juros selic taxa de juros juro alto banco central copom disparou subiu credito caro' },
+
+{ id:'ind-divida', tipo:'indicador', tema:'Contas públicas', quem:'Dado oficial', frase:'A dívida pública cresceu no governo Lula?', veredito:'VERDADEIRO',
+  resumo:'Sim. A dívida bruta passou de cerca de 73,5% do PIB no fim de 2022 para 82,9% em agosto de 2026 (R$ 11,1 trilhões), o maior nível desde 2021.',
+  dado:'O pico da série foi 87,7% do PIB em outubro de 2020, na pandemia. O principal motor da alta recente são os juros, que custaram R$ 1,18 trilhão em 12 meses. O mercado projeta 83,4% no fim de 2026 e cerca de 87% em 2027.',
+  unidade:'% do PIB, dívida bruta do governo geral', serie:[[2022,73.5,'B'],[2023,73.8,'L'],[2024,76.3,'L'],[2025,78.6,'L'],['2026*',82.9,'L']],
+  nota:'2026: agosto. Pico da série: 87,7% em outubro de 2020.',
+  fonte:'Banco Central, Estatísticas Fiscais', link:'https://acritica.net/economia/divida-bruta-sobe-a-8286-do-pib-e-mercado-projeta-avanco-acima-de-90-em-2028/', ref:'2022 a ago/2026',
+  termos:'divida divida publica endividamento do governo rombo explodiu cresceu trilhoes' },
+
+{ id:'ind-primario', tipo:'indicador', tema:'Contas públicas', quem:'Dado oficial', frase:'Lula quebrou as contas públicas?', veredito:'FALTA_CONTEXTO',
+  resumo:'O governo central teve déficit de 2,1% do PIB em 2023, puxado pelo pagamento de R$ 92 bilhões em precatórios atrasados, e depois reduziu o rombo para cerca de 0,4% a 0,5% do PIB em 2024 e 2025.',
+  dado:'Em 2022 houve superávit de 0,5% do PIB, ajudado pelo adiamento de precatórios. Em 2020, na pandemia, o déficit chegou a 9,8% do PIB. O resultado primário não inclui os juros, que são o maior fator de alta da dívida.',
+  unidade:'resultado primário do governo central, % do PIB', serie:[[2019,-1.3,'B'],[2020,-9.8,'B'],[2021,-0.4,'B'],[2022,0.5,'B'],[2023,-2.1,'L'],[2024,-0.4,'L'],[2025,-0.48,'L']],
+  nota:'Valores negativos são déficit.',
+  fonte:'Tesouro Nacional', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2019 a 2025',
+  termos:'contas publicas deficit rombo fiscal gastanca gastos quebrou o pais gasto publico arcabouco' },
+
+{ id:'ind-salmin', tipo:'indicador', tema:'Emprego e renda', quem:'Dado oficial', frase:'O salário mínimo ficou sem aumento real?', veredito:'FALSO',
+  resumo:'No governo Lula o mínimo teve ganho real todos os anos, com a política de valorização retomada em 2023 (inflação mais crescimento do PIB, com teto de 2,5% desde 2025). Chegou a R$ 1.621 em 2026.',
+  dado:'No governo Bolsonaro houve ganho real só em 2019 (1,14%); nos outros três anos o reajuste repôs apenas a inflação.',
+  unidade:'valor nominal em R$', serie:[[2019,998,'B'],[2020,1045,'B'],[2021,1100,'B'],[2022,1212,'B'],[2023,1320,'L'],[2024,1412,'L'],[2025,1518,'L'],[2026,1621,'L']],
+  nota:'2023: valor vigente a partir de maio (R$ 1.302 de janeiro a abril).',
+  fonte:'Decretos presidenciais e Dieese', link:'https://www.dieese.org.br/notatecnica/2025/notaTec289salarioMinimo.pdf', ref:'2019 a 2026',
+  termos:'salario minimo aumento real reajuste poder de compra arrocho' },
+
+{ id:'ind-caged', tipo:'indicador', tema:'Emprego e renda', quem:'Dado oficial', frase:'O emprego com carteira está caindo?', veredito:'FALTA_CONTEXTO',
+  resumo:'O saldo de empregos formais foi positivo em todos os anos, mas vem diminuindo. Em 2025 foram 1,28 milhão de vagas, o menor saldo anual da série do Novo Caged, iniciada em 2020.',
+  dado:'O estoque chegou a 48,5 milhões de vínculos com carteira no fim de 2025. Em 2026, foram 921,6 mil vagas no 1º semestre. Os juros altos são apontados por economistas como causa da desaceleração.',
+  unidade:'saldo anual de empregos com carteira', serie:[[2020,142690,'B'],[2021,2730597,'B'],[2022,2013261,'B'],[2023,1483598,'L'],[2024,1693673,'L'],[2025,1279498,'L']],
+  nota:'2020 e 2021 refletem a queda e a recuperação da pandemia.',
+  fonte:'Ministério do Trabalho, Novo Caged', link:'https://www.oliberal.com/economia/saldo-liquido-de-empregos-em-2025-e-de-1-279-498-pior-da-serie-mostra-caged-1.1077884', ref:'2020 a 2025',
+  termos:'emprego carteira assinada caged vagas formais caindo demissoes empregos' },
+
+{ id:'ind-dolar', tipo:'indicador', tema:'Economia', quem:'Dado oficial', frase:'O dólar disparou no governo Lula?', veredito:'FALTA_CONTEXTO',
+  resumo:'O dólar subiu para cerca de R$ 6,18 no fim de 2024, mas caiu 11% em 2025, para R$ 5,38, e girava em torno de R$ 5,10 em agosto de 2026.',
+  dado:'No governo anterior o dólar passou de cerca de R$ 4 no fim de 2019 para perto de R$ 5,60 no fim de 2021. O câmbio reage a juros, cenário externo e risco fiscal.',
+  unidade:'R$ por US$, fim de cada ano', serie:[[2019,4.03,'B'],[2020,5.19,'B'],[2021,5.58,'B'],[2022,5.22,'B'],[2023,4.85,'L'],[2024,6.18,'L'],[2025,5.38,'L'],['2026*',5.10,'L']],
+  nota:'2026: média aproximada de agosto.',
+  fonte:'Banco Central; O Imparcial; CNN Brasil', link:'https://oimparcial.com.br/noticias/2025/12/dolar-despenca-no-ultimo-pregao-e-fecha-2025-com-maior-queda-desde-2016/', ref:'2019 a ago/2026',
+  termos:'dolar cambio moeda real desvalorizado disparou subiu' },
+
+{ id:'ind-desmatamento', tipo:'indicador', tema:'Meio ambiente', quem:'Dado oficial', frase:'O desmatamento aumentou no governo Lula?', veredito:'FALSO',
+  resumo:'Não. O desmatamento na Amazônia caiu todos os anos, de 11.594 km² em 2022 para 3.335 km² em 2026, o menor desde 1988.',
+  dado:'No governo anterior o desmatamento subiu de 7.536 km² (2018) para 13.038 km² (2021). O ano do Prodes vai de agosto a julho.',
+  unidade:'km² desmatados na Amazônia (Prodes)', serie:[[2018,7536,'T'],[2019,10129,'B'],[2020,10851,'B'],[2021,13038,'B'],[2022,11594,'B'],[2023,9064,'L'],[2024,6518,'L'],[2025,5731,'L'],[2026,3335,'L']],
+  nota:'',
+  fonte:'Inpe, Prodes', link:'https://www.gov.br/mma/pt-br/noticias-defeso-eleitoral/apresentacao-coletiva-prodes-2026_inpe.pdf/', ref:'2018 a 2026',
+  termos:'desmatamento amazonia floresta meio ambiente devastacao aumentou' },
+
+{ id:'ind-violencia', tipo:'indicador', tema:'Segurança', quem:'Dado oficial', frase:'A violência aumentou no governo Lula?', veredito:'FALSO',
+  resumo:'Não, pelo principal indicador. As mortes violentas intencionais caíram de 47.950 em 2022 para 40.775 em 2025, taxa de 19,1 por 100 mil, a menor desde 2012.',
+  dado:'Subiram os feminicídios (recorde em 2025, em parte por melhor registro) e as mortes causadas por policiais (6.602, recorde). Roubos de celular caíram 37% entre 2022 e 2025. Policiamento é atribuição dos estados.',
+  unidade:'mortes violentas intencionais por ano', serie:[[2022,47950,'B'],[2023,46328,'L'],[2024,44127,'L'],[2025,40775,'L']],
+  nota:'Cada edição do Anuário revisa os números de anos anteriores.',
+  fonte:'Fórum Brasileiro de Segurança Pública, Anuários 2024 a 2026', link:'https://www.poder360.com.br/poder-seguranca-publica/brasil-tem-menor-numero-de-assassinatos-em-13-anos/', ref:'2022 a 2025',
+  termos:'violencia criminalidade crime assassinatos homicidios mortes bandidos inseguranca aumentou explodiu' },
+
+{ id:'ind-pobreza', tipo:'indicador', tema:'Fome e pobreza', quem:'Dado oficial', frase:'A pobreza e a fome aumentaram no governo Lula?', veredito:'FALSO',
+  resumo:'Não. A extrema pobreza caiu de 5,9% em 2022 para 3,5% em 2024, menor nível da série. A FAO tirou o Brasil do Mapa da Fome em 2025.',
+  dado:'A renda domiciliar por pessoa bateu recorde em 2025 (R$ 2.264), 18,9% acima de 2019. A desigualdade medida pelo Gini subiu levemente em 2025 (0,511), mas segue abaixo de 2019 (0,543).',
+  unidade:'% da população em extrema pobreza', serie:[[2022,5.9,'B'],[2023,4.4,'L'],[2024,3.5,'L']],
+  nota:'',
+  fonte:'IBGE, Síntese de Indicadores Sociais; FAO', link:'https://biblioteca.ibge.gov.br/visualizacao/livros/liv102240.pdf', ref:'2022 a 2025',
+  termos:'pobreza miseria fome pobres renda mais pobre empobreceu poder de compra' },
+
+
 
 // ---------------- ECONOMIA ----------------
 { id:'eco-pib-2t26', tema:'Economia', quem:'Dado oficial', frase:'Como está o crescimento da economia em 2026?', veredito:'DADO',
@@ -11,12 +111,6 @@ window.FICHAS = [
   dado:'A agropecuária puxou o resultado (alta de 2,8% no trimestre). A indústria cresceu 0,1% e os serviços 0,2%. A taxa de investimento ficou em 16,1% do PIB, abaixo dos 16,6% do 2º trimestre de 2025. O mercado (Focus) projetava crescimento de 1,92% em 2026.',
   fonte:'IBGE, Contas Nacionais Trimestrais', link:'https://agenciagov.ebc.com.br/noticias/202609/pib-cresce-0-5-no-segundo-trimestre-aponta-ibge', ref:'2º tri 2026',
   termos:'pib crescimento economia recessao atividade investimento agro industria servicos' },
-
-{ id:'eco-pib-anual', tema:'Economia', quem:'Dado oficial', frase:'Quanto o PIB cresceu em cada ano do governo?', veredito:'DADO',
-  resumo:'O PIB cresceu 2,9% em 2023, 3,4% em 2024 e 2,3% em 2025, segundo o IBGE.',
-  dado:'No governo anterior, o PIB caiu 3,3% em 2020 e cresceu 4,8% em 2021 (efeito de recuperação da pandemia) e 3,0% em 2022.',
-  fonte:'IBGE, séries históricas do PIB', link:'https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45968-pib-cresce-2-3-em-2025-e-fecha-o-ano-em-r-12-7-trilhoes', ref:'2020 a 2025',
-  termos:'pib anual crescimento 2023 2024 2025 2021 2022 media bolsonaro lula' },
 
 { id:'eco-lula-3pct', tema:'Economia', quem:'Lula', frase:'O país só voltou a crescer acima de 3% quando eu voltei à Presidência.', veredito:'FALSO',
   resumo:'O PIB passou de 3% em outros governos depois de 2010.',
