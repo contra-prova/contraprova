@@ -174,7 +174,7 @@ window.FICHAS = [
   resumo:'A CNC registrou recorde de 80,9% das famílias com alguma dívida em abril de 2026.',
   dado:'O indicador inclui dívidas em dia (cartão, carnê, financiamento), não só atrasadas. Os juros altos encarecem o crédito. O governo lançou rodadas do Desenrola para renegociar dívidas, a mais recente o Desenrola 3.0 em 2026.',
   fonte:'CNC, Pesquisa de Endividamento (Peic)', link:'https://www.dgabc.com.br/Noticia/4318229/renda-media-das-familias-chega-a-r$-2-264-e-e-recorde-em-2025', ref:'abr/2026',
-  termos:'endividamento endividados dividas familias desenrola inadimplencia cartao' },
+  termos:'endividamento endividados endividado endividada dividas familias desenrola inadimplencia cartao nome sujo' },
 
 // ---------------- EMPREGO E RENDA ----------------
 { id:'emp-desemprego', tema:'Emprego e renda', quem:'Dado oficial', frase:'Qual é a taxa de desemprego?', veredito:'DADO',
@@ -450,7 +450,7 @@ window.FICHAS = [
   resumo:'Não há norma de Lula que facilite armas para criminosos. Em 2023 ele revogou decretos que ampliavam o acesso a armas e munição.',
   dado:'A PF apreendeu 9.373 armas de 2023 a outubro de 2026, contra 8.812 em 2019-2022. Em 2026 foi criada a Rede Nacional de Enfrentamento ao Tráfico de Armas. Estudo do Sou da Paz com cartuchos de fuzil apreendidos com o Comando Vermelho mostra que 40,9% eram de fabricação brasileira.',
   fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2023 a 2026',
-  termos:'armas traficantes fronteira arma ilegal contrabando fuzil apreensao' },
+  termos:'armas traficantes fronteira arma ilegal contrabando fuzil apreensao liberou armas para bandido bandidos criminosos faccoes' },
 
 { id:'arm-marcacao', tema:'Armas', quem:'Flávio Bolsonaro', frase:'Nunca quis tirar a marcação das munições.', veredito:'FALSO',
   resumo:'Flávio apoiou o PL 3.723/2019, do governo Bolsonaro, que revogaria a exigência de código de rastreio nas embalagens de munição e de identificação nas armas.',
@@ -766,6 +766,64 @@ window.FICHAS = [
   dado:'Deputados aliados defendem revogar o Estatuto e retomar as regras do governo Bolsonaro. Pesquisa Quaest de setembro de 2026 mostra que a maioria acha que limitar o acesso a armas melhora a segurança. Clubes de tiro fizeram promoções em apoio à candidatura, segundo o Aos Fatos.',
   fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/clubes-de-tiro-ignoram-proibicao-e-promovem-descontos-em-armas-para-apoiar-flavio-bolsonaro/', ref:'2026',
   termos:'armas liberar armas estatuto do desarmamento cac porte de arma flavio armamento' },
+
+
+
+// ---------------- BOLSO E SERVIÇOS ----------------
+{ id:'bol-gasolina', tema:'Inflação e preços', quem:'Dado oficial', frase:'A gasolina está cara demais no governo Lula?', veredito:'DADO',
+  resumo:'O litro da gasolina comum custava em média R$ 6,59 na semana de 4 a 10 de outubro de 2026, segundo a ANP. Em junho de 2022 chegou a cerca de R$ 7,39, recorde da série, antes do corte de impostos feito às vésperas da eleição.',
+  dado:'Em 2023 o governo retomou a cobrança dos tributos federais sobre combustíveis, zerados em 2022, e mudou a política de preços da Petrobras, que deixou de seguir automaticamente o preço internacional. Os estados também cobram ICMS. Os preços variam muito por região: a média estadual vai de R$ 6,32 (MG) a R$ 7,86 (AC).',
+  fonte:'ANP, levantamento semanal de preços', link:'https://www.combustiveis-anp.com.br/preco-da-gasolina', ref:'out/2026',
+  termos:'gasolina combustivel combustiveis diesel etanol posto petrobras preco da gasolina caro' },
+
+{ id:'bol-luz', tema:'Inflação e preços', quem:'Dado oficial', frase:'A conta de luz não para de subir.', veredito:'DADO',
+  resumo:'A Aneel estima reajuste médio de 8,6% nas contas de luz em 2026, acima da inflação prevista. Desde julho de 2025, famílias de baixa renda do CadÚnico que consomem até 80 kWh por mês não pagam a conta.',
+  dado:'O aumento reflete encargos do setor, custos de geração e de distribuição. Parte da alta será compensada em 22 distribuidoras, sobretudo no Norte e Nordeste, com recursos de renegociações do setor elétrico. O fim do bônus de Itaipu pesou no IPCA de setembro.',
+  fonte:'Aneel, InfoTarifas 2026', link:'https://www.gazetasp.com.br/economia/conta-luz-aumento-2026/', ref:'2026',
+  termos:'conta de luz energia eletrica tarifa aneel bandeira tarifaria energia cara tarifa social' },
+
+{ id:'bol-farmacia', tema:'Saúde', quem:'Dado oficial', frase:'O que é a Farmácia Popular hoje?', veredito:'DADO',
+  resumo:'Desde fevereiro de 2025, os 41 itens da Farmácia Popular são gratuitos para toda a população com receita, incluindo remédios para hipertensão, diabetes, asma, colesterol, osteoporose, glaucoma e Parkinson, além de fraldas geriátricas.',
+  dado:'Absorventes são gratuitos para pessoas de 10 a 49 anos do CadÚnico que atendem aos critérios. O plano de governo de Flávio Bolsonaro não menciona o programa.',
+  fonte:'Ministério da Saúde, via Estado de Minas', link:'https://www.em.com.br/emfoco/2026/08/04/farmacia-popular-entrega-41-medicamentos-e-itens-de-graca-para-toda-a-populacao-veja-o-que-levar/', ref:'2025 e 2026',
+  termos:'farmacia popular remedio remedios medicamentos gratis gratuitos de graca pressao diabetes saude' },
+
+{ id:'bol-gas', tema:'Fome e pobreza', quem:'Dado oficial', frase:'O que é o Gás do Povo?', veredito:'DADO',
+  resumo:'Lançado em setembro de 2025 no lugar do Auxílio Gás, dá botijões gratuitos a cerca de 15,5 milhões de famílias do CadÚnico com renda de até meio salário mínimo por pessoa.',
+  dado:'A quantidade vai de 3 a 6 botijões por ano, conforme o tamanho da família. Beneficiários do Bolsa Família têm prioridade. O frete, em alguns locais, fica por conta da família.',
+  fonte:'Governo federal, via Portal de Prefeitura', link:'https://portaldeprefeitura.com.br/bastidores-da-politica/governo-lula-inicia-entrega-um-botijao-a-cada-dois-meses/602705/', ref:'2025 e 2026',
+  termos:'gas gas do povo botijao gas de cozinha auxilio gas' },
+
+{ id:'bol-moradia', tema:'Fome e pobreza', quem:'Dado oficial', frase:'Quantas casas o Minha Casa Minha Vida fez?', veredito:'DADO',
+  resumo:'O programa contratou 2,7 milhões de moradias desde 2023, segundo o Ministério das Cidades, e tem meta de 3 milhões até dezembro de 2026.',
+  dado:'Contratar não é o mesmo que entregar: as obras levam de um a três anos. O programa foi relançado em 2023 com quatro faixas de renda, incluindo uma para a classe média.',
+  fonte:'Ministério das Cidades, via Registro de Imóveis do Brasil', link:'https://www.registrodeimoveis.org.br/minha-casa-minha-vida-se-aproxima-da-meta', ref:'out/2026',
+  termos:'minha casa minha vida moradia casa propria habitacao casas aluguel' },
+
+{ id:'bol-desenrola', tema:'Economia', quem:'Dado oficial', frase:'O que é o Desenrola?', veredito:'DADO',
+  resumo:'Programa de renegociação de dívidas. As duas primeiras fases atenderam cerca de 25 milhões de pessoas e renegociaram R$ 75 bilhões. O Desenrola 3.0, criado em setembro de 2026, vai comprar em leilão dívidas atrasadas de até R$ 10 mil com desconto mínimo de 90%.',
+  dado:'Até 15 milhões de pessoas podem ser beneficiadas na nova fase, com custo máximo de R$ 15 bilhões para a União em 2027 e 2028. Os contratos começam em fevereiro de 2027. Críticos apontam que a medida foi anunciada perto da eleição.',
+  fonte:'Medida provisória do Desenrola 3.0, via Mercado & Consumo', link:'https://mercadoeconsumo.com.br/26/09/2026/noticias/desenrola-3-0-saiba-como-funcionara-compra-de-dividas-pela-uniao/', ref:'2023 a 2026',
+  termos:'desenrola dividas renegociar nome sujo serasa inadimplencia endividados' },
+
+{ id:'bol-fila-inss', tema:'INSS', quem:'Dado oficial', frase:'A fila do INSS não anda.', veredito:'DADO',
+  resumo:'A fila caiu para 1,28 milhão de pedidos em agosto de 2026, menor nível do governo, depois de bater recorde de 3,13 milhões em fevereiro de 2026. O tempo médio de resposta é de 35 dias.',
+  dado:'Em janeiro de 2023, a fila era de 1,7 milhão. Benefícios assistenciais que exigem perícia, como o BPC, levam em média 65 dias. Houve também alta da taxa de indeferimento de pedidos.',
+  fonte:'INSS, via Viva', link:'https://viva.com.br/cidadania-e-direitos/fila-do-inss-cai-para-1282-milhao-em-agosto-queda-de-59-desde-janeiro.html', ref:'ago/2026',
+  termos:'fila do inss aposentadoria demora pericia beneficio bpc pedido inss' },
+
+// ---------------- CONTROVÉRSIAS DA CAMPANHA ----------------
+{ id:'cor-cartao', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Lula gasta muito com cartão corporativo e esconde em sigilo.', veredito:'FALTA_CONTEXTO',
+  resumo:'O governo federal inteiro gastou cerca de R$ 430 milhões com cartões corporativos em 2023, R$ 584 milhões em 2024 e R$ 423 milhões em 2025. Só a Presidência gastou R$ 55 milhões em 2025, e grande parte das despesas segue sob sigilo.',
+  dado:'O sigilo sobre gastos de segurança do presidente existe em todos os governos; no governo Bolsonaro também houve sigilo e Flávio justificou os gastos do pai como despesas de segurança. Em outubro de 2026, Lula pediu ao TSE a quebra de seus sigilos bancário, fiscal e telefônico e dos familiares, desde que Flávio fizesse o mesmo.',
+  fonte:'Portal da Transparência, via Gazeta do Povo e Portal de Prefeitura; O Tempo', link:'https://www.otempo.com.br/eleicoes/2026/presidentes/2026/10/20/campanha-de-lula-pede-checagem-de-fatos-em-tempo-real-em-debate-da-globo-com-flavio-bolsonaro', ref:'2023 a 2026',
+  termos:'cartao corporativo sigilo gastos presidencia janja sigilo de 100 anos quebra de sigilo' },
+
+{ id:'cor-anistia', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio vai anistiar os condenados do 8 de janeiro e o pai?', veredito:'DADO',
+  resumo:'Em julho de 2026, Flávio disse acreditar na anistia aos condenados pelo 8 de janeiro e que alguns subiriam a rampa do Planalto com ele. Na Globo, disse que o pai foi condenado numa farsa e que espera a anulação.',
+  dado:'Jair Bolsonaro foi condenado pelo STF a 27 anos de prisão em setembro de 2025. O Congresso discutiu um projeto de redução de penas (dosimetria), que Flávio criticou e disse que precisaria ser corrigido. Uma eventual anistia aprovada pelo Congresso poderia ser contestada no STF.',
+  fonte:'Portal de Prefeitura; Aos Fatos', link:'https://portaldeprefeitura.com.br/bastidores-da-politica/flavio-bolsonaro-diz-que-vai-subir-rampa-do-planalto-com-anistiados/627327/', ref:'2025 e 2026',
+  termos:'anistia 8 de janeiro anistiar golpistas dosimetria indulto bolsonaro preso liberdade' },
 
 
 ];

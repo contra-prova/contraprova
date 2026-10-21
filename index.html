@@ -65,6 +65,9 @@ header.topo{display:grid;gap:6px;padding-block:8px 18px}
 .ia h2{font-family:var(--fonte-dado);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--acento);margin:0;font-weight:500}
 .ia p{margin:0}
 .ia .frase-ia{font-style:italic;color:var(--tinta-2)}
+.ia .cab{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-weight:700}
+.ia .cab a{color:var(--tinta);text-decoration:none}
+.ia .fonte{font-size:14px;color:var(--tinta-2)}
 
 .lista{display:grid;gap:12px;margin-top:16px}
 .ficha{background:var(--superficie);border:1px solid var(--linha);border-radius:12px;padding:14px 16px 12px;display:grid;gap:8px;min-width:0}
@@ -164,7 +167,7 @@ footer p{margin:0;max-width:70ch}
     INSUSTENTAVEL:'Não há prova pública que confirme.',
     DADO:'Informação de referência, sem frase a julgar.'
   };
-  var STOP = ' a o e de da do das dos em no na nos nas um uma que com por para pra pro os as ao aos se foi ser sao era eh esta esse essa isso isto ele ela eles elas voce voces eu nos meu minha seu sua mais muito ja nao sim tem ter como qual quais quanto quantos quando onde porque pq governo brasil disparou disparar explodiu explodir aumentou aumentar subiu subir caiu cair piorou piorar melhorou mandato gestao periodo epoca hoje agora ano anos esta estao virou ficou vai sera esta '.split(' ').reduce(function(m,w){ if(w) m[w]=1; return m; },{});
+  var STOP = ' a o e de da do das dos em no na nos nas um uma que com por para pra pro os as ao aos se foi ser sao era eh esta esse essa isso isto ele ela eles elas voce voces eu nos meu minha seu sua mais muito ja nao sim tem ter como qual quais quanto quantos quando onde porque pq governo brasil disparou disparar explodiu explodir aumentou aumentar subiu subir caiu cair piorou piorar melhorou mandato gestao periodo epoca hoje agora ano anos esta estao virou ficou vai sera esta primeiro segundo terceiro quarto tambem sempre nunca povo gente pessoas brasileiro brasileiros populacao '.split(' ').reduce(function(m,w){ if(w) m[w]=1; return m; },{});
 
   function norm(t){ return String(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9%]+/g,' ').trim(); }
   function tokens(t){ return norm(t).split(' ').filter(function(w){ return w && !STOP[w] && (w.length>2 || /\d/.test(w)); }); }
@@ -180,9 +183,11 @@ footer p{margin:0;max-width:70ch}
     ];
   });
 
+  var NOMES = {lula:1, bolsonaro:1, flavio:1, jair:1};
   function pontuar(f, q){
-    if(!q.length) return 0;
-    var total = 0, achados = 0;
+    var temas = q.filter(function(w){ return !NOMES[w]; });
+    if(!temas.length) return 0;
+    var total = 0, achados = 0, nomes = 0;
     q.forEach(function(w){
       var r = raiz(w), melhor = 0;
       f._campos.forEach(function(c){
@@ -193,10 +198,12 @@ footer p{margin:0;max-width:70ch}
           if(r.length>=4 && raiz(t)===r){ melhor = Math.max(melhor, peso*0.8); }
         }
       });
+      if(NOMES[w]){ if(melhor>0) nomes += 0.3; return; }
       if(melhor>0) achados++;
       total += melhor;
     });
-    return total * (0.4 + 0.6 * achados / q.length) * (f.tipo==='indicador' ? 1.15 : 1);
+    if(!achados) return 0;
+    return (total * (0.4 + 0.6 * achados / temas.length) + nomes) * (f.tipo==='indicador' ? 1.15 : 1);
   }
 
   var estado = { q:'', quem:'Todos', tema:'Todos', limite:POR_PAGINA };
@@ -258,7 +265,9 @@ footer p{margin:0;max-width:70ch}
     if(!q.length) return { itens: base, busca:false };
     var pont = base.map(function(f){ return { f:f, s:pontuar(f,q) }; }).filter(function(x){ return x.s>=1.2; });
     pont.sort(function(a,b){ return b.s-a.s; });
-    return { itens: pont.map(function(x){ return x.f; }), busca:true, top: pont.slice(0,6) };
+    if(pont.length){ var corte = pont[0].s*0.4; pont = pont.filter(function(x){ return x.s>=corte; }); }
+    var claro = pont.length && pont[0].s>=2.5 && (pont.length===1 || pont[0].s>=pont[1].s*1.25 || pont[0].f.tipo==='indicador');
+    return { itens: pont.map(function(x){ return x.f; }), busca:true, top: pont.slice(0,6), melhor: claro ? pont[0].f : null };
   }
 
   function render(){
@@ -279,7 +288,7 @@ footer p{margin:0;max-width:70ch}
   var timer;
   el('q').addEventListener('input', function(){
     clearTimeout(timer);
-    timer = setTimeout(function(){ estado.q = el('q').value; estado.limite=POR_PAGINA; el('caixa-ia').hidden = true; render(); }, 120);
+    timer = setTimeout(function(){ estado.q = el('q').value; estado.limite=POR_PAGINA; render(); respostaDireta(filtradas()); }, 150);
   });
   el('q').addEventListener('keydown', function(e){ if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); el('form-busca').requestSubmit(); } });
   el('mais').addEventListener('click', function(){ estado.limite += POR_PAGINA; render(); });
@@ -287,6 +296,16 @@ footer p{margin:0;max-width:70ch}
   function textoFicha(f){
     var s = f.serie ? ' Série ('+(f.unidade||'')+'): '+f.serie.map(function(x){ return x[0]+'='+x[1]+(x[2]==='L'?' (Lula)':x[2]==='B'?' (Bolsonaro)':' (Temer)'); }).join('; ')+'. '+(f.nota||'') : '';
     return 'Tema: '+f.tema+'. Autor da frase: '+f.quem+'. Frase verificada: '+f.frase+' Veredito: '+f.veredito+'. Resumo: '+f.resumo+s+' Detalhe: '+(f.dado||'')+' Fonte: '+f.fonte+' ('+f.ref+').';
+  }
+
+  function respostaDireta(r, aviso){
+    if(!r || !r.melhor){ el('caixa-ia').hidden = true; return false; }
+    var f = r.melhor, v = f.veredito;
+    caixa('<h2>Resposta mais provável</h2>'+
+      '<div class="cab"><span class="carimbo v-'+v+'">'+esc(ROTULO[v]||v)+'</span><a href="#f-'+esc(f.id)+'">'+esc(f.frase)+'</a></div>'+
+      '<p>'+esc(f.resumo)+'</p>'+
+      '<p class="fonte">Fonte: <a href="'+esc(f.link)+'" target="_blank" rel="noopener">'+esc(f.fonte)+'</a>'+(aviso ? ' · '+aviso : '')+'</p>');
+    return true;
   }
 
   function caixa(html){ var c = el('caixa-ia'); c.innerHTML = html; c.hidden = false; }
@@ -320,7 +339,7 @@ footer p{margin:0;max-width:70ch}
       return;
     }
     if(!PROXY){
-      caixa('<h2>Fichas relacionadas</h2><p>As fichas abaixo tratam do assunto da frase. Compare o carimbo e o resumo com o que foi dito.</p>');
+      if(!respostaDireta(r)) caixa('<h2>Fichas relacionadas</h2><p>As fichas abaixo tratam do assunto da frase. Compare o carimbo e o resumo com o que foi dito.</p>');
       return;
     }
     var top = r.itens.slice(0,6);
@@ -333,12 +352,14 @@ footer p{margin:0;max-width:70ch}
       .then(function(resp){ return resp.json().then(function(j){ return { ok:resp.ok, j:j }; }); })
       .then(function(x){
         if(!x.ok){
-          var msg = x.j && x.j.error==='limite' ? 'Muitas consultas seguidas. Aguarde um minuto e tente de novo; enquanto isso, as fichas abaixo já respondem.' : 'A comparação por IA não respondeu agora. As fichas abaixo continuam valendo.';
-          caixa('<h2>Comparação com as fichas</h2><p>'+msg+'</p>'); return;
+          var cod = (x.j && x.j.error) || 'erro';
+          var aviso = cod==='limite' ? 'IA: muitas consultas seguidas, aguarde um minuto' : 'IA indisponível ('+esc(cod)+(x.j && x.j.detalhe ? ': '+esc(String(x.j.detalhe).slice(0,120)) : '')+')';
+          if(!respostaDireta(r, aviso)) caixa('<h2>Comparação com as fichas</h2><p>A comparação por IA não respondeu. As fichas abaixo continuam valendo.</p><p class="fonte">'+aviso+'</p>');
+          return;
         }
         gravarCache(chave, x.j); mostrarResposta(frase, x.j);
       })
-      .catch(function(){ caixa('<h2>Comparação com as fichas</h2><p>Sem conexão com o serviço de IA. As fichas abaixo continuam valendo.</p>'); })
+      .catch(function(){ if(!respostaDireta(r, 'IA sem conexão')) caixa('<h2>Comparação com as fichas</h2><p>Sem conexão com o serviço de IA. As fichas abaixo continuam valendo.</p>'); })
       .then(function(){ btn.disabled = false; btn.textContent = 'Checar frase'; });
   });
 
