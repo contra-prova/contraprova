@@ -49,8 +49,8 @@ window.FICHAS = [
 
 { id:'ind-primario', tipo:'indicador', tema:'Contas públicas', quem:'Dado oficial', frase:'Lula quebrou as contas públicas?', veredito:'FALTA_CONTEXTO',
   resumo:'O governo central teve déficit de 2,1% do PIB em 2023, puxado pelo pagamento de R$ 92 bilhões em precatórios atrasados, e depois reduziu o rombo para cerca de 0,4% a 0,5% do PIB em 2024 e 2025.',
-  dado:'Em 2022 houve superávit de 0,5% do PIB, ajudado pelo adiamento de precatórios. Em 2020, na pandemia, o déficit chegou a 9,8% do PIB. O resultado primário não inclui os juros, que são o maior fator de alta da dívida.',
-  unidade:'resultado primário do governo central, % do PIB', serie:[[2019,-1.3,'B'],[2020,-9.8,'B'],[2021,-0.4,'B'],[2022,0.5,'B'],[2023,-2.1,'L'],[2024,-0.4,'L'],[2025,-0.48,'L']],
+  dado:'Em 2022 houve superávit de 0,5% do PIB, ajudado pelo adiamento de precatórios. Em 2020, na pandemia, o déficit chegou a cerca de 10% do PIB (R$ 743 bilhões). O resultado primário não inclui os juros, que são o maior fator de alta da dívida.',
+  unidade:'resultado primário do governo central, % do PIB', serie:[[2019,-1.3,'B'],[2020,-10.0,'B'],[2021,-0.4,'B'],[2022,0.5,'B'],[2023,-2.1,'L'],[2024,-0.4,'L'],[2025,-0.48,'L']],
   nota:'Valores negativos são déficit.',
   fonte:'Tesouro Nacional', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2019 a 2025',
   termos:'contas publicas deficit rombo fiscal gastanca gastos quebrou o pais gasto publico arcabouco' },
@@ -66,7 +66,7 @@ window.FICHAS = [
 { id:'ind-caged', tipo:'indicador', tema:'Emprego e renda', quem:'Dado oficial', frase:'O emprego com carteira está caindo?', veredito:'FALTA_CONTEXTO',
   resumo:'O saldo de empregos formais foi positivo em todos os anos, mas vem diminuindo. Em 2025 foram 1,28 milhão de vagas, o menor saldo anual da série do Novo Caged, iniciada em 2020.',
   dado:'O estoque chegou a 48,5 milhões de vínculos com carteira no fim de 2025. Em 2026, foram 921,6 mil vagas no 1º semestre. Os juros altos são apontados por economistas como causa da desaceleração.',
-  unidade:'saldo anual de empregos com carteira', serie:[[2020,142690,'B'],[2021,2730597,'B'],[2022,2013261,'B'],[2023,1483598,'L'],[2024,1693673,'L'],[2025,1279498,'L']],
+  unidade:'saldo anual de empregos com carteira', serie:[[2020,142690,'B'],[2021,2730597,'B'],[2022,2013261,'B'],[2023,1454124,'L'],[2024,1693673,'L'],[2025,1279498,'L']],
   nota:'2020 e 2021 refletem a queda e a recuperação da pandemia.',
   fonte:'Ministério do Trabalho, Novo Caged', link:'https://www.oliberal.com/economia/saldo-liquido-de-empregos-em-2025-e-de-1-279-498-pior-da-serie-mostra-caged-1.1077884', ref:'2020 a 2025',
   termos:'emprego carteira assinada caged vagas formais caindo demissoes empregos' },
@@ -825,5 +825,44 @@ window.FICHAS = [
   fonte:'Portal de Prefeitura; Aos Fatos', link:'https://portaldeprefeitura.com.br/bastidores-da-politica/flavio-bolsonaro-diz-que-vai-subir-rampa-do-planalto-com-anistiados/627327/', ref:'2025 e 2026',
   termos:'anistia 8 de janeiro anistiar golpistas dosimetria indulto bolsonaro preso liberdade' },
 
+
+
+// ---------------- LOTE 4: EDUCAÇÃO, BETS, SEGURANÇA, CULTURA, PREVIDÊNCIA ----------------
+{ id:'edu-alfabetizacao', tipo:'indicador', tema:'Educação', quem:'Dado oficial', frase:'A educação piorou? As crianças estão aprendendo a ler?', veredito:'DADO',
+  resumo:'A proporção de crianças alfabetizadas ao fim do 2º ano nas escolas públicas subiu de 56% em 2023 para 59,2% em 2024 e 66% em 2025, acima da meta de 64% para o ano.',
+  dado:'O indicador foi criado em 2023 com o Compromisso Nacional Criança Alfabetizada, pactuado com estados e municípios, que são os responsáveis pela educação infantil e fundamental. A meta nacional é passar de 80% em 2030. O abandono no ensino médio caiu com o Pé-de-Meia (ficha própria).',
+  unidade:'% de crianças alfabetizadas ao fim do 2º ano', serie:[[2023,56,'L'],[2024,59.2,'L'],[2025,66,'L']], nota:'Série iniciada em 2023.',
+  fonte:'MEC, Indicador Criança Alfabetizada', link:'https://atarde.com.br/brasil/66-das-criancas-brasileiras-foram-alfabetizadas-em-2025-aponta-o-mec-1383540', ref:'2023 a 2025',
+  termos:'educacao escola alfabetizacao ler escrever criancas aprendizado ensino piorou professores' },
+
+{ id:'bets', tema:'Economia', quem:'Dado oficial', frase:'Quem liberou as bets?', veredito:'DADO',
+  resumo:'As apostas esportivas foram legalizadas em 2018 (Lei 13.756, governo Temer) e ficaram sem regulamentação no governo Bolsonaro. O governo Lula regulamentou o setor em 2023 (Lei 14.790) e, em 25 de setembro de 2026, anunciou medida provisória e projeto para proibir as bets.',
+  dado:'O projeto prevê de 4 a 6 anos de prisão para quem operar apostas on-line. Flávio chamou a medida de estelionato eleitoral e disse que proibiria jogos como o Tigrinho, mas manteria as apostas esportivas. Pesquisa Atlas indica que três em cada quatro brasileiros apoiam a proibição. Estimativas citadas pela imprensa apontam R$ 62,5 bilhões gastos pelas famílias com apostas em 2025.',
+  fonte:'Tribuna PR; legislação federal', link:'https://www.tribunapr.com.br/noticias/economia/lula-anuncia-proibicao-de-bets-e-pena-de-prisao-para-operadores/', ref:'2018 a 2026',
+  termos:'bets apostas tigrinho cassino online jogo de azar apostas esportivas liberou as bets proibir bets' },
+
+{ id:'seg-pec', tema:'Segurança', quem:'Dado oficial', frase:'O governo Lula não fez nada pela segurança.', veredito:'FALSO',
+  resumo:'O governo enviou a PEC da Segurança Pública, aprovada na Câmara e em análise final no Senado em outubro de 2026, e a Lei Antifacção, em vigor desde março de 2026.',
+  dado:'A PEC põe o Sistema Único de Segurança Pública na Constituição, obriga repasse de metade dos fundos de segurança aos estados, protege esses recursos de cortes, amplia a PRF e prevê regime mais duro para chefes de facções e confisco de bens do crime. A Rede Nacional contra o Tráfico de Armas foi criada em 2026. A violência caiu no período (veja o painel de violência), mas policiamento e investigação continuam a cargo dos estados.',
+  fonte:'Poder360; Lupa', link:'https://www.poder360.com.br/poder-congresso/senado-votara-pec-da-seguranca-na-5a-feira/', ref:'2025 e 2026',
+  termos:'seguranca publica pec da seguranca nao fez nada susp faccoes policia federal crime organizado' },
+
+{ id:'cul-rouanet', tema:'Costumes e religião', quem:'Boato', frase:'Lula paga artistas com dinheiro da Lei Rouanet para apoiá-lo.', veredito:'ENGANOSO',
+  resumo:'A Lei Rouanet não tira dinheiro do Orçamento para pagar artistas. Empresas patrocinam projetos culturais aprovados e descontam até 4% do imposto de renda devido. Não há prova de que captações tenham sido pagamento por apoio político.',
+  dado:'Checagem do Comprova mostrou que vídeo sobre Anitta, Ivete Sangalo e outros artistas inventou ou inflou valores: vários não tinham projetos aprovados ou não captaram nada. A lei é de 1991 e financia de festas populares a museus e orquestras.',
+  fonte:'Comprova, via SBT News', link:'https://sbtnews.sbt.com.br/noticia/comprova/enganoso-video-erra-ao-dizer-que-anitta-diogo-nogueira-e-outros-artistas-receberam-milhoes-da-lei-rouanet-para-apoiar-lula', ref:'2024',
+  termos:'lei rouanet artistas mamata cultura anitta ivete dinheiro publico artistas da globo' },
+
+{ id:'prev-aposentados', tema:'INSS', quem:'Dado oficial', frase:'Os aposentados perderam poder de compra?', veredito:'FALTA_CONTEXTO',
+  resumo:'Quem ganha um salário mínimo teve ganho real todos os anos desde 2023 (6,79% em 2026). Quem ganha acima do mínimo teve reajuste de 3,9% em 2026, igual ao INPC de 2025, o que só repõe a inflação.',
+  dado:'O reajuste acima do mínimo segue a inflação pelo INPC, regra que vale há décadas; a crítica é que fica abaixo do IPCA (4,26% em 2025). São mais de 12,2 milhões de benefícios acima do mínimo. O teto do INSS passou a R$ 8.475,55. A fraude nos descontos associativos e as devoluções têm fichas próprias.',
+  fonte:'Portaria interministerial de 12/01/2026, via SBT News', link:'https://sbtnews.sbt.com.br/noticia/economia/aposentadorias-do-inss-acima-do-salario-minimo-tem-reajuste-de-3-9', ref:'2026',
+  termos:'aposentados aposentadoria reajuste aposentados inss pensionistas poder de compra aposentado' },
+
+{ id:'lula-idade', tema:'Eleição', quem:'Dado oficial', frase:'Lula está velho demais para governar?', veredito:'DADO',
+  resumo:'Lula nasceu em 27 de outubro de 1945 e faz 81 anos na semana da eleição. Se reeleito, terminaria o mandato aos 85. Flávio Bolsonaro tem 45 anos.',
+  dado:'Em dezembro de 2024 Lula passou por cirurgia de emergência para drenar um hematoma na cabeça, decorrente de uma queda, e retomou a agenda semanas depois. Avaliar capacidade para o cargo é julgamento do eleitor; a ficha registra apenas os fatos.',
+  fonte:'Registros públicos e TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'idade lula velho idoso saude de lula 80 anos 81 anos cansado' },
 
 ];
