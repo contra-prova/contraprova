@@ -317,7 +317,7 @@ window.FICHAS = [
   resumo:'O governo pagou R$ 3,52 bilhões a cerca de 5 milhões de aposentados e pensionistas que tiveram descontos indevidos.',
   dado:'A fraude foi desarticulada pela Polícia Federal e pela CGU na Operação Sem Desconto. A recuperação dos valores desviados das entidades ainda depende de processos judiciais.',
   fonte:'Estadão Verifica e Aos Fatos, com dados da Dataprev e do INSS', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'out/2026',
-  termos:'inss fraude descontos aposentados roubo devolucao ressarcimento careca' },
+  termos:'inss fraude descontos aposentados roubo devolucao ressarcimento careca devolveu dinheiro' },
 
 { id:'inss-mp871', tema:'INSS', quem:'Flávio Bolsonaro', frase:'Bolsonaro mandou MP para combater a fraude no INSS e o PT foi contra.', veredito:'FALTA_CONTEXTO',
   resumo:'A MP 871/2019 previa revalidação anual dos descontos, mas o Congresso a flexibilizou e, em 2022, derrubou a exigência por emenda incluída pelo relator Luis Miranda. Onze partidos votaram nesse sentido, incluindo PL e Centrão.',
@@ -823,7 +823,7 @@ window.FICHAS = [
   resumo:'Em julho de 2026, Flávio disse acreditar na anistia aos condenados pelo 8 de janeiro e que alguns subiriam a rampa do Planalto com ele. Na Globo, disse que o pai foi condenado numa farsa e que espera a anulação.',
   dado:'Jair Bolsonaro foi condenado pelo STF a 27 anos de prisão em setembro de 2025. O Congresso discutiu um projeto de redução de penas (dosimetria), que Flávio criticou e disse que precisaria ser corrigido. Uma eventual anistia aprovada pelo Congresso poderia ser contestada no STF.',
   fonte:'Portal de Prefeitura; Aos Fatos', link:'https://portaldeprefeitura.com.br/bastidores-da-politica/flavio-bolsonaro-diz-que-vai-subir-rampa-do-planalto-com-anistiados/627327/', ref:'2025 e 2026',
-  termos:'anistia 8 de janeiro anistiar golpistas dosimetria indulto bolsonaro preso liberdade' },
+  termos:'anistia anistiado anistiados perdao 8 de janeiro anistiar golpistas dosimetria indulto bolsonaro preso liberdade' },
 
 
 
@@ -864,5 +864,185 @@ window.FICHAS = [
   dado:'Em dezembro de 2024 Lula passou por cirurgia de emergência para drenar um hematoma na cabeça, decorrente de uma queda, e retomou a agenda semanas depois. Avaliar capacidade para o cargo é julgamento do eleitor; a ficha registra apenas os fatos.',
   fonte:'Registros públicos e TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
   termos:'idade lula velho idoso saude de lula 80 anos 81 anos cansado' },
+
+
+// ---------------- LOTE 5: PANORAMAS DE CORRUPÇÃO E ESCÂNDALOS ----------------
+{ id:'esc-inss', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O que foi o escândalo do INSS? Foi no governo Lula?', veredito:'FALTA_CONTEXTO',
+  resumo:'Entidades associativas descontaram sem autorização mensalidades de aposentados e pensionistas. A CGU calcula R$ 6,3 bilhões em descontos entre 2019 e 2024, em esquema que atravessou os governos Bolsonaro e Lula e cresceu muito a partir de 2023.',
+  dado:'Os descontos somaram R$ 536 milhões em 2021 e R$ 1,3 bilhão em 2023, com projeção de até R$ 2,6 bilhões em 2024. Acordos com entidades foram assinados nos dois governos (cinco em 2021-2022 e quatro no governo Lula). A Operação Sem Desconto, da PF e da CGU, foi deflagrada em abril de 2025; o ministro da Previdência, Carlos Lupi, deixou o cargo em seguida e o presidente do INSS foi afastado. O governo devolveu R$ 3,5 bilhões a cerca de 5 milhões de pessoas. As investigações seguem e alcançam também o entorno de Flávio (veja a ficha sobre o Careca do INSS).',
+  fonte:'CGU, via Congresso em Foco e Jornal Grande Bahia', link:'https://www.congressoemfoco.com.br/noticia/108480/lula-ou-bolsonaro-descontos-no-inss-antecedem-dois-ultimos-governos', ref:'2019 a 2026',
+  termos:'escandalo do inss fraude do inss roubo dos aposentados descontos indevidos sem desconto lupi careca do inss farra do inss' },
+
+{ id:'esc-cpmi-inss', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Como terminou a CPMI do INSS?', veredito:'DADO',
+  resumo:'A CPMI terminou em 28 de março de 2026 sem relatório aprovado. O relatório de Alfredo Gaspar (PL), hoje vice de Flávio, pedia o indiciamento de 216 pessoas, entre elas Lulinha e Vorcaro, e foi rejeitado por 19 a 12.',
+  dado:'O relatório alternativo da base do governo, de Paulo Pimenta (PT), pedia o indiciamento de 131 pessoas, entre elas Flávio e Jair Bolsonaro, mas não chegou a ser votado. O presidente da comissão encerrou os trabalhos depois que o STF negou, por 8 a 2, a prorrogação. Nenhum dos relatórios tem efeito formal; as investigações da PF e do Ministério Público continuam.',
+  fonte:'Movimento Econômico; Congresso em Foco', link:'https://movimentoeconomico.com.br/politica/2026/03/28/cpmi-do-inss-rejeita-216-indiciamentos-e-termina-com-dois-relatorios-na-gaveta/', ref:'mar/2026',
+  termos:'cpmi cpmi do inss relatorio indiciamento alfredo gaspar paulo pimenta comissao parlamentar' },
+
+{ id:'esc-flavio-careca', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio tem ligação com o Careca do INSS?', veredito:'DADO',
+  resumo:'Há conexões em investigação, mas nenhuma prova pública de que Flávio tenha recebido dinheiro dos aposentados. Uma empresa ligada a Flávio e Carlos Bolsonaro dividia endereço com 16 empresas do Careca do INSS, e a administradora do escritório de advocacia de Flávio é irmã de um contador ligado ao lobista.',
+  dado:'O advogado Willer Tomaz, próximo de Flávio, foi alvo de busca da PF numa fase da Operação Sem Desconto, e documentos bancários apontaram uma conta em nome de Flávio ligada a uma estrutura associada a Tomaz. Flávio e Tomaz negam irregularidades. Flávio também é alvo de inquérito no STF sobre suspeitas de lavagem com o advogado. O Aos Fatos considerou falsa a negativa de Flávio, no debate da Band, de que mantinha escritório com o lobista.',
+  fonte:'Jornal Grande Bahia; Aos Fatos', link:'https://jornalgrandebahia.com.br/2026/10/caso-inss-r-63-bilhoes-em-descontos-milhoes-de-contestacoes-e-conexoes-investigadas-alcancam-entorno-de-flavio-bolsonaro/', ref:'2026',
+  termos:'careca do inss flavio escritorio bravo grafeno willer tomaz antonio camilo antunes flavio inss' },
+
+{ id:'esc-master', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O que é o escândalo do Banco Master?', veredito:'DADO',
+  resumo:'O Master vendia aplicações com juros muito acima do mercado e, segundo a PF, se sustentava com fraudes, como a venda de cerca de R$ 12 bilhões em carteiras de crédito sem lastro ao BRB, banco do governo do Distrito Federal. Foi liquidado em novembro de 2025, e o rombo coberto pelo FGC passa de R$ 50 bilhões.',
+  dado:'O dono, Daniel Vorcaro, foi preso em novembro de 2025 e de novo em março de 2026. Fundos de previdência de servidores do Rio (cerca de R$ 1 bilhão), do Amapá e de Maceió perderam dinheiro. O caso tem ramificações em vários partidos, com ligações mais diretas na direita e no Centrão, como mostram as fichas sobre Vorcaro, Dark Horse, BRB e Moraes.',
+  fonte:'Agência Pública', link:'https://apublica.org/2026/03/banco-master-a-reconstrucao-completa-de-como-uma-fraude-capturou-a-republica/', ref:'2019 a 2026',
+  termos:'banco master master vorcaro brb fraude bancaria fgc escandalo do master liquidacao' },
+
+{ id:'esc-master-politicos', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Quais políticos estão ligados ao Banco Master?', veredito:'DADO',
+  resumo:'As ligações relatadas atravessam partidos, mas se concentram na direita e no Centrão. Flávio pediu e recebeu de Vorcaro quase R$ 70 milhões para o filme sobre o pai. Ciro Nogueira (PP) propôs a emenda que ampliaria a garantia do FGC e aparece em mensagens sobre pagamentos. Ibaneis Rocha comandava o governo dono do BRB e Cláudio Castro, o Rio, cuja previdência comprou papéis do banco.',
+  dado:'Também são citados Arthur Lira, Davi Alcolumbre e Hugo Motta como próximos de Vorcaro. O cunhado de Vorcaro doou R$ 3 milhões à campanha de Jair Bolsonaro em 2022. Do lado do governo, Lula teve um encontro fora da agenda com Vorcaro em dezembro de 2024, sem acusação de irregularidade. Diretores do Banco Central nomeados na gestão Campos Neto são suspeitos de receber mesada do banqueiro. Quase todos negam irregularidades.',
+  fonte:'Agência Pública; Aos Fatos', link:'https://apublica.org/2026/01/a-bancada-do-master-e-de-direita/', ref:'2024 a 2026',
+  termos:'politicos master vorcaro ciro nogueira ibaneis claudio castro lira alcolumbre campos neto bancada do master' },
+
+{ id:'esc-moraes-master', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Alexandre de Moraes está envolvido com o Banco Master?', veredito:'DADO',
+  resumo:'O escritório da mulher de Moraes, Viviane Barci, tinha contrato de cerca de R$ 130 milhões com o Master, assinado em janeiro de 2024. Mensagens no celular de Vorcaro, divulgadas em setembro de 2026, mostram cobranças desses pagamentos e um pedido para que Moraes interferisse junto à PF e à PGR.',
+  dado:'Não se sabe se o ministro respondeu. O escritório diz que nunca atuou para o Master no STF e que Moraes jamais julgou causa do banco; a PGR não viu irregularidade no contrato. O ministro Dias Toffoli deixou a relatoria do caso após revelações sobre negócios da família com fundos ligados ao Master. Flávio defende o impeachment de Moraes.',
+  fonte:'A Gazeta, com O Estado de S. Paulo; Agência Pública', link:'https://www.agazeta.com.br/mundo/moraes-no-caso-master-o-que-mostram-as-mensagens-entre-o-ministro-do-stf-e-daniel-vorcaro-0926', ref:'2024 a 2026',
+  termos:'moraes master viviane barci escritorio contrato toffoli stf vorcaro ministro' },
+
+{ id:'esc-aliados-rj', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Aliados de Flávio no Rio foram presos?', veredito:'DADO',
+  resumo:'Sim. O ex-presidente da Alerj Rodrigo Bacellar, que chegou a ser cotado como candidato de Flávio ao governo do Rio, foi preso pela PF por suspeita de comandar o braço político do Comando Vermelho. O deputado estadual eleito Márcio Canella, que teve vídeos de apoio de Flávio, foi preso em outubro de 2026 por suspeita de lavagem ligada a milícia e tráfico.',
+  dado:'O ex-governador Cláudio Castro foi tornado inelegível e é citado no caso Master. Na entrevista à Globo, Flávio disse ter se surpreendido e que os acusados devem responder se tiverem culpa. Todos negam as acusações.',
+  fonte:'Poder360; entrevista à TV Globo transcrita pelo Aos Fatos', link:'https://www.poder360.com.br/poder-justica/pf-prende-rodrigo-bacellar-ex-presidente-da-alerj-pela-2a-vez/', ref:'2026',
+  termos:'bacellar canella claudio castro alerj rio de janeiro comando vermelho milicia aliados de flavio presos' },
+
+{ id:'esc-joias-vacina', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'E as joias sauditas e o cartão de vacina de Bolsonaro?', veredito:'DADO',
+  resumo:'A PF indiciou Jair Bolsonaro nos dois casos em 2024: pela suposta fraude no cartão de vacinação contra a Covid e pela apropriação de joias dadas pela Arábia Saudita, avaliadas em R$ 16,5 milhões. Até a última informação pública, a PGR não havia apresentado denúncia em nenhum dos dois.',
+  dado:'Os casos são separados da condenação de 27 anos por tentativa de golpe, de setembro de 2025. Bolsonaro nega irregularidades.',
+  fonte:'Mais Goiás; Muita Informação', link:'https://muitainformacao.com.br/politica/caso-das-joias-sauditas-envolvendo-bolsonaro-segue-sem-decisao-da-pgr-apos-15-meses/', ref:'2024 e 2025',
+  termos:'joias joias sauditas rolex arabia saudita cartao de vacina vacinacao fraude mauro cid bolsonaro' },
+
+{ id:'esc-mais-corrupto', tema:'Corrupção e investigações', quem:'Boato', frase:'O governo Lula é o mais corrupto da história; o PT é o partido mais corrupto.', veredito:'FALTA_CONTEXTO',
+  resumo:'Não existe medida oficial que permita ranquear governos ou partidos por corrupção. Os grandes casos em investigação hoje atravessam partidos e governos.',
+  dado:'As condenações de Lula na Lava Jato foram anuladas pelo STF, sem julgamento do mérito. A fraude do INSS começou antes de 2023 e cresceu no governo Lula; Lupi deixou o ministério. O caso Master tem ligações mais diretas com políticos da direita e do Centrão, incluindo Flávio. Lulinha é investigado em três inquéritos. Jair Bolsonaro foi condenado por golpe e indiciado nos casos das joias e do cartão de vacina. No índice da Transparência Internacional, que mede percepção, o Brasil está mal colocado há anos, em todos os governos.',
+  fonte:'Fichas desta base, com Lupa, Aos Fatos, CGU e Agência Pública', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2014 a 2026',
+  termos:'corrupcao corrupto mais corrupto pt corrupto ladroes governo corrupto roubalheira mensalao petrolao lava jato' },
+
+// ---------------- LOTE 5: OUTROS TEMAS ----------------
+{ id:'ele-vices', tema:'Eleição', quem:'Dado oficial', frase:'Quem são os vices?', veredito:'DADO',
+  resumo:'O vice de Lula é Geraldo Alckmin (PSB), atual vice-presidente e ministro do Desenvolvimento até 2026. O de Flávio é o deputado federal Alfredo Gaspar (PL-AL), ex-procurador-geral de Justiça de Alagoas e relator da CPMI do INSS.',
+  dado:'Gaspar foi anunciado em 5 de agosto de 2026, depois que PP e Republicanos não aceitaram indicar nomes como Tereza Cristina. Seu relatório na CPMI, que pedia a prisão de Lulinha, foi rejeitado pela comissão.',
+  fonte:'BBC Brasil, via O Povo', link:'https://www.opovo.com.br/agencia/bbc/2026/08/05/quem-e-alfredo-gaspar-anunciado-como-vice-de-flavio-bolsonaro-nas-eleicoes-2026.html', ref:'2026',
+  termos:'vice vice-presidente alckmin alfredo gaspar chapa companheiro de chapa' },
+
+{ id:'ext-trump', tipo:'panorama', tema:'Política externa e comércio', quem:'Dado oficial', frase:'Lula brigou com os Estados Unidos?', veredito:'FALTA_CONTEXTO',
+  resumo:'A relação passou por crise em 2025, com tarifas sobre produtos brasileiros e sanções da Lei Magnitsky contra Alexandre de Moraes, mas houve reaproximação. Depois de conversas de Lula com Trump, os EUA retiraram as sanções contra Moraes e a mulher em 12 de dezembro de 2025.',
+  dado:'Lula e Trump se reuniram na Malásia em outubro de 2025 e falaram por telefone em outubro e dezembro. Novas tarifas, de até 37,5%, foram impostas em julho de 2026, e os dois governos criaram em setembro um grupo de trabalho para negociar. Eduardo Bolsonaro atuou nos EUA por sanções contra autoridades brasileiras e foi condenado pelo STF por isso.',
+  fonte:'Poder360', link:'https://www.poder360.com.br/poder-governo/trump-ja-havia-sinalizado-retirada-da-magnitsky-a-moraes/', ref:'2025 e 2026',
+  termos:'trump estados unidos eua magnitsky sancoes relacao com os eua americano diplomacia' },
+
+{ id:'ext-israel', tema:'Política externa e comércio', quem:'Dado oficial', frase:'Qual a posição de Lula sobre Israel e Gaza?', veredito:'DADO',
+  resumo:'Lula condenou o ataque do Hamas de outubro de 2023 e passou a classificar a ofensiva de Israel em Gaza como genocídio. Em fevereiro de 2024 comparou a ação ao Holocausto, foi declarado persona non grata por Israel e o Brasil retirou seu embaixador em Tel Aviv.',
+  dado:'O governo defende cessar-fogo e a criação do Estado palestino. Críticos, sobretudo entre evangélicos e na comunidade judaica, acusam Lula de antissemitismo pela comparação com o Holocausto, o que o governo nega.',
+  fonte:'SBT News; Renascença', link:'https://sbtnews.sbt.com.br/noticia/politica/apos-crise-diplomatica-lula-volta-a-dizer-que-israel-pratica-genocidio-contra-palestinos', ref:'2023 a 2026',
+  termos:'israel gaza palestina hamas netanyahu holocausto genocidio judeus oriente medio' },
+
+{ id:'eco-petrobras', tipo:'panorama', tema:'Economia', quem:'Dado oficial', frase:'A Petrobras está quebrando com Lula?', veredito:'FALSO',
+  resumo:'A Petrobras lucrou R$ 110,1 bilhões em 2025, alta de cerca de 200% sobre 2024, e aprovou R$ 45,2 bilhões em dividendos, dos quais R$ 17,6 bilhões para a União. A produção de petróleo e gás subiu 11%.',
+  dado:'O lucro de 2024 foi menor por efeitos contábeis e de câmbio. Críticos apontam o aumento do investimento em refino e a mudança da política de preços em 2023 como riscos; o governo defende que a empresa invista mais no país. A estatal fica fora da conta de déficit das estatais.',
+  fonte:'Agência iNFRA, com balanço da Petrobras', link:'https://agenciainfra.com/blog/petrobras-lucrou-r-110-bilhoes-em-2025/', ref:'2025',
+  termos:'petrobras lucro estatal petroleo dividendos quebrando prejuizo petrobras' },
+
+{ id:'eco-reforma-tributaria', tipo:'panorama', tema:'Economia', quem:'Dado oficial', frase:'O que muda com a reforma tributária?', veredito:'DADO',
+  resumo:'Aprovada em 2023 (Emenda 132) e regulamentada em 2025, a reforma troca cinco tributos sobre consumo (PIS, Cofins, IPI, ICMS e ISS) por dois impostos sobre valor agregado, a CBS federal e o IBS de estados e municípios. A transição começa com teste em 2026 e vai até 2033.',
+  dado:'A cesta básica nacional tem alíquota zero e há devolução de imposto (cashback) para famílias de baixa renda. Templos e entidades religiosas mantêm imunidade. Críticos apontam que a alíquota total ficará entre as mais altas do mundo; defensores dizem que acaba com a cobrança em cascata e a guerra fiscal. A reforma foi aprovada com votos de vários partidos, inclusive parte da oposição.',
+  fonte:'Emenda Constitucional 132/2023 e Lei Complementar 214/2025', link:'https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm', ref:'2023 a 2033',
+  termos:'reforma tributaria ibs cbs iva imposto sobre consumo cesta basica cashback simplificacao' },
+
+{ id:'tec-soberania', tipo:'panorama', tema:'Indústria e tecnologia', quem:'Dado oficial', frase:'O que o governo Lula fez em inteligência artificial e soberania digital?', veredito:'DADO',
+  resumo:'O governo lançou o Plano Brasileiro de Inteligência Artificial, com cerca de R$ 23 bilhões previstos até 2028, e em setembro de 2025 o Redata, regime tributário para atrair data centers ao país.',
+  dado:'O Redata isenta equipamentos de data center de tributos federais e exige em troca investimento de 2% em pesquisa e inovação e a reserva de ao menos 10% da capacidade ao mercado nacional. Hoje só cerca de 40% do processamento de dados de brasileiros ocorre no país. As medidas integram a Nova Indústria Brasil. O plano de Flávio também quer atrair data centers, com foco em energia barata, mas não fala em contrapartidas nem em soberania de dados.',
+  fonte:'Itatiaia; Fast Company Brasil', link:'https://www.itatiaia.com.br/politica/lula-lanca-programa-para-atrair-datacenters-e-reforcar-soberania-digital/', ref:'2024 a 2026',
+  termos:'inteligencia artificial ia data center datacenter redata pbia soberania digital nuvem big techs tecnologia' },
+
+
+// ---------------- LOTE 6: SAÚDE, ESTADO, INDÍGENAS, INFRAESTRUTURA, CLIMA, IGUALDADE, ENSINO SUPERIOR, MUNDO, DEFESA, FAMÍLIA BOLSONARO ----------------
+{ id:'sau-filas', tipo:'panorama', tema:'Saúde', quem:'Dado oficial', frase:'A fila do SUS para cirurgias e especialistas não anda.', veredito:'FALTA_CONTEXTO',
+  resumo:'O SUS fez 14,9 milhões de cirurgias eletivas em 2025 e mais de 7,5 milhões no 1º semestre de 2026, 8% acima do mesmo período de 2025. Mas auditoria do TCU concluiu que o aumento não reduziu de forma consistente as esperas: cerca de um quarto dos pacientes enfrenta filas maiores.',
+  dado:'O programa Agora Tem Especialistas respondeu por 2,92 milhões das cirurgias do semestre e recebeu R$ 3,3 bilhões em 2025. O TCU aponta falta de especialistas, oferta concentrada e ausência de base nacional para acompanhar o paciente na fila; o Ministério da Saúde contesta parte das conclusões. O plano de Flávio Bolsonaro propõe comprar vagas ociosas da rede privada.',
+  fonte:'Ministério da Saúde, via JB; TCU, via Jornal de Brasília', link:'https://jornaldebrasilia.com.br/noticias/politica-e-poder/programa-de-lula-amplia-atendimentos-mas-1-4-dos-pacientes-enfrenta-espera-maior-diz-tcu/', ref:'2023 a 2026',
+  termos:'fila do sus cirurgia cirurgias eletivas especialistas agora tem especialistas espera exames consulta saude publica hospital' },
+
+{ id:'sau-vacinacao', tipo:'indicador', tema:'Saúde', quem:'Dado oficial', frase:'A vacinação das crianças voltou a subir?', veredito:'DADO',
+  resumo:'Sim. A cobertura da primeira dose da tríplice viral (sarampo, caxumba e rubéola) caiu de 93% em 2019 para 75% em 2021 e voltou a subir, chegando a 87% em 2023, ainda abaixo da meta de 95%. O Brasil perdeu o certificado de país livre do sarampo em 2019 e o recuperou em 2024.',
+  dado:'Em 2025 houve 37 casos de sarampo, a maioria ligada a casos importados, em meio a surtos no continente. A queda da vacinação na pandemia foi geral no mundo, mas no Brasil foi agravada por campanhas de desinformação contra vacinas.',
+  unidade:'% de cobertura, 1ª dose da tríplice viral', serie:[[2019,93,'B'],[2020,80,'B'],[2021,75,'B'],[2022,81,'B'],[2023,87,'L']], nota:'2020: estimativa aproximada. 2023: dado preliminar.',
+  fonte:'Ministério da Saúde, via Folhapress', link:'https://tribunaonline.com.br/saude/brasil-espera-recuperar-certificado-de-eliminacao-do-sarampo-no-2-semestre-185321', ref:'2019 a 2025',
+  termos:'vacina vacinacao vacinas criancas sarampo cobertura vacinal campanha antivacina' },
+
+{ id:'est-cargos', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'Lula criou mais de 22 mil cargos comissionados; Bolsonaro extinguiu 20 mil.', veredito:'FALTA_CONTEXTO',
+  resumo:'O governo federal tinha 50.770 cargos comissionados e funções de confiança em novembro de 2025, maior número da série, cerca de 4,4 mil a mais que em janeiro de 2023. O número de 22,5 mil citado por Flávio Bolsonaro não aparece nos dados oficiais consultados.',
+  dado:'A maior parte dessas funções é ocupada por servidores de carreira. O gasto federal com pessoal passou de cerca de R$ 369 bilhões em 2022 para R$ 445 bilhões em 2025, com reajustes e concursos, como o Concurso Nacional Unificado. O governo Bolsonaro extinguiu cargos, muitos deles efetivos e já vagos.',
+  fonte:'Ministério da Gestão e Inovação, via Portal de Prefeitura', link:'https://portaldeprefeitura.com.br/brasil/governo-lula-chega-a-507-mil-cargos-comissionados-maior-patamar-da/610961/', ref:'2022 a 2025',
+  termos:'cargos comissionados cabide de emprego apadrinhados servidores funcionalismo maquina publica inchada concursos ministerios' },
+
+{ id:'ind-marco-temporal', tipo:'panorama', tema:'Campo e agro', quem:'Dado oficial', frase:'O que aconteceu com o marco temporal das terras indígenas?', veredito:'DADO',
+  resumo:'Em 2023 o STF derrubou a tese de que só têm direito à terra os povos que a ocupavam em 1988. Dias depois o Congresso aprovou lei recriando a tese; Lula vetou trechos e o Congresso derrubou os vetos. Em dezembro de 2025 o STF manteve boa parte da lei, mas derrubou de novo o marco de 1988 e deu dez anos ao governo para concluir as demarcações pendentes.',
+  dado:'Ficaram regras mais amplas de indenização a proprietários, a participação de estados, municípios e fazendeiros desde o início das demarcações e o direito de posseiros permanecerem até serem indenizados. Recursos contra a decisão foram julgados em agosto de 2026. O plano de Flávio Bolsonaro não trata do marco temporal.',
+  fonte:'Diario de Pernambuco', link:'https://www.diariodepernambuco.com.br/brasil/2026/08/11720578-stf-volta-a-julgar-recursos-sobre-lei-do-marco-temporal-nesta-sexta-7.html', ref:'2023 a 2026',
+  termos:'marco temporal indigenas terras indigenas demarcacao indios reserva fazendeiros' },
+
+{ id:'ind-yanomami', tema:'Meio ambiente', quem:'Dado oficial', frase:'O que mudou na terra Yanomami?', veredito:'DADO',
+  resumo:'Em janeiro de 2023 o governo decretou emergência sanitária na Terra Yanomami, tomada pelo garimpo ilegal, que cresceu mais de 3.000% entre 2016 e 2021. O governo afirma ter reduzido as áreas de garimpo ativo em cerca de 90% e o Ministério da Saúde registra queda de 27,6% nas mortes até janeiro de 2026.',
+  dado:'Ainda assim, 1.121 mortes foram registradas entre 2023 e 2025, por doenças e violência ligada ao garimpo, e surtos como o de coqueluche em 2026 mataram crianças. Garimpeiros voltam a áreas desocupadas quando a fiscalização diminui.',
+  fonte:'Casa de Governo Yanomami; Folha BV', link:'https://www.gov.br/casacivil/pt-br/casa-de-governo-yanomami/boletins-mensais/FLDRelatorioYanomamiABR26_VS02.pdf', ref:'2023 a 2026',
+  termos:'yanomami garimpo garimpeiros indigenas roraima emergencia desnutricao mercurio' },
+
+{ id:'inf-pac', tema:'Economia', quem:'Dado oficial', frase:'O que é o Novo PAC e quanto saiu do papel?', veredito:'DADO',
+  resumo:'Lançado em 2023, o Novo PAC prevê R$ 1,3 trilhão em investimentos públicos e privados até 2026. Até dezembro de 2024, R$ 711 bilhões (53,7%) haviam sido executados e 3.800 de 23 mil empreendimentos estavam concluídos.',
+  dado:'Inclui obras de energia, transporte, saneamento, escolas, creches, moradia e água. Parte relevante do valor vem de estatais e do setor privado. Críticos apontam que muitas obras são retomadas de projetos antigos e que o percentual concluído ainda é baixo.',
+  fonte:'Casa Civil, via Vermelho', link:'https://vermelho.org.br/?p=715293', ref:'2023 a dez/2024',
+  termos:'pac novo pac obras infraestrutura investimento estradas ferrovias saneamento obras paradas' },
+
+{ id:'clima-cop30', tema:'Meio ambiente', quem:'Dado oficial', frase:'O que a COP30 em Belém trouxe de resultado?', veredito:'DADO',
+  resumo:'A conferência do clima da ONU ocorreu em Belém em novembro de 2025. O Brasil lançou o fundo Florestas Tropicais para Sempre (TFFF), que pagaria por hectare de floresta preservada, com cerca de US$ 5,6 bilhões prometidos, pouco mais da metade da meta de US$ 10 bilhões até o fim de 2026.',
+  dado:'Brasil e Indonésia prometeram US$ 1 bilhão cada; a Noruega, até US$ 3 bilhões em dez anos, condicionados. Críticos apontaram resultados modestos e a contradição entre o discurso climático e a exploração de petróleo na margem equatorial. Os EUA não participaram.',
+  fonte:'Poder360', link:'https://www.poder360.com.br/cop30/cupula-do-clima-termina-com-promessas-e-pouco-resultado-concreto/', ref:'nov/2025',
+  termos:'cop30 cop 30 clima belem conferencia do clima aquecimento global tfff fundo florestas mudancas climaticas' },
+
+{ id:'mul-igualdade', tema:'Emprego e renda', quem:'Dado oficial', frase:'As mulheres ainda ganham menos que os homens?', veredito:'DADO',
+  resumo:'Sim. Nas empresas com 100 ou mais empregados, as mulheres ganhavam em média 21,3% menos que os homens em dezembro de 2025, diferença um pouco maior que a de 2023 (20,7%), segundo o relatório exigido pela Lei de Igualdade Salarial (Lei 14.611/2023).',
+  dado:'A lei obriga as empresas a publicar relatórios e corrigir distorções. O emprego de mulheres nessas empresas subiu de 7,2 para 8 milhões, e o de mulheres negras cresceu 29%. O plano de Flávio Bolsonaro não menciona a Lei de Igualdade Salarial.',
+  fonte:'Ministério do Trabalho, 5º Relatório de Transparência Salarial, via IstoÉ Dinheiro', link:'https://istoedinheiro.com.br/mulheres-recebem-menos-homens-27426', ref:'2023 a 2025',
+  termos:'mulheres salario das mulheres igualdade salarial desigualdade de genero ganham menos feminismo' },
+
+{ id:'edu-cotas', tema:'Educação', quem:'Dado oficial', frase:'O que muda nas cotas e no acesso à universidade?', veredito:'DADO',
+  resumo:'Lula sancionou em 2023 a atualização da Lei de Cotas, que vale até 2033 e incluiu estudantes quilombolas. O governo também anunciou 100 novos campi de institutos federais. O plano de Flávio Bolsonaro não menciona cotas, ProUni nem Fies e propõe transferir o ensino superior para o Ministério da Ciência e Tecnologia.',
+  dado:'As cotas reservam 50% das vagas das universidades e institutos federais a alunos de escola pública, com subcotas por renda e para pretos, pardos, indígenas, quilombolas e pessoas com deficiência. Críticos defendem cotas só por renda.',
+  fonte:'Agência Senado; SBT News', link:'https://www12.senado.leg.br/noticias/materias/2023/11/14/sancionada-ampliacao-da-lei-de-cotas', ref:'2023 a 2026',
+  termos:'cotas cotas raciais universidade faculdade prouni fies ensino superior institutos federais vestibular enem' },
+
+{ id:'ext-mercosul', tema:'Política externa e comércio', quem:'Dado oficial', frase:'E o acordo Mercosul-União Europeia?', veredito:'DADO',
+  resumo:'Depois de 26 anos de negociação, o acordo foi assinado em janeiro de 2026 e entrou em vigor em 1º de maio de 2026, de forma provisória do lado europeu. O Mercosul vai zerar tarifas de 91% dos produtos europeus em até 15 anos, e a União Europeia, de 95% dos produtos do Mercosul em até 12 anos.',
+  dado:'Cria uma área de livre comércio com cerca de 720 milhões de pessoas. O Parlamento Europeu pediu parecer da Justiça europeia, e agricultores europeus resistem. O plano de Flávio Bolsonaro prioriza a entrada na OCDE e não menciona o Mercosul.',
+  fonte:'eixos', link:'https://eixos.com.br/internacional/lula-assina-decreto-que-promulga-acordo-mercosul-ue/', ref:'2026',
+  termos:'mercosul uniao europeia acordo comercial europa exportacoes livre comercio ocde' },
+
+{ id:'ext-ucrania-brics', tema:'Política externa e comércio', quem:'Dado oficial', frase:'Lula apoia a Rússia na guerra da Ucrânia?', veredito:'FALTA_CONTEXTO',
+  resumo:'O Brasil votou na ONU a favor de resoluções que condenam a invasão russa, mas Lula se declara neutro, não aplica sanções à Rússia e propôs com a China um grupo de países para mediar a paz. A Ucrânia e países europeus criticaram a proposta.',
+  dado:'O governo diz ter neutralidade militar, mas não moral. A Rússia é parceira do Brasil no BRICS e grande fornecedora de fertilizantes e diesel; a China é o principal parceiro comercial do país. O governo Bolsonaro também não aplicou sanções e Bolsonaro visitou Putin dias antes da invasão, em 2022.',
+  fonte:'Jornal de Brasília; A Gazeta', link:'https://jornaldebrasilia.com.br/noticias/politica-e-poder/governo-lula-e-cobrado-por-guerra-na-ucrania-e-diz-que-tem-neutralidade-militar-mas-nao-moral/', ref:'2022 a 2026',
+  termos:'russia ucrania putin guerra brics china neutralidade comunista ditadores' },
+
+{ id:'def-santos', tema:'Segurança', quem:'Plano de Flávio', frase:'Sob Lula, o Porto de Santos se tornou um dos maiores exportadores de cocaína do mundo.', veredito:'FALTA_CONTEXTO',
+  resumo:'Santos é apontado há anos como um dos principais pontos de saída de cocaína para a Europa, controlado em parte pelo PCC, o que já acontecia antes de 2023. Em 2022 foram apreendidas quase 14 toneladas no porto em oito meses.',
+  dado:'Não há ranking oficial de portos exportadores de cocaína; a origem da droga é sobretudo Colômbia, Peru e Bolívia. A fiscalização cabe à Receita Federal e à PF. O plano de Flávio Bolsonaro propõe tropas da Marinha e da Aeronáutica em portos e aeroportos e declarar facções como narcoterroristas. A PEC da Segurança e a Lei Antifacção têm fichas próprias.',
+  fonte:'Âmbito Jurídico; Datamar News', link:'https://datamarnews.com/noticias/brazil-cocaine-exports-from-santos-port-at-all-time-high/', ref:'2019 a 2026',
+  termos:'porto de santos cocaina drogas trafico internacional pcc fronteiras forcas armadas marinha' },
+
+{ id:'fam-michelle', tema:'Eleição', quem:'Dado oficial', frase:'Michelle Bolsonaro apoia Flávio Bolsonaro?', veredito:'DADO',
+  resumo:'Em junho de 2026 Michelle publicou vídeo acusando o enteado de humilhá-la e maltratá-la, e deixou a presidência do PL Mulher. Em julho, Flávio Bolsonaro pediu desculpas em vídeo e convidou a madrasta a caminhar junto; até o fim de julho ela não havia declarado apoio.',
+  dado:'Aliados da campanha disseram depois que a relação estava pacificada, mas Michelle não teve papel de destaque na campanha.',
+  fonte:'Estado de Minas', link:'https://www.em.com.br/politica/2026/07/7466942-flavio-bolsonaro-faz-apelo-a-michelle-por-apoio-ninguem-e-perfeito.html', ref:'jun e jul/2026',
+  termos:'michelle michelle bolsonaro madrasta racha familia bolsonaro pl mulher' },
+
+{ id:'fam-jair-preso', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Jair Bolsonaro está preso? Onde ele está?', veredito:'DADO',
+  resumo:'Condenado pelo STF a 27 anos e 3 meses por tentativa de golpe, Bolsonaro teve a condenação definitiva em novembro de 2025, após indícios de violação da tornozeleira. Foi levado à Papudinha, em Brasília, em janeiro de 2026, e em março recebeu prisão domiciliar humanitária temporária por problemas de saúde, sujeita a reavaliação pelo STF.',
+  dado:'Em maio de 2026 a defesa pediu revisão criminal para anular a condenação; a PGR se manifestou contra. Flávio Bolsonaro diz que o pai foi condenado numa farsa e que a condenação deveria ser anulada. Bolsonaro está inelegível.',
+  fonte:'Portal Tela; Hoje em Dia', link:'https://www.portaltela.com/noticias/politica/2026/06/24/prazo-da-prisao-domiciliar-de-bolsonaro-vence-nesta-quinta/', ref:'2025 e 2026',
+  termos:'jair bolsonaro preso prisao cadeia presidio cumprindo pena situacao papuda papudinha domiciliar tornozeleira condenado inelegivel' },
 
 ];

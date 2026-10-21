@@ -198,12 +198,12 @@ footer p{margin:0;max-width:70ch}
           if(r.length>=4 && raiz(t)===r){ melhor = Math.max(melhor, peso*0.8); }
         }
       });
-      if(NOMES[w]){ if(melhor>0) nomes += 0.3; return; }
+      if(NOMES[w]){ nomes += melhor*0.15; return; }
       if(melhor>0) achados++;
       total += melhor;
     });
     if(!achados) return 0;
-    return (total * (0.4 + 0.6 * achados / temas.length) + nomes) * (f.tipo==='indicador' ? 1.15 : 1);
+    return (total * (0.4 + 0.6 * achados / temas.length) + nomes) * (f.tipo ? 1.15 : 1);
   }
 
   var estado = { q:'', quem:'Todos', tema:'Todos', limite:POR_PAGINA };
@@ -266,7 +266,7 @@ footer p{margin:0;max-width:70ch}
     var pont = base.map(function(f){ return { f:f, s:pontuar(f,q) }; }).filter(function(x){ return x.s>=1.2; });
     pont.sort(function(a,b){ return b.s-a.s; });
     if(pont.length){ var corte = pont[0].s*0.4; pont = pont.filter(function(x){ return x.s>=corte; }); }
-    var claro = pont.length && pont[0].s>=2.5 && (pont.length===1 || pont[0].s>=pont[1].s*1.25 || pont[0].f.tipo==='indicador');
+    var claro = pont.length && pont[0].s>=2.5 && (pont.length===1 || pont[0].s>=pont[1].s*1.25 || !!pont[0].f.tipo);
     return { itens: pont.map(function(x){ return x.f; }), busca:true, top: pont.slice(0,6), melhor: claro ? pont[0].f : null };
   }
 
