@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contraprova</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Confira na hora as frases ditas no debate presidencial com dados oficiais e checagens de agências.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: coluna única de segunda tela para o celular; busca fixa no topo, fichas como recortes de pauta com carimbo de veredito. */
+:root{
+  --papel:#F4F5F1; --superficie:#FFFFFF; --tinta:#1A1F2B; --tinta-2:#4A5163; --linha:#D9DCD3;
+  --acento:#1F4FB8; --acento-suave:#E3EAF8;
+  --v-verdadeiro:#1E7A4C; --v-falso:#C2321F; --v-meio:#B4610B; --v-contexto:#6B4BA8; --v-dado:#1F4FB8; --v-neutro:#5C6375;
+  --fonte-titulo:'Bricolage Grotesque', 'Arial Narrow', system-ui, sans-serif;
+  --fonte-corpo:'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fonte-dado:'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --papel:#12151C; --superficie:#1B2029; --tinta:#E9ECF2; --tinta-2:#A9B0C0; --linha:#2E3542;
+  --acento:#7FA2F0; --acento-suave:#1E2A44;
+  --v-verdadeiro:#4FC48A; --v-falso:#FF7A66; --v-meio:#F0A54C; --v-contexto:#B79BF0; --v-dado:#7FA2F0; --v-neutro:#9AA2B4;
+  color-scheme:dark } }
+:root[data-theme="dark"]{
+  --papel:#12151C; --superficie:#1B2029; --tinta:#E9ECF2; --tinta-2:#A9B0C0; --linha:#2E3542;
+  --acento:#7FA2F0; --acento-suave:#1E2A44;
+  --v-verdadeiro:#4FC48A; --v-falso:#FF7A66; --v-meio:#F0A54C; --v-contexto:#B79BF0; --v-dado:#7FA2F0; --v-neutro:#9AA2B4;
+  color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--papel);color:var(--tinta);font-family:var(--fonte-corpo);font-size:17px;line-height:1.5;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--papel)}
+.moldura{max-width:760px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+a{color:var(--acento)}
+:focus-visible{outline:3px solid var(--acento);outline-offset:2px;border-radius:4px}
+
+header.topo{display:grid;gap:6px;padding-block:8px 18px}
+.marca{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.marca h1{font-family:var(--fonte-titulo);font-weight:800;font-size:clamp(34px,8vw,48px);letter-spacing:-0.02em;line-height:1;margin:0}
+.marca h1 span{color:var(--acento)}
+.ao-vivo{font-family:var(--fonte-dado);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--v-falso);display:inline-flex;align-items:center;gap:6px}
+.ao-vivo::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--v-falso)}
+.topo p{margin:0;color:var(--tinta-2);max-width:60ch;text-wrap:pretty}
+.topo .descricao{color:var(--tinta);font-size:18px;max-width:58ch}
+
+.busca{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--papel);padding-block:10px;display:grid;gap:10px;border-bottom:1px solid var(--linha)}
+.campo{display:flex;gap:8px;align-items:stretch}
+.campo textarea{flex:1;min-width:0;font:inherit;font-size:18px;color:var(--tinta);background:var(--superficie);border:2px solid var(--tinta);border-radius:10px;padding:12px 14px;resize:none;height:56px;line-height:1.35}
+.campo textarea::placeholder{color:var(--tinta-2)}
+.campo textarea:focus{border-color:var(--acento);outline:none;box-shadow:0 0 0 3px var(--acento-suave)}
+.btn{font:inherit;font-weight:700;border-radius:10px;border:2px solid var(--tinta);background:var(--tinta);color:var(--papel);padding:0 16px;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--acento);border-color:var(--acento)}
+.btn[disabled]{opacity:.55;cursor:wait}
+.btn-sec{background:transparent;color:var(--tinta)}
+.btn-sec:hover{color:var(--papel)}
+.filtros{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+.chip{flex:0 0 auto;font:inherit;font-size:14px;border:1px solid var(--linha);background:var(--superficie);color:var(--tinta);border-radius:999px;padding:5px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+.situacao{font-size:14px;color:var(--tinta-2);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.ia{margin-block:16px 4px;border:2px solid var(--acento);border-radius:12px;background:var(--superficie);padding:14px 16px;display:grid;gap:8px}
+.ia h2{font-family:var(--fonte-dado);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--acento);margin:0;font-weight:500}
+.ia p{margin:0}
+.ia .frase-ia{font-style:italic;color:var(--tinta-2)}
+
+.lista{display:grid;gap:12px;margin-top:16px}
+.ficha{background:var(--superficie);border:1px solid var(--linha);border-radius:12px;padding:14px 16px 12px;display:grid;gap:8px;min-width:0}
+.ficha .cab{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.carimbo{font-family:var(--fonte-dado);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;border:2px solid currentColor;line-height:1.2}
+.quem{font-size:14px;font-weight:700}
+.tema{font-size:13px;color:var(--tinta-2);margin-left:auto}
+.ficha blockquote{margin:0;font-family:var(--fonte-titulo);font-weight:600;font-size:19px;line-height:1.3;text-wrap:balance}
+.ficha.e-pergunta blockquote{font-family:var(--fonte-corpo);font-weight:700;font-size:17px}
+.ficha .resumo{margin:0;max-width:65ch}
+.ficha details{border-top:1px dashed var(--linha);padding-top:6px}
+.ficha summary{cursor:pointer;font-size:14px;color:var(--acento);font-weight:700}
+.ficha details p{margin:8px 0 0;color:var(--tinta-2);font-size:16px;max-width:65ch}
+.fonte{font-size:14px;color:var(--tinta-2);display:flex;gap:6px 12px;flex-wrap:wrap;align-items:baseline}
+.fonte .ref{font-family:var(--fonte-dado);font-size:12px}
+.vazio{border:2px dashed var(--linha);border-radius:12px;padding:18px;color:var(--tinta-2)}
+.mais{justify-self:center;margin-top:8px;height:44px}
+
+.v-VERDADEIRO{color:var(--v-verdadeiro)} .v-FALSO{color:var(--v-falso)}
+.v-ENGANOSO,.v-EXAGERADO,.v-SUBESTIMADO,.v-IMPRECISO{color:var(--v-meio)}
+.v-FALTA_CONTEXTO,.v-INSUSTENTAVEL{color:var(--v-contexto)}
+.v-DADO{color:var(--v-dado)} .v-SEM_BASE{color:var(--v-neutro)}
+
+footer{margin-top:36px;border-top:2px solid var(--tinta);padding-top:14px;display:grid;gap:12px;font-size:15px;color:var(--tinta-2)}
+footer h2{font-family:var(--fonte-titulo);font-size:20px;color:var(--tinta);margin:0}
+.legenda{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px}
+.legenda div{display:flex;gap:8px;align-items:baseline}
+.legenda .carimbo{flex:0 0 auto}
+footer p{margin:0;max-width:70ch}
+@media (max-width:480px){ .campo{flex-direction:column} .btn{height:48px} .tema{margin-left:0;width:100%} }
+@media (prefers-reduced-motion: reduce){ *{transition:none!important;animation:none!important} }
+</style>
+</head>
+<body>
+
+<div class="moldura">
+  <header class="topo">
+    <div class="marca"><h1>Contra<span>prova</span></h1><span class="ao-vivo">Segundo turno 2026</span></div>
+    <p class="descricao">Ferramenta de checagem para acompanhar o debate presidencial pelo celular. Reúne dados oficiais e verificações das agências de checagem sobre o que os candidatos dizem, com a fonte de cada informação.</p>
+    <p>Ouviu um número ou uma acusação? Digite a frase ou o tema e veja o que os dados mostram.</p>
+  </header>
+
+  <section class="busca" aria-label="Buscar">
+    <form class="campo" id="form-busca">
+      <label for="q" class="sr" hidden>Frase ou tema</label>
+      <textarea id="q" rows="1" maxlength="400" placeholder="Ex.: a criminalidade explodiu" aria-label="Frase ou tema para checar"></textarea>
+      <button class="btn" type="submit" id="btn-ia">Checar frase</button>
+    </form>
+    <div class="filtros" id="filtros-quem" role="group" aria-label="Filtrar por autor"></div>
+    <div class="filtros" id="filtros-tema" role="group" aria-label="Filtrar por tema"></div>
+    <div class="situacao"><span id="contagem"></span><span id="atualizado"></span></div>
+  </section>
+
+  <section class="ia" id="caixa-ia" hidden aria-live="polite"></section>
+  <section class="lista" id="lista" aria-live="polite"></section>
+  <button class="btn btn-sec mais" id="mais" type="button" hidden>Mostrar mais fichas</button>
+
+  <footer>
+    <h2>Como ler os carimbos</h2>
+    <div class="legenda" id="legenda"></div>
+    <p>Cada ficha resume em linguagem própria dados de órgãos oficiais (IBGE, Banco Central, Inpe, TSE, Fórum Brasileiro de Segurança Pública) e checagens publicadas por Lupa, Aos Fatos e Estadão Verifica. Quando as agências divergem, a ficha registra as duas avaliações. Abra o link de cada ficha para ler a apuração completa.</p>
+    <p>A busca nas fichas funciona no seu aparelho, sem inteligência artificial. O botão “Checar frase” usa inteligência artificial apenas para comparar o que você digitou com as fichas já verificadas; ele não pesquisa na internet e pode errar. Conteúdo produzido com apoio de IA.</p>
+    <p>Iniciativa voluntária. Não substitui as agências de checagem nem a cobertura jornalística.</p>
+  </footer>
+</div>
+
+<script src="fichas.js"></script>
+<script src="config.js"></script>
+<script>
+(function(){
+  'use strict';
+  var FICHAS = window.FICHAS || [];
+  var PROXY = (window.CHECA_PROXY || '').trim();
+  var POR_PAGINA = 20;
+
+  var ROTULO = { VERDADEIRO:'Verdadeiro', FALSO:'Falso', ENGANOSO:'Enganoso', EXAGERADO:'Exagerado', SUBESTIMADO:'Subestimado', IMPRECISO:'Impreciso', FALTA_CONTEXTO:'Falta contexto', INSUSTENTAVEL:'Insustentável', DADO:'Dado', SEM_BASE:'Sem ficha' };
+  var EXPLICA = {
+    VERDADEIRO:'A afirmação confere com os dados.',
+    FALSO:'Os dados mostram o contrário.',
+    ENGANOSO:'Mistura fatos com conclusão que eles não sustentam.',
+    EXAGERADO:'O número ou a comparação foi inflado.',
+    SUBESTIMADO:'O número real é maior que o citado.',
+    IMPRECISO:'Erro no detalhe, sem mudar o sentido geral.',
+    FALTA_CONTEXTO:'Tem base, mas omite algo que muda a leitura.',
+    INSUSTENTAVEL:'Não há prova pública que confirme.',
+    DADO:'Informação de referência, sem frase a julgar.'
+  };
+  var STOP = ' a o e de da do das dos em no na nos nas um uma que com por para pra pro os as ao aos se foi ser sao era eh esta esse essa isso isto ele ela eles elas voce voces eu nos meu minha seu sua mais muito ja nao sim tem ter como qual quais quanto quantos quando onde porque pq governo brasil '.split(' ').reduce(function(m,w){ if(w) m[w]=1; return m; },{});
+
+  function norm(t){ return String(t||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9%]+/g,' ').trim(); }
+  function tokens(t){ return norm(t).split(' ').filter(function(w){ return w && !STOP[w] && (w.length>2 || /\d/.test(w)); }); }
+  function raiz(w){ return w.length>5 ? w.slice(0,5) : w; }
+
+  FICHAS.forEach(function(f){
+    f._campos = [
+      [tokens(f.termos), 3],
+      [tokens(f.frase), 2.2],
+      [tokens(f.tema+' '+f.quem), 1.5],
+      [tokens(f.resumo), 1.4],
+      [tokens(f.dado), 0.8]
+    ];
+  });
+
+  function pontuar(f, q){
+    if(!q.length) return 0;
+    var total = 0, achados = 0;
+    q.forEach(function(w){
+      var r = raiz(w), melhor = 0;
+      f._campos.forEach(function(c){
+        var lista = c[0], peso = c[1];
+        for(var i=0;i<lista.length;i++){
+          var t = lista[i];
+          if(t===w){ melhor = Math.max(melhor, peso); break; }
+          if(r.length>=4 && raiz(t)===r){ melhor = Math.max(melhor, peso*0.8); }
+        }
+      });
+      if(melhor>0) achados++;
+      total += melhor;
+    });
+    return total * (achados / q.length);
+  }
+
+  var estado = { q:'', quem:'Todos', tema:'Todos', limite:POR_PAGINA };
+  var el = function(id){ return document.getElementById(id); };
+
+  function chips(container, valores, chaveEstado){
+    container.innerHTML = '';
+    valores.forEach(function(v){
+      var b = document.createElement('button');
+      b.type='button'; b.className='chip'; b.textContent=v;
+      b.setAttribute('aria-pressed', String(estado[chaveEstado]===v));
+      b.addEventListener('click', function(){ estado[chaveEstado]=v; estado.limite=POR_PAGINA; chips(container, valores, chaveEstado); render(); });
+      container.appendChild(b);
+    });
+  }
+
+  function esc(t){ return String(t||'').replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function cartao(f){
+    var ehPergunta = f.quem==='Dado oficial' || f.quem==='Plano de Flávio';
+    var quem = f.quem==='Dado oficial' ? 'Dado oficial' : (f.quem==='Plano de Flávio' ? 'Plano de Flávio Bolsonaro' : 'Frase de '+f.quem);
+    var a = document.createElement('article');
+    a.className = 'ficha' + (ehPergunta ? ' e-pergunta' : '');
+    a.id = 'f-'+f.id;
+    a.innerHTML =
+      '<div class="cab"><span class="carimbo v-'+f.veredito+'">'+esc(ROTULO[f.veredito]||f.veredito)+'</span>'+
+      '<span class="quem">'+esc(quem)+'</span><span class="tema">'+esc(f.tema)+'</span></div>'+
+      '<blockquote>'+(ehPergunta ? esc(f.frase) : '“'+esc(f.frase)+'”')+'</blockquote>'+
+      '<p class="resumo">'+esc(f.resumo)+'</p>'+
+      (f.dado ? '<details><summary>Mais contexto</summary><p>'+esc(f.dado)+'</p></details>' : '')+
+      '<div class="fonte"><span>Fonte: <a href="'+esc(f.link)+'" target="_blank" rel="noopener">'+esc(f.fonte)+'</a></span><span class="ref">'+esc(f.ref)+'</span></div>';
+    return a;
+  }
+
+  function filtradas(){
+    var q = tokens(estado.q);
+    var base = FICHAS.filter(function(f){
+      if(estado.quem!=='Todos'){
+        if(estado.quem==='Dados e planos'){ if(!(f.quem==='Dado oficial'||f.quem==='Plano de Flávio')) return false; }
+        else if(f.quem!==estado.quem) return false;
+      }
+      if(estado.tema!=='Todos' && f.tema!==estado.tema) return false;
+      return true;
+    });
+    if(!q.length) return { itens: base, busca:false };
+    var pont = base.map(function(f){ return { f:f, s:pontuar(f,q) }; }).filter(function(x){ return x.s>=1.2; });
+    pont.sort(function(a,b){ return b.s-a.s; });
+    return { itens: pont.map(function(x){ return x.f; }), busca:true, top: pont.slice(0,6) };
+  }
+
+  function render(){
+    var r = filtradas(), lista = el('lista');
+    lista.innerHTML = '';
+    if(!r.itens.length){
+      var d = document.createElement('div'); d.className='vazio';
+      d.innerHTML = 'Ainda não há ficha sobre isso. Tente outras palavras (por exemplo “desemprego”, “dívida”, “armas”) ou consulte as checagens ao vivo da <a href="https://www.agencialupa.org/checagem/" target="_blank" rel="noopener">Lupa</a> e do <a href="https://www.aosfatos.org/" target="_blank" rel="noopener">Aos Fatos</a>.';
+      lista.appendChild(d);
+    }
+    r.itens.slice(0, estado.limite).forEach(function(f){ lista.appendChild(cartao(f)); });
+    el('mais').hidden = r.itens.length <= estado.limite;
+    el('contagem').textContent = r.busca
+      ? (r.itens.length ? r.itens.length+' ficha'+(r.itens.length>1?'s':'')+' relacionada'+(r.itens.length>1?'s':'') : 'Nenhuma ficha encontrada')
+      : r.itens.length+' fichas verificadas';
+  }
+
+  var timer;
+  el('q').addEventListener('input', function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){ estado.q = el('q').value; estado.limite=POR_PAGINA; el('caixa-ia').hidden = true; render(); }, 120);
+  });
+  el('q').addEventListener('keydown', function(e){ if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); el('form-busca').requestSubmit(); } });
+  el('mais').addEventListener('click', function(){ estado.limite += POR_PAGINA; render(); });
+
+  function textoFicha(f){
+    return 'Tema: '+f.tema+'. Autor da frase: '+f.quem+'. Frase verificada: '+f.frase+' Veredito: '+f.veredito+'. Resumo: '+f.resumo+' Detalhe: '+(f.dado||'')+' Fonte: '+f.fonte+' ('+f.ref+').';
+  }
+
+  function caixa(html){ var c = el('caixa-ia'); c.innerHTML = html; c.hidden = false; }
+
+  function lerCache(k){ try { var v = localStorage.getItem('checa:'+k); return v ? JSON.parse(v) : null; } catch(e){ return null; } }
+  function gravarCache(k,v){ try { localStorage.setItem('checa:'+k, JSON.stringify(v)); } catch(e){} }
+
+  function mostrarResposta(frase, res){
+    var v = res.veredito in ROTULO ? res.veredito : 'SEM_BASE';
+    var links = (res.fichas||[]).map(function(id){
+      var f = FICHAS.find(function(x){ return x.id===id; });
+      return f ? '<a href="#f-'+esc(f.id)+'">'+esc(f.fonte)+'</a>' : '';
+    }).filter(Boolean).join(' · ');
+    caixa('<h2>Comparação com as fichas</h2>'+
+      '<p class="frase-ia">“'+esc(frase)+'”</p>'+
+      '<div class="cab"><span class="carimbo v-'+v+'">'+esc(ROTULO[v])+'</span></div>'+
+      '<p>'+esc(res.explicacao || 'As fichas disponíveis não tratam deste ponto.')+'</p>'+
+      (links ? '<p class="fonte">Baseado em: '+links+'</p>' : '')+
+      '<p class="fonte">Resposta gerada por IA a partir das fichas abaixo. Confira a fonte original.</p>');
+  }
+
+  el('form-busca').addEventListener('submit', function(e){
+    e.preventDefault();
+    var frase = el('q').value.trim();
+    estado.q = frase; estado.limite = POR_PAGINA;
+    render();
+    if(!frase) return;
+    var r = filtradas();
+    if(!r.busca || !r.itens.length){
+      caixa('<h2>Comparação com as fichas</h2><p>Nenhuma ficha cobre este assunto ainda, então não há como checar sem pesquisar fora. Tente palavras mais simples ou veja as agências de checagem.</p>');
+      return;
+    }
+    if(!PROXY){
+      caixa('<h2>Fichas relacionadas</h2><p>As fichas abaixo tratam do assunto da frase. Compare o carimbo e o resumo com o que foi dito.</p>');
+      return;
+    }
+    var top = r.itens.slice(0,6);
+    var chave = tokens(frase).join(' ')+'|'+top.map(function(f){return f.id;}).join(',');
+    var guardada = lerCache(chave);
+    if(guardada){ mostrarResposta(frase, guardada); return; }
+    var btn = el('btn-ia'); btn.disabled = true; btn.textContent = 'Checando…';
+    caixa('<h2>Comparação com as fichas</h2><p>Comparando a frase com '+top.length+' fichas verificadas…</p>');
+    fetch(PROXY, { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify({ frase: frase.slice(0,400), fichas: top.map(function(f){ return { id:f.id, texto:textoFicha(f) }; }) }) })
+      .then(function(resp){ return resp.json().then(function(j){ return { ok:resp.ok, j:j }; }); })
+      .then(function(x){
+        if(!x.ok){
+          var msg = x.j && x.j.error==='limite' ? 'Muitas consultas seguidas. Aguarde um minuto e tente de novo; enquanto isso, as fichas abaixo já respondem.' : 'A comparação por IA não respondeu agora. As fichas abaixo continuam valendo.';
+          caixa('<h2>Comparação com as fichas</h2><p>'+msg+'</p>'); return;
+        }
+        gravarCache(chave, x.j); mostrarResposta(frase, x.j);
+      })
+      .catch(function(){ caixa('<h2>Comparação com as fichas</h2><p>Sem conexão com o serviço de IA. As fichas abaixo continuam valendo.</p>'); })
+      .then(function(){ btn.disabled = false; btn.textContent = 'Checar frase'; });
+  });
+
+  var temas = ['Todos'].concat(FICHAS.map(function(f){return f.tema;}).filter(function(t,i,a){ return a.indexOf(t)===i; }));
+  chips(el('filtros-quem'), ['Todos','Flávio Bolsonaro','Lula','Dados e planos'], 'quem');
+  chips(el('filtros-tema'), temas, 'tema');
+  el('atualizado').textContent = 'Dados atualizados em '+(window.FICHAS_ATUALIZADAS_EM||'');
+  el('legenda').innerHTML = Object.keys(EXPLICA).map(function(k){ return '<div><span class="carimbo v-'+k+'">'+ROTULO[k]+'</span><span>'+EXPLICA[k]+'</span></div>'; }).join('');
+  if(!PROXY) el('btn-ia').textContent = 'Buscar';
+  render();
+})();
+</script>
+</body>
+</html>

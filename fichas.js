@@ -1,0 +1,557 @@
+// Base de fichas do Contraprova. Coleta encerrada em 21/10/2026.
+// Cada ficha: id, tema, quem (autor da frase ou "Dado oficial"/"Plano de Flávio"), frase (afirmação típica),
+// veredito, resumo (resposta em uma linha), dado (detalhe), fonte, link, ref (período do dado), termos (sinônimos para a busca).
+// Para incluir uma ficha nova, copie um bloco, troque o id e preencha os campos.
+window.FICHAS_ATUALIZADAS_EM = '21/10/2026';
+window.FICHAS = [
+
+// ---------------- ECONOMIA ----------------
+{ id:'eco-pib-2t26', tema:'Economia', quem:'Dado oficial', frase:'Como está o crescimento da economia em 2026?', veredito:'DADO',
+  resumo:'O PIB cresceu 0,5% no 2º trimestre de 2026 e 2,0% sobre o mesmo trimestre de 2025. Em quatro trimestres, a alta é de 1,9%.',
+  dado:'A agropecuária puxou o resultado (alta de 2,8% no trimestre). A indústria cresceu 0,1% e os serviços 0,2%. A taxa de investimento ficou em 16,1% do PIB, abaixo dos 16,6% do 2º trimestre de 2025. O mercado (Focus) projetava crescimento de 1,92% em 2026.',
+  fonte:'IBGE, Contas Nacionais Trimestrais', link:'https://agenciagov.ebc.com.br/noticias/202609/pib-cresce-0-5-no-segundo-trimestre-aponta-ibge', ref:'2º tri 2026',
+  termos:'pib crescimento economia recessao atividade investimento agro industria servicos' },
+
+{ id:'eco-pib-anual', tema:'Economia', quem:'Dado oficial', frase:'Quanto o PIB cresceu em cada ano do governo?', veredito:'DADO',
+  resumo:'O PIB cresceu 2,9% em 2023, 3,4% em 2024 e 2,3% em 2025, segundo o IBGE.',
+  dado:'No governo anterior, o PIB caiu 3,3% em 2020 e cresceu 4,8% em 2021 (efeito de recuperação da pandemia) e 3,0% em 2022.',
+  fonte:'IBGE, séries históricas do PIB', link:'https://agenciadenoticias.ibge.gov.br/agencia-sala-de-imprensa/2013-agencia-de-noticias/releases/45968-pib-cresce-2-3-em-2025-e-fecha-o-ano-em-r-12-7-trilhoes', ref:'2020 a 2025',
+  termos:'pib anual crescimento 2023 2024 2025 2021 2022 media bolsonaro lula' },
+
+{ id:'eco-lula-3pct', tema:'Economia', quem:'Lula', frase:'O país só voltou a crescer acima de 3% quando eu voltei à Presidência.', veredito:'FALSO',
+  resumo:'O PIB passou de 3% em outros governos depois de 2010.',
+  dado:'Cresceu 3,9% em 2011 e 3,0% em 2013 (Dilma), 4,8% em 2021 e 3,0% em 2022 (Bolsonaro). O crescimento de 2021 veio depois da queda de 3,3% em 2020. A Lupa já havia desmentido a mesma frase em outras três ocasiões.',
+  fonte:'Lupa, checagem do debate da Band', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'18/10/2026',
+  termos:'crescer 3% tres por cento pib voltou a crescer' },
+
+{ id:'eco-lula-pib-industrial', tema:'Economia', quem:'Lula', frase:'O PIB industrial é de 3,4%.', veredito:'EXAGERADO',
+  resumo:'A indústria cresceu 1,4% em 2025. O 3,4% é o crescimento do PIB total em 2024.',
+  dado:'O PIB da indústria cresceu 1,6% em 2023, 3,3% em 2024 e 1,4% em 2025.',
+  fonte:'Lupa, com dados do IBGE', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2023 a 2025',
+  termos:'pib industrial industria crescimento industrial 3,4' },
+
+{ id:'eco-lula-2010', tema:'Economia', quem:'Lula', frase:'O Brasil cresceu 7,5% em 2010.', veredito:'VERDADEIRO',
+  resumo:'O IBGE registra alta de 7,5% do PIB em 2010, último ano do segundo mandato de Lula.',
+  dado:'', fonte:'Lupa e Aos Fatos, com dados do IBGE', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2010',
+  termos:'7,5 2010 crescimento recorde' },
+
+{ id:'eco-grau-investimento', tema:'Economia', quem:'Lula', frase:'Fui o primeiro presidente a conseguir dois graus de investimento.', veredito:'VERDADEIRO',
+  resumo:'O Brasil recebeu o grau de investimento da S&P e da Fitch em 2008 e da Moody\'s em 2009.',
+  dado:'', fonte:'Estadão Verifica e Aos Fatos', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2008 e 2009',
+  termos:'grau de investimento agencias rating s&p fitch moodys' },
+
+{ id:'eco-fmi-reservas', tema:'Economia', quem:'Lula', frase:'Pagamos o FMI e deixamos 270 bilhões de reservas.', veredito:'SUBESTIMADO',
+  resumo:'A dívida com o FMI foi quitada em 2005 e as reservas chegaram a US$ 288,6 bilhões no fim de 2010, acima do número citado.',
+  dado:'Em 2003 as reservas eram de US$ 37,7 bilhões. O valor é em dólares, não em reais. O Estadão Verifica classificou a frase como verdadeira e a Lupa como subestimada.',
+  fonte:'Lupa e Estadão Verifica', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2003 a 2010',
+  termos:'fmi reservas internacionais divida externa dolares' },
+
+{ id:'eco-selic', tema:'Economia', quem:'Dado oficial', frase:'Qual é a taxa de juros hoje?', veredito:'DADO',
+  resumo:'A Selic está em 13,75% ao ano desde 16 de setembro de 2026, após cinco cortes seguidos de 0,25 ponto.',
+  dado:'A Selic ficou em 15% de junho de 2025 a março de 2026, maior nível desde 2006. Os cortes começaram em março de 2026. O Banco Central tem autonomia legal e define a taxa pelo Copom. A próxima reunião é em 3 e 4 de novembro.',
+  fonte:'Banco Central (Copom)', link:'https://atlaspublico.com.br/bcb/noticias/copom-reduz-selic-para-13-75pct-ao-ano-em-decisao-unanime-87748', ref:'set/2026',
+  termos:'selic juros taxa de juros copom banco central 15% 14% 13,75 juros altos' },
+
+{ id:'eco-juros-futuros', tema:'Economia', quem:'Flávio Bolsonaro', frase:'O fato de eu ter ficado à frente no primeiro turno fez a taxa de juros cair 2%.', veredito:'FALTA_CONTEXTO',
+  resumo:'As taxas de juros futuros negociadas no mercado caíram mais de 2 pontos após o 1º turno, mas a Selic, que é a taxa básica, não mudou por isso.',
+  dado:'O Estadão Verifica considerou verdadeira a queda dos juros futuros. O Aos Fatos considerou incorreto atribuir a queda da taxa de juros ao resultado do 1º turno. Juros futuros refletem apostas do mercado, não a taxa que o Banco Central fixa.',
+  fonte:'Estadão Verifica e Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-lula-flavio-bolsonaro-debate-band/', ref:'out/2026',
+  termos:'juros futuros caiu 2% primeiro turno mercado di economia 220 bilhoes' },
+
+{ id:'eco-empresas-fechadas', tema:'Economia', quem:'Flávio Bolsonaro', frase:'O governo Lula é recordista em empresas fechadas e falências.', veredito:'FALSO',
+  resumo:'Em 2025 o Brasil abriu 5,1 milhões de CNPJs, recorde da série, contra 2,8 milhões encerrados. O recorde de falências é de 2015.',
+  dado:'Pela Serasa Experian, foram 1.828 falências em 2015, 862 em 2024, 734 em 2025 e 277 até maio de 2026. O que bateu recorde em 2025 foram os pedidos de recuperação judicial (5.680 empresas).',
+  fonte:'Aos Fatos e Estadão Verifica, com dados de Serasa, Receita Federal e Fenacon', link:'https://www.aosfatos.org/noticias/flavio-bolsonaro-mente-recorde-falencias-empresas/', ref:'2015 a 2026',
+  termos:'empresas fechadas falencia falencias cnpj recorde quebradas recuperacao judicial' },
+
+{ id:'eco-paraguai', tema:'Economia', quem:'Flávio Bolsonaro', frase:'É recorde de indústrias saindo do Brasil para o Paraguai.', veredito:'FALSO',
+  resumo:'Não há levantamento que mostre fuga recorde. Desde 2007, 232 empresas brasileiras aderiram ao regime de maquila paraguaio, e elas seguem ativas no Brasil.',
+  dado:'O regime de maquila dá incentivo para produzir no Paraguai e exportar, sem que a empresa feche no país de origem.',
+  fonte:'Aos Fatos, com dados da Câmara de Empresários Brasileiros no Paraguai', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2007 a 2026',
+  termos:'paraguai industrias fuga maquila empresas saindo' },
+
+{ id:'eco-mei', tema:'Economia', quem:'Lula', frase:'Criamos o MEI, hoje são 17,5 milhões, e anistiamos R$ 12,6 bilhões de dívidas.', veredito:'VERDADEIRO',
+  resumo:'O MEI foi criado em 2008 e há 17,56 milhões ativos. O Congresso aprovou em 16/10/2026 projeto do Executivo que perdoa cerca de R$ 12,6 bilhões em dívidas de MEIs.',
+  dado:'O perdão atinge cerca de 3,6 milhões de empreendedores e também amplia o teto de faturamento do MEI. O texto aguardava sanção. O regime Simples original é de 1996 (governo FHC); o Simples Nacional é de 2006 (governo Lula).',
+  fonte:'Estadão Verifica e Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'out/2026',
+  termos:'mei microempreendedor anistia divida simples nacional empreendedor' },
+
+{ id:'eco-endividamento', tema:'Economia', quem:'Dado oficial', frase:'As famílias estão endividadas como nunca.', veredito:'DADO',
+  resumo:'A CNC registrou recorde de 80,9% das famílias com alguma dívida em abril de 2026.',
+  dado:'O indicador inclui dívidas em dia (cartão, carnê, financiamento), não só atrasadas. Os juros altos encarecem o crédito. O governo lançou rodadas do Desenrola para renegociar dívidas, a mais recente o Desenrola 3.0 em 2026.',
+  fonte:'CNC, Pesquisa de Endividamento (Peic)', link:'https://www.dgabc.com.br/Noticia/4318229/renda-media-das-familias-chega-a-r$-2-264-e-e-recorde-em-2025', ref:'abr/2026',
+  termos:'endividamento endividados dividas familias desenrola inadimplencia cartao' },
+
+// ---------------- EMPREGO E RENDA ----------------
+{ id:'emp-desemprego', tema:'Emprego e renda', quem:'Dado oficial', frase:'Qual é a taxa de desemprego?', veredito:'DADO',
+  resumo:'O desemprego foi de 5,3% no trimestre de junho a agosto de 2026, cerca de 5,8 milhões de pessoas, entre as menores taxas da série iniciada em 2012.',
+  dado:'Havia 109,3 milhões de pessoas ocupadas. A taxa sobe no início de cada ano por efeito sazonal (6,1% no 1º trimestre de 2026) e o menor nível trimestral foi 5,1% no 4º trimestre de 2025. A informalidade era de 37,3% no 1º trimestre de 2026.',
+  fonte:'IBGE, PNAD Contínua', link:'https://static.poder360.com.br/uploads/2026/09/pnad-continua-agosto2026.pdf', ref:'jun a ago/2026',
+  termos:'desemprego desocupacao desempregados emprego pnad taxa informalidade trabalho' },
+
+{ id:'emp-caged', tema:'Emprego e renda', quem:'Dado oficial', frase:'Quantos empregos com carteira foram criados?', veredito:'DADO',
+  resumo:'Foram 921,6 mil empregos formais no 1º semestre de 2026. O estoque passa de 48 milhões de vínculos com carteira.',
+  dado:'O ritmo é menor que no mesmo período de 2025 (cerca de 1,2 milhão). Os serviços lideram a criação de vagas.',
+  fonte:'Ministério do Trabalho, Novo Caged', link:'https://agenciagov.ebc.com.br/noticias/202607/novo-caged-mercado-formal-cria-921-6-mil-empregos-no-primeiro-semestre-de-2026', ref:'jan a jun/2026',
+  termos:'caged carteira assinada empregos formais vagas criadas' },
+
+{ id:'emp-renda', tema:'Emprego e renda', quem:'Dado oficial', frase:'A renda do brasileiro subiu ou caiu?', veredito:'DADO',
+  resumo:'A renda bateu recorde em 2025. O rendimento médio do trabalho foi de R$ 3.560, alta real de 5,7%, e a renda domiciliar por pessoa chegou a R$ 2.264.',
+  dado:'O rendimento de todas as fontes foi de R$ 3.367, 8,6% acima de 2019. O índice de Gini subiu levemente de 0,504 (2024) para 0,511 (2025), mas segue abaixo de 2019 (0,543). Os 10% mais ricos recebem 13,8 vezes mais que os 40% mais pobres.',
+  fonte:'IBGE, PNAD Contínua Rendimentos 2025', link:'https://www.correiobraziliense.com.br/economia/2026/05/7415178-renda-do-brasileiro-bate-recorde-em-2025-aponta-ibge.html', ref:'2025',
+  termos:'renda rendimento salario medio poder de compra desigualdade gini ricos pobres' },
+
+{ id:'emp-salario-minimo', tema:'Emprego e renda', quem:'Dado oficial', frase:'Quanto é o salário mínimo e teve aumento real?', veredito:'DADO',
+  resumo:'O salário mínimo é de R$ 1.621 em 2026, reajuste de 6,79%, sendo 4,18% de inflação (INPC) e 2,5% de ganho real.',
+  dado:'A política de valorização foi retomada pela Lei 14.663/2023 (inflação mais o PIB de dois anos antes). Desde o pacote fiscal de 2024, o ganho real é limitado a 2,5%; sem o teto, o mínimo seria R$ 1.636. Cerca de 62 milhões de pessoas têm renda ligada ao mínimo.',
+  fonte:'Decreto 12.797/2025 e Dieese', link:'https://www.tnh1.com.br/noticia/nid/decreto-fixando-novo-valor-do-salario-minimo-de-2026-e-publicado-no-diario-oficial/', ref:'2026',
+  termos:'salario minimo reajuste aumento real valorizacao 1621 aposentadoria' },
+
+{ id:'emp-lula-minimo-bolsonaro', tema:'Emprego e renda', quem:'Lula', frase:'O governo Bolsonaro não deu aumento real do mínimo em nenhum ano.', veredito:'ENGANOSO',
+  resumo:'Houve ganho real de 1,14% em 2019. Nos outros três anos do governo Bolsonaro o reajuste só repôs a inflação.',
+  dado:'O decreto de 2019 fixou R$ 998, abaixo dos R$ 1.006 previstos pelo governo anterior.',
+  fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2019 a 2022',
+  termos:'salario minimo bolsonaro aumento real inflacao' },
+
+{ id:'emp-cesta', tema:'Emprego e renda', quem:'Lula', frase:'O mínimo comprava 1,8 cesta básica com Bolsonaro e hoje compra 2,2.', veredito:'EXAGERADO',
+  resumo:'Em agosto de 2026 o mínimo comprava 1,8 cesta básica em São Paulo, contra 1,62 em agosto de 2022. Houve melhora de 11,3%, menor que a citada.',
+  dado:'Não há levantamento nacional; o cálculo usa a cesta do Dieese em São Paulo.',
+  fonte:'Lupa, com estudo da 4intelligence publicado pela Folha', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'ago/2022 e ago/2026',
+  termos:'cesta basica salario minimo poder de compra comida' },
+
+{ id:'emp-ir-5mil', tema:'Emprego e renda', quem:'Dado oficial', frase:'Quem ganha até R$ 5 mil não paga mais imposto de renda?', veredito:'DADO',
+  resumo:'Sim. Desde janeiro de 2026 quem ganha até R$ 5 mil por mês está isento, com desconto parcial para rendas um pouco acima.',
+  dado:'O governo estimou cerca de 10 milhões de novos isentos, que se somam aos cerca de 10 milhões beneficiados pelas correções de 2023 e 2024. A compensação vem de um imposto mínimo de até 10% para quem recebe mais de R$ 600 mil por ano (cerca de 141 mil pessoas).',
+  fonte:'Lei 15.270/2025 e Dieese', link:'https://www.dieese.org.br/notatecnica/2026/notaTec290isencaoIR.pdf', ref:'2026',
+  termos:'imposto de renda isencao 5 mil ir irpf super ricos alta renda tabela' },
+
+// ---------------- INFLAÇÃO ----------------
+{ id:'inf-ipca', tema:'Inflação e preços', quem:'Dado oficial', frase:'Como está a inflação?', veredito:'DADO',
+  resumo:'O IPCA foi de 0,82% em setembro de 2026 e acumula 4,58% em 12 meses, acima do teto da meta (4,5%).',
+  dado:'A meta é de 3% com tolerância de 1,5 ponto. Em julho o acumulado havia caído a 4,44%. O fim do bônus de Itaipu nas contas de luz pesou em setembro.',
+  fonte:'IBGE, IPCA', link:'https://www.jornaldocomercio.com/economia/2026/10/1266395-ipca-sobe-mais-do-que-o-esperado-em-setembro-e-fica-acima-da-meta-de-inflacao.html', ref:'set/2026',
+  termos:'inflacao ipca precos carestia meta de inflacao custo de vida' },
+
+{ id:'inf-alimentos', tema:'Inflação e preços', quem:'Lula', frase:'A inflação de alimentos foi de 56% com Bolsonaro e de 13% no meu governo.', veredito:'VERDADEIRO',
+  resumo:'Pelo IPCA, os alimentos subiram 54,2% entre janeiro de 2019 e julho de 2022 e 13,6% nos primeiros 43 meses do governo Lula.',
+  dado:'As carnes subiram 72,84% de janeiro de 2019 a agosto de 2022 e 17,75% de janeiro de 2023 a agosto de 2026.',
+  fonte:'Lupa e Aos Fatos, com dados do IBGE', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2019 a 2026',
+  termos:'alimentos comida carne picanha preco inflacao de alimentos supermercado' },
+
+// ---------------- CONTAS PÚBLICAS ----------------
+{ id:'fis-divida', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'O governo Lula está deixando uma dívida de R$ 11 trilhões.', veredito:'VERDADEIRO',
+  resumo:'A dívida bruta do governo geral chegou a R$ 11,1 trilhões em agosto de 2026, 82,9% do PIB, o maior nível desde março de 2021.',
+  dado:'Em dezembro de 2022 era de R$ 7,2 trilhões (cerca de 73,5% do PIB). Fechou 2023 em 73,8%, 2024 em 76,3% e 2025 em 78,6%. O principal motor é o custo dos juros, que somou R$ 1,18 trilhão (8,86% do PIB) em 12 meses.',
+  fonte:'Banco Central, Estatísticas Fiscais; checagens de Lupa e Aos Fatos', link:'https://www.poder360.com.br/poder-economia/divida-bruta-atinge-829-do-pib-em-agosto-diz-banco-central/', ref:'ago/2026',
+  termos:'divida publica 11 trilhoes divida bruta rombo fiscal juros da divida' },
+
+{ id:'fis-primario', tema:'Contas públicas', quem:'Dado oficial', frase:'O governo gasta mais do que arrecada?', veredito:'DADO',
+  resumo:'O setor público acumula déficit primário de R$ 82,1 bilhões em 12 meses até agosto de 2026, 0,62% do PIB.',
+  dado:'O governo central teve déficit de R$ 228,5 bilhões em 2023 (2,1% do PIB, com R$ 92,4 bilhões de precatórios atrasados do governo anterior), de 0,4% do PIB em 2024 e de R$ 61,6 bilhões (0,48%) em 2025. A meta de 2026 é superávit de 0,25% do PIB, com tolerância de 0,25 ponto.',
+  fonte:'Banco Central e Tesouro Nacional', link:'https://www.opovo.com.br/noticias/economia/2026/09/30/contas-publicas-tem-deficit-de-rs-10-bilhoes-em-agosto.html', ref:'2023 a ago/2026',
+  termos:'deficit primario contas publicas gastos arrecadacao arcabouco meta fiscal rombo' },
+
+{ id:'fis-lula-heranca', tema:'Contas públicas', quem:'Lula', frase:'Quando assumi, o governo anterior deixou um déficit de 2,8%.', veredito:'FALSO',
+  resumo:'O governo central fechou 2022 com superávit de R$ 54,1 bilhões, 0,5% do PIB.',
+  dado:'O resultado de 2022 foi ajudado pelo adiamento do pagamento de precatórios, quitados em dezembro de 2023 (R$ 92,4 bilhões).',
+  fonte:'Lupa, com dados do Tesouro Nacional', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2022',
+  termos:'heranca deficit 2,8 2022 superavit precatorios' },
+
+{ id:'fis-orcamento-2027', tema:'Contas públicas', quem:'Lula', frase:'Apresentamos um orçamento com superávit de 0,1%.', veredito:'VERDADEIRO',
+  resumo:'O projeto de Orçamento de 2027 prevê superávit primário de R$ 18,6 bilhões, 0,13% do PIB.',
+  dado:'Para a meta fiscal, que desconta precatórios, a estimativa é de R$ 83,4 bilhões (0,56% do PIB). Previsões de superávit em anos anteriores terminaram em déficit, então não é a primeira vez que se projeta resultado positivo.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'PLOA 2027',
+  termos:'orcamento 2027 superavit ploa' },
+
+{ id:'fis-350bi', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'Lula já gastou R$ 350 bilhões para tentar se reeleger.', veredito:'EXAGERADO',
+  resumo:'O valor vem do Gastômetro do Estadão (R$ 354 bilhões em medidas com impacto fiscal), mas não significa que tudo foi gasto nem que o objetivo seja eleitoral.',
+  dado:'Mais de R$ 55 bilhões são renúncias fiscais e só R$ 34 bilhões estão fora do Orçamento aprovado. O governo diz que se trata de execução regular de políticas, como o reajuste do Bolsa Família e o Desenrola 3.0.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2026',
+  termos:'350 bilhoes gastometro gasto eleitoral reeleicao gastanca' },
+
+{ id:'fis-viagens-janja', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'Lula gastou R$ 7 bilhões em viagens com a Janja.', veredito:'FALSO',
+  resumo:'O valor é o gasto com viagens de todo o governo federal entre 2023 e 2025 (cerca de 475 mil pessoas de mais de 34 órgãos), não do casal presidencial.',
+  dado:'Pelo Portal da Transparência, as viagens de toda a estrutura federal somaram R$ 7,14 bilhões de 2023 a 2025. A Lupa já havia desmentido o boato em setembro.',
+  fonte:'Lupa e Estadão Verifica', link:'https://www.agencialupa.org/jornalismo/2026/09/25/e-falso-que-lula-gastou-r-735-bilhoes-em-viagens-com-janja/', ref:'2023 a 2026',
+  termos:'janja viagens 7 bilhoes primeira dama gastos viagem aviao' },
+
+{ id:'fis-ministerios', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'Vou cortar 10 ministérios e fazer ajuste de R$ 200 bilhões sem mexer em salário mínimo, aposentadoria, saúde e educação.', veredito:'FALTA_CONTEXTO',
+  resumo:'O próprio candidato admitiu na Globo que cortar ministérios não gera economia relevante. As fontes citadas (venda de imóveis, securitização de dívida ativa, petróleo da margem equatorial) são receitas incertas ou de longo prazo.',
+  dado:'A Petrobras não prevê produção na margem equatorial antes de 2033. Analistas ouvidos pela entrevistadora apontaram que um ajuste desse porte sem tocar nas grandes despesas não fecha.',
+  fonte:'Aos Fatos, entrevista de Flávio Bolsonaro à TV Globo', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'16/10/2026',
+  termos:'ajuste fiscal 200 bilhoes ministerios corte de gastos imoveis securitizacao' },
+
+{ id:'fis-margem-equatorial', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'A margem equatorial pode trazer mais de R$ 100 bilhões de largada.', veredito:'ENGANOSO',
+  resumo:'Não há estimativa pública que sustente esse valor no início. A produção comercial deve começar só entre 2032 e 2036.',
+  dado:'Ainda é preciso confirmar as reservas, a viabilidade comercial, investir em infraestrutura e obter licenças.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'out/2026',
+  termos:'margem equatorial petroleo amapa royalties 100 bilhoes' },
+
+// ---------------- SOCIAL, FOME E POBREZA ----------------
+{ id:'soc-mapa-fome', tema:'Fome e pobreza', quem:'Dado oficial', frase:'O Brasil saiu do Mapa da Fome?', veredito:'DADO',
+  resumo:'Sim. A FAO tirou o Brasil do Mapa da Fome em julho de 2025 (triênio 2022-2024) e o relatório de 2026 (2023-2025) manteve o país fora.',
+  dado:'A insegurança alimentar severa caiu a 0,6% da população (1,2 milhão de pessoas), menor nível da série. A moderada ou grave atinge 9,6% (20,3 milhões). O Brasil tinha saído do mapa em 2014 e voltado no triênio 2018-2020.',
+  fonte:'FAO, relatório SOFI 2026', link:'https://jornaldebrasilia.com.br/noticias/brasil/brasil-segue-fora-do-mapa-da-fome-em-relatorio-da-fao/', ref:'2023 a 2025',
+  termos:'fome mapa da fome fao inseguranca alimentar comida miseria' },
+
+{ id:'soc-pobreza', tema:'Fome e pobreza', quem:'Dado oficial', frase:'A pobreza diminuiu?', veredito:'DADO',
+  resumo:'A extrema pobreza caiu de 4,4% (2023) para 3,5% (2024), menor nível da série iniciada em 2012.',
+  dado:'Em 2022 a extrema pobreza era de 5,9%. O IBGE estima que, sem os programas sociais, a extrema pobreza teria sido cerca de três vezes maior. Entre crianças de até 14 anos, 5,6% estavam na extrema pobreza em 2024.',
+  fonte:'IBGE, Síntese de Indicadores Sociais 2025', link:'https://biblioteca.ibge.gov.br/visualizacao/livros/liv102240.pdf', ref:'2024',
+  termos:'pobreza extrema pobreza miseria pobres desigualdade' },
+
+{ id:'soc-bolsa-familia', tema:'Fome e pobreza', quem:'Dado oficial', frase:'Quanto paga o Bolsa Família e quantos recebem?', veredito:'DADO',
+  resumo:'Cerca de 19,3 milhões de famílias recebem. Desde outubro de 2026 o piso é de R$ 691 e o valor médio estimado é de R$ 777.',
+  dado:'O reajuste de 15,04% (inflação pelo INPC de março de 2023 a agosto de 2026) foi o primeiro desde a recriação do programa em 2023 e foi anunciado a 17 dias do 1º turno. Custa R$ 5,8 bilhões em 2026. O Ministério Público junto ao TCU pediu sua suspensão e o tema chegou ao TSE. A renda de acesso é de até R$ 218 por pessoa.',
+  fonte:'Decreto 13.120/2026 e MDS', link:'https://tribunadejundiai.com.br/politica/lula-aumenta-bolsa-familia-a-17-dias-das-eleicoes/', ref:'out/2026',
+  termos:'bolsa familia reajuste 691 600 beneficio cadunico auxilio' },
+
+{ id:'soc-flavio-triplicou-bf', tema:'Fome e pobreza', quem:'Flávio Bolsonaro', frase:'Bolsonaro triplicou o Bolsa Família, de R$ 190 para R$ 600.', veredito:'EXAGERADO',
+  resumo:'O valor médio era de R$ 187,91 em janeiro de 2019, mas o Auxílio Brasil foi proposto com mínimo de R$ 400. Os R$ 600 só vieram em junho de 2022, perto da eleição, e valiam só até dezembro daquele ano.',
+  dado:'A proposta de Orçamento de 2023 enviada pelo governo Bolsonaro previa R$ 400. No auxílio emergencial de 2020, o governo propôs R$ 200; o Congresso elevou o valor e o governo então aderiu aos R$ 600.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2019 a 2022',
+  termos:'bolsa familia 600 triplicou auxilio brasil auxilio emergencial 190 400' },
+
+{ id:'soc-pe-de-meia', tema:'Educação', quem:'Dado oficial', frase:'O que é o Pé-de-Meia e ele funciona?', veredito:'DADO',
+  resumo:'Poupança para estudantes de baixa renda do ensino médio público. Atendeu 5,6 milhões de alunos com R$ 18,6 bilhões em 2024 e 2025.',
+  dado:'Segundo o MEC, o abandono no ensino médio caiu de 6,4% para 3,6%. Estudo independente do Centro de Evidências da Educação Integral estima que o programa evita a evasão de 1 em cada 4 jovens vulneráveis que deixariam a escola. O plano de Flávio Bolsonaro não cita o programa.',
+  fonte:'MEC e Centro de Evidências da Educação Integral', link:'https://www.poder360.com.br/poder-educacao/pe-de-meia-evita-evasao-escolar-de-1-a-cada-4-alunos-diz-estudo/', ref:'2024 e 2025',
+  termos:'pe de meia ensino medio evasao escolar estudantes poupanca educacao' },
+
+// ---------------- INSS ----------------
+{ id:'inss-devolucao', tema:'INSS', quem:'Lula', frase:'Já devolvemos R$ 3,5 bilhões aos aposentados roubados.', veredito:'VERDADEIRO',
+  resumo:'O governo pagou R$ 3,52 bilhões a cerca de 5 milhões de aposentados e pensionistas que tiveram descontos indevidos.',
+  dado:'A fraude foi desarticulada pela Polícia Federal e pela CGU na Operação Sem Desconto. A recuperação dos valores desviados das entidades ainda depende de processos judiciais.',
+  fonte:'Estadão Verifica e Aos Fatos, com dados da Dataprev e do INSS', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'out/2026',
+  termos:'inss fraude descontos aposentados roubo devolucao ressarcimento careca' },
+
+{ id:'inss-mp871', tema:'INSS', quem:'Flávio Bolsonaro', frase:'Bolsonaro mandou MP para combater a fraude no INSS e o PT foi contra.', veredito:'FALTA_CONTEXTO',
+  resumo:'A MP 871/2019 previa revalidação anual dos descontos, mas o Congresso a flexibilizou e, em 2022, derrubou a exigência por emenda incluída pelo relator Luis Miranda. Onze partidos votaram nesse sentido, incluindo PL e Centrão.',
+  dado:'O PT apresentou o maior número de emendas para flexibilizar a regra, mas não foi o único. Não há evidência de que Lula tenha participado da fraude, segundo o Aos Fatos.',
+  fonte:'Estadão Verifica e Aos Fatos', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2019 a 2022',
+  termos:'mp 871 inss fraude pt votou contra medida provisoria descontos' },
+
+{ id:'inss-frei-chico', tema:'INSS', quem:'Flávio Bolsonaro', frase:'O irmão de Lula é vice de um sindicato que roubou aposentados.', veredito:'FALTA_CONTEXTO',
+  resumo:'Frei Chico é vice-presidente do Sindnapi, entidade investigada na Operação Sem Desconto, mas ele próprio não é investigado pela Polícia Federal.',
+  dado:'', fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'out/2026',
+  termos:'irmao de lula frei chico sindnapi sindicato aposentados' },
+
+{ id:'inss-careca', tema:'INSS', quem:'Flávio Bolsonaro', frase:'O Careca do INSS fazia parte do governo Lula, e eu não tenho escritório com ele.', veredito:'FALSO',
+  resumo:'O Aos Fatos concluiu que é falso que o chamado Careca do INSS tenha feito parte do governo Lula, e que registros contradizem a negativa de Flávio sobre manter escritório com ele.',
+  dado:'Os detalhes de cada ponto estão na checagem completa.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-lula-flavio-bolsonaro-debate-band/', ref:'18/10/2026',
+  termos:'careca do inss escritorio antonio camilo' },
+
+// ---------------- SAÚDE ----------------
+{ id:'sau-mais-medicos', tema:'Saúde', quem:'Lula', frase:'O Mais Médicos tinha 12 mil quando voltei e hoje tem 27 mil.', veredito:'IMPRECISO',
+  resumo:'Eram 13,7 mil médicos em 2023, não 12 mil. Em dezembro de 2025 havia 27,3 mil profissionais.',
+  dado:'O pico anterior foi de 18,2 mil em 2015. A meta do governo é chegar a 28 mil. O plano de Flávio Bolsonaro não menciona o programa.',
+  fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2015 a 2025',
+  termos:'mais medicos medicos saude atencao basica posto de saude' },
+
+{ id:'sau-prontuario', tema:'Saúde', quem:'Flávio Bolsonaro', frase:'Vou criar um prontuário eletrônico único para integrar o SUS.', veredito:'FALTA_CONTEXTO',
+  resumo:'O sistema já existe. A Rede Nacional de Dados em Saúde (RNDS), criada em 2020, reunia mais de 5 bilhões de registros em agosto de 2026, consultáveis pelo Meu SUS Digital.',
+  dado:'Nem todos os prontuários do país já estão integrados à rede, o que é o desafio real.',
+  fonte:'Aos Fatos, com dados do Ministério da Saúde', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'ago/2026',
+  termos:'prontuario eletronico rnds meu sus digital fila sus telemedicina' },
+
+{ id:'sau-vacina', tema:'Saúde', quem:'Flávio Bolsonaro', frase:'Lula tomou a vacina que Bolsonaro comprou.', veredito:'FALTA_CONTEXTO',
+  resumo:'Lula tomou vacina contra a Covid-19 adquirida no governo Bolsonaro, mas a compra só ocorreu depois de o então presidente dizer que não iria comprar.',
+  dado:'O Brasil perdeu a certificação de país livre do sarampo em 2019 e a recuperou em 2024.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-lula-flavio-bolsonaro-debate-band/', ref:'2021',
+  termos:'vacina covid pandemia comprou vacinas sarampo vacinacao' },
+
+// ---------------- SEGURANÇA ----------------
+{ id:'seg-mvi', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Com Lula a criminalidade explodiu; é um governo recordista em criminalidade.', veredito:'FALSO',
+  resumo:'O Brasil teve 40.775 mortes violentas intencionais em 2025, queda de 8,2%. A taxa de 19,1 por 100 mil é a menor da série iniciada em 2012.',
+  dado:'A taxa de homicídios chegou a 15,4 por 100 mil, abaixo da meta de 16 prevista para 2027. Também caíram roubos de celulares, veículos, cargas, comércios e residências. Subiram as mortes causadas por policiais (6.602, recorde) e os feminicídios. Sete estados tiveram alta das mortes violentas, entre eles o Rio de Janeiro.',
+  fonte:'Anuário Brasileiro de Segurança Pública 2026; Lupa e Aos Fatos', link:'https://www.poder360.com.br/poder-seguranca-publica/brasil-tem-menor-numero-de-assassinatos-em-13-anos/', ref:'2025',
+  termos:'criminalidade violencia homicidios assassinatos mortes violentas seguranca crime explodiu recorde' },
+
+{ id:'seg-feminicidio', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'É um governo recordista em assassinatos de mulheres.', veredito:'FALTA_CONTEXTO',
+  resumo:'Os feminicídios bateram recorde em 2025 (1.571 vítimas, taxa de 1,4 por 100 mil), mas o total de mulheres mortas de forma violenta caiu.',
+  dado:'Especialistas atribuem a alta do feminicídio sobretudo à melhora no registro dos casos como crime de gênero: 44,4% das mulheres assassinadas foram classificadas como feminicídio, maior proporção desde 2015. O Aos Fatos considerou correta a fala sobre recorde de mulheres agredidas.',
+  fonte:'Anuário Brasileiro de Segurança Pública 2026 e Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2025',
+  termos:'feminicidio mulheres assassinadas violencia contra mulher espancadas' },
+
+{ id:'seg-letalidade-policial', tema:'Segurança', quem:'Dado oficial', frase:'Quantas pessoas a polícia matou?', veredito:'DADO',
+  resumo:'As mortes decorrentes de intervenção policial chegaram a 6.602 em 2025, alta de 5,4% e maior número da série.',
+  dado:'Representam 16,2% de todas as mortes violentas intencionais do país. As polícias Militar e Civil são estaduais.',
+  fonte:'Anuário Brasileiro de Segurança Pública 2026', link:'https://apublica.org/?p=259840', ref:'2025',
+  termos:'letalidade policial policia matou mortes por intervencao policial' },
+
+{ id:'seg-celular', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Vocês estão vendo redução de roubo de celular? Ninguém combate quem revende.', veredito:'FALSO',
+  resumo:'Os roubos de celular caíram de 492.905 em 2022 para 308.723 em 2025, queda de 37,4%, em anos consecutivos.',
+  dado:'A Lei 15.397/2026 aumentou penas de furto, roubo e receptação. A Operação Última Chamada recuperou quase 10 mil aparelhos e fez 396 prisões em agosto de 2026. Policiamento de rua é atribuição dos governos estaduais.',
+  fonte:'Lupa, com dados do Anuário 2026 e da Receita Federal', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2022 a 2026',
+  termos:'celular roubo de celular furto receptacao assalto onibus' },
+
+{ id:'seg-antifaccao', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Com a Lei Antifacção que aprovamos, os chefes vão ficar 80 anos presos.', veredito:'ENGANOSO',
+  resumo:'A lei veio de projeto do governo Lula e prevê penas de 20 a 40 anos, que podem dobrar para líderes. Mas o Código Penal limita o cumprimento a 40 anos.',
+  dado:'A Lei 15.358 foi sancionada em 24/03/2026, a partir do PL 5.582/2025 enviado pelo Executivo. A fala de Lula de que enviou e aprovou a lei foi considerada verdadeira.',
+  fonte:'Lupa e Estadão Verifica', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2026',
+  termos:'lei antifaccao faccoes crime organizado 80 anos pena prisao pcc comando vermelho' },
+
+{ id:'seg-saidinha-veto', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Lula vetou o fim da saidinha e ainda acionou a Justiça para ela voltar.', veredito:'ENGANOSO',
+  resumo:'Lula vetou parte do projeto em 2024 e o Congresso derrubou o veto, isso é verdade. Mas não há registro de que Lula tenha ido à Justiça; a ação no STF (ADI 7663) é da Associação Nacional da Advocacia Criminal.',
+  dado:'A Lei 14.843/2024, sancionada por Lula, proíbe saída temporária para condenados por crimes hediondos ou com violência, como estupro e feminicídio. O veto atingiu só a saída para visita à família.',
+  fonte:'Lupa e Estadão Verifica', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2024',
+  termos:'saidinha saida temporaria presos veto justica stf' },
+
+{ id:'seg-soltura', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'O governo solta bandidos perigosos alegando falta de vagas.', veredito:'FALSO',
+  resumo:'Não existe norma que solte presos automaticamente por falta de vaga. Toda saída antecipada depende de decisão judicial caso a caso.',
+  dado:'O mutirão de 2023 citado no Plano Pena Justa libertou 21 mil pessoas que já cumpriam os requisitos legais, como pena cumprida ou direito a regime mais brando.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2023 a 2026',
+  termos:'solta presos bandidos soltos falta de vagas presidios pena justa' },
+
+{ id:'seg-presos-voto', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'73% dos presidiários votaram em Lula.', veredito:'FALTA_CONTEXTO',
+  resumo:'Lula teve 72,57% dos votos válidos nas 244 seções instaladas em presídios e unidades socioeducativas, mas foram só 11.186 votos, cerca de 1,1% da população carcerária.',
+  dado:'Só votam presos provisórios (sem condenação definitiva) e adolescentes internados. Agentes e servidores também votam nessas seções.',
+  fonte:'Lupa, Estadão Verifica e Aos Fatos, com dados do TSE', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'1º turno 2026',
+  termos:'presos presidiarios votaram em lula 73% presidios voto' },
+
+{ id:'seg-faccoes-territorio', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Mais de 40 milhões moram em áreas dominadas por narcoterroristas.', veredito:'SUBESTIMADO',
+  resumo:'Os estudos indicam números maiores. Pesquisa da Cambridge estima 50 a 61 milhões sob governança criminal; Datafolha e Fórum de Segurança apontam 68,7 milhões.',
+  dado:'Cerca de 41% dos brasileiros acima de 16 anos dizem conviver com facções ou milícias no bairro.',
+  fonte:'Lupa e Estadão Verifica', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2020 a 2026',
+  termos:'faccoes milicias areas dominadas narcoterroristas territorio crime organizado' },
+
+{ id:'seg-maioridade-lula', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Na proposta de Lula, traficante e ladrão de celular ficam fora da redução da maioridade.', veredito:'ENGANOSO',
+  resumo:'A proposta defendida pelo PT reduz a maioridade para 16 anos apenas para crimes hediondos. O tráfico de drogas é equiparado a crime hediondo pela Constituição.',
+  dado:'O plano de Flávio propõe reduzir a maioridade penal para 16 anos e punir maiores de 14 por crimes graves.',
+  fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'out/2026',
+  termos:'maioridade penal 16 anos menor infrator hediondo trafico' },
+
+{ id:'seg-dino-mare', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Flávio Dino entrou sem segurança na favela da Maré.', veredito:'FALSO',
+  resumo:'Na visita de 13 de março de 2023, Dino foi acompanhado por PF, PRF (com agentes à paisana), polícias Civil e Militar do Rio e Bombeiros.',
+  dado:'', fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2023',
+  termos:'flavio dino mare favela escolta complexo da mare' },
+
+{ id:'seg-mensalao', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Lula dá emprego no governo a condenados do Mensalão.', veredito:'FALSO',
+  resumo:'Não há registro de condenados do Mensalão com cargos no atual governo.',
+  dado:'Lula declarou apoio a candidaturas de José Dirceu e Delúbio Soares a deputado em 2026, que não foram eleitos.',
+  fonte:'Estadão Verifica e Aos Fatos', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2026',
+  termos:'mensalao condenados governo dirceu cargos' },
+
+{ id:'seg-eua-faccoes', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Lula foi aos EUA defender organizações criminosas; o governo trata abusador de criança como doente.', veredito:'FALSO',
+  resumo:'O Aos Fatos classificou as duas afirmações como falsas.',
+  dado:'Os detalhes estão na checagem completa do debate da Band.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-lula-flavio-bolsonaro-debate-band/', ref:'18/10/2026',
+  termos:'estados unidos defender faccoes narcoterroristas pedofilia abuso infantil doente' },
+
+// ---------------- ARMAS ----------------
+{ id:'arm-1milhao', tema:'Armas', quem:'Lula', frase:'No governo Bolsonaro liberaram mais de 1 milhão de armas.', veredito:'VERDADEIRO',
+  resumo:'Foram registradas mais de um milhão de novas armas particulares entre 2019 e 2022, segundo os institutos Sou da Paz e Igarapé com dados da PF e do Exército.',
+  dado:'Investigações da PF e do MP-SP apontam desvios de armas de CACs para facções. O estudo Arsenal do Crime (Sou da Paz) liga a liberação da pistola 9 mm em 2019 a armas parar nas mãos de criminosos.',
+  fonte:'Lupa e Aos Fatos', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2019 a 2022',
+  termos:'armas 1 milhao cac armamento liberou armas registro' },
+
+{ id:'arm-balas', tema:'Armas', quem:'Lula', frase:'O governo Bolsonaro liberou 1 bilhão e 100 milhões de balas.', veredito:'INSUSTENTAVEL',
+  resumo:'Não há dado oficial com esse número. A Lupa classificou como insustentável; o Aos Fatos considerou a afirmação um fato.',
+  dado:'O Decreto 9.797/2019 permitiria a compra de pelo menos 2,1 bilhões de munições, mas foi revogado e substituído por normas com limites menores.',
+  fonte:'Lupa e Aos Fatos', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2019',
+  termos:'balas municao 1 bilhao municoes decreto' },
+
+{ id:'arm-traficantes', tema:'Armas', quem:'Flávio Bolsonaro', frase:'Lula liberou as armas para os traficantes e deixa arma ilegal entrar pelas fronteiras.', veredito:'FALSO',
+  resumo:'Não há norma de Lula que facilite armas para criminosos. Em 2023 ele revogou decretos que ampliavam o acesso a armas e munição.',
+  dado:'A PF apreendeu 9.373 armas de 2023 a outubro de 2026, contra 8.812 em 2019-2022. Em 2026 foi criada a Rede Nacional de Enfrentamento ao Tráfico de Armas. Estudo do Sou da Paz com cartuchos de fuzil apreendidos com o Comando Vermelho mostra que 40,9% eram de fabricação brasileira.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2023 a 2026',
+  termos:'armas traficantes fronteira arma ilegal contrabando fuzil apreensao' },
+
+{ id:'arm-marcacao', tema:'Armas', quem:'Flávio Bolsonaro', frase:'Nunca quis tirar a marcação das munições.', veredito:'FALSO',
+  resumo:'Flávio apoiou o PL 3.723/2019, do governo Bolsonaro, que revogaria a exigência de código de rastreio nas embalagens de munição e de identificação nas armas.',
+  dado:'Na entrevista à Globo ele chamou o tema de detalhe. A marcação ajuda a rastrear desvios de munição das forças de segurança para o crime.',
+  fonte:'Estadão Verifica e Aos Fatos', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2019 a 2026',
+  termos:'marcacao municao rastreio pl 3723 numeracao capsulas' },
+
+{ id:'arm-cac-homicidios', tema:'Armas', quem:'Flávio Bolsonaro', frase:'Em 2019, com recorde de CACs, os homicídios caíram 17%; mais armas não geram violência.', veredito:'FALSO',
+  resumo:'Os homicídios caíram em 2019, mas os estudos não atribuem a queda às armas. O Atlas da Violência aponta envelhecimento da população, programas estaduais, o Estatuto do Desarmamento e trégua entre facções.',
+  dado:'Pesquisa Quaest de setembro de 2026 mostra que a maioria dos brasileiros acha que limitar o acesso a armas melhora a segurança.',
+  fonte:'Aos Fatos, com Atlas da Violência (Ipea)', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2019',
+  termos:'cac armas homicidios 2019 caiu 17% armas reduzem violencia' },
+
+{ id:'arm-legitima-defesa', tema:'Armas', quem:'Flávio Bolsonaro', frase:'O direito à legítima defesa está na Constituição; o Estatuto deixa bandido comprar arma de guerra.', veredito:'FALSO',
+  resumo:'A legítima defesa está no Código Penal (art. 25), não na Constituição. E o Estatuto do Desarmamento não autoriza criminosos a comprar armas de guerra; ele criminaliza esse porte.',
+  dado:'Armas de uso restrito dependem de autorização excepcional do órgão competente.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'out/2026',
+  termos:'legitima defesa constituicao estatuto do desarmamento arma de guerra' },
+
+// ---------------- CORRUPÇÃO E INVESTIGAÇÕES ----------------
+{ id:'cor-vorcaro-lula', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'O áudio do Vorcaro fala em R$ 30 milhões por fora para o Instituto Lula; a PF confirmou.', veredito:'INSUSTENTAVEL',
+  resumo:'A PF e a PGR negaram que Vorcaro tenha prestado depoimento com esse conteúdo. Não há prova de pagamento e o relato não consta das três propostas de delação.',
+  dado:'A informação saiu em reportagem da Veja de 9/10/2026, que admite não haver prova de que Lula tenha tido o encontro descrito. A equipe do filme de Oliver Stone nega ter recebido verba de Vorcaro. A defesa de Vorcaro não reconhece o material.',
+  fonte:'Lupa, Aos Fatos e Estadão Verifica', link:'https://www.agencialupa.org/reportagem/2026/10/09/vorcaro-patrocinou-filme-sobre-lula-o-que-se-sabe-ate-agora/', ref:'out/2026',
+  termos:'vorcaro banco master 30 milhoes instituto lula filme oliver stone audio delacao' },
+
+{ id:'cor-dark-horse', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'O dinheiro do Vorcaro para o filme do meu pai é lícito e a produtora prestou contas.', veredito:'FALSO',
+  resumo:'A PF investiga lavagem, evasão de divisas, organização criminosa e corrupção no financiamento. A produtora não apresentou notas e extratos; o perito contratado por ela não teve acesso a dados do fundo que bancou cerca de 70% das despesas.',
+  dado:'Vorcaro se comprometeu com US$ 24 milhões (cerca de R$ 134 milhões) e repassou quase R$ 70 milhões. Mensagens mostram Flávio cobrando os pagamentos. O dinheiro passou por um fundo no Texas (Havengate) ligado a um advogado próximo de Eduardo Bolsonaro. A PF pediu mais 90 dias de investigação.',
+  fonte:'Aos Fatos, com O Globo, G1 e Metrópoles', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2026',
+  termos:'dark horse filme bolsonaro vorcaro master havengate fundo texas patrocinio 134 milhoes' },
+
+{ id:'cor-43-mentiras', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio contou 43 mentiras sobre a relação dele com Vorcaro.', veredito:'VERDADEIRO',
+  resumo:'O Aos Fatos contou ao menos 43 declarações falsas de Flávio sobre o envolvimento com Vorcaro até setembro de 2026.',
+  dado:'Flávio negou ter trocado mensagens com o banqueiro e depois admitiu ter falado com ele.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/flavio-mentiu-ao-menos-43-vezes-sobre-envolvimento-com-vorcaro/', ref:'set/2026',
+  termos:'43 mentiras vorcaro flavio mentiu' },
+
+{ id:'cor-reuniao-vorcaro', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'Lula se reuniu com Vorcaro e prometeu ajudar o Master trocando o presidente do Banco Central.', veredito:'ENGANOSO',
+  resumo:'Houve encontro fora da agenda em dezembro de 2024, mas as reportagens não registram promessa de ajuda. Lula e Galípolo dizem que o caso seria tratado de forma técnica, e o banco acabou liquidado e Vorcaro preso.',
+  dado:'Relatos de bastidores do Poder360 dizem que Lula criticou Campos Neto e aconselhou Vorcaro a não vender o banco. O BC só detectou problemas nas operações Master-BRB no início de 2025. A afirmação de Lula de que prendeu Vorcaro também foi contestada: a prisão não decorreu de decisão do presidente.',
+  fonte:'Estadão Verifica e Aos Fatos', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2024 a 2026',
+  termos:'reuniao lula vorcaro galipolo banco central master brb prendeu vorcaro' },
+
+{ id:'cor-casa-flavio', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio comprou uma casa de R$ 10 milhões com dinheiro do BRB.', veredito:'EXAGERADO',
+  resumo:'A mansão no Lago Sul (Brasília) custou cerca de R$ 6 milhões, dos quais há suspeita de que R$ 3,1 milhões foram pagos com recursos ligados ao BRB.',
+  dado:'Flávio declarou ao TSE patrimônio de R$ 8,1 milhões. O valor de R$ 10 milhões pode vir de outra denúncia, a do jogador Richarlison sobre uma ilha em Angra dos Reis.',
+  fonte:'Aos Fatos e Estadão Verifica', link:'https://www.aosfatos.org/noticias/checamos-lula-flavio-bolsonaro-debate-band/', ref:'2026',
+  termos:'mansao casa flavio lago sul brb 10 milhoes 6 milhoes patrimonio richarlison ilha' },
+
+{ id:'cor-lula-condenado', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'Lula foi condenado em todas as instâncias, inclusive no STF, e descondenado pelos amigos.', veredito:'FALSO',
+  resumo:'O STF nunca condenou Lula. Em 2021 a Corte anulou, por 8 a 3, as condenações de Curitiba por incompetência do juízo, e os processos prescreveram.',
+  dado:'O caso do triplex teve condenação em 1ª instância, no TRF-4 e no STJ; o do sítio não chegou ao STJ. A anulação não julgou o mérito, ou seja, não declarou inocência nem culpa.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2017 a 2021',
+  termos:'lula condenado ladrao descondenado lava jato triplex sitio stf anulacao' },
+
+{ id:'cor-lulinha', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O filho de Lula é investigado?', veredito:'DADO',
+  resumo:'Sim. A Polícia Federal investiga Fábio Luís Lula da Silva, o Lulinha, em três inquéritos sobre suposto tráfico de influência e corrupção.',
+  dado:'A lobista Roberta Luchsinger, também investigada, disse à CNN que Lula sabia de reuniões do filho com ministros. Não há acusação na Justiça contra o presidente.',
+  fonte:'Lupa e Aos Fatos', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'out/2026',
+  termos:'lulinha filho de lula investigado pf roberta luchsinger trafico de influencia' },
+
+{ id:'cor-filho-agressao', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'O filho do Lula bateu na própria mulher.', veredito:'INSUSTENTAVEL',
+  resumo:'A ex-companheira de Luís Cláudio Lula da Silva registrou ocorrência em 2024, mas a Polícia Civil de São Paulo concluiu o inquérito sem indiciá-lo, por falta de provas.',
+  dado:'Um vídeo de agressão que circulou na época como sendo dele mostrava outra pessoa.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2024',
+  termos:'filho de lula agressao luis claudio bateu mulher violencia domestica' },
+
+{ id:'cor-rachadinha', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O que aconteceu com o caso da rachadinha de Flávio?', veredito:'DADO',
+  resumo:'O MP do Rio denunciou Flávio por suposto esquema de devolução de salários no gabinete da Alerj. O STJ anulou as quebras de sigilo em 2021 e o caso foi arquivado sem análise do mérito das provas.',
+  dado:'A defesa obteve o foro especial e a anulação das decisões do juiz de 1ª instância. O ministro Gilmar Mendes negou recurso do MP-RJ para reabrir o caso. Flávio sempre negou as acusações.',
+  fonte:'Correio Braziliense e CartaCapital', link:'https://www.correiobraziliense.com.br/politica/2022/10/5043990-rachadinha-o-que-aconteceu-com-caso-que-envolve-filho-de-bolsonaro.html', ref:'2018 a 2024',
+  termos:'rachadinha queiroz alerj gabinete salarios flavio denuncia arquivado' },
+
+{ id:'cor-escritorio-crime', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio deu emprego a parentes do chefe do Escritório do Crime.', veredito:'VERDADEIRO',
+  resumo:'Flávio empregou em seu gabinete, até novembro de 2018, a mãe e a mulher do ex-capitão Adriano da Nóbrega, apontado como chefe do Escritório do Crime.',
+  dado:'Adriano e outro integrante do grupo foram homenageados por Flávio na Alerj em 2003 e 2004. Lula falou em irmã e mulher; os registros falam em mãe e mulher.',
+  fonte:'Lupa, com reportagem de O Globo', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2003 a 2018',
+  termos:'escritorio do crime adriano da nobrega milicia marielle gabinete homenagem' },
+
+{ id:'cor-inquerito-stf', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio é investigado no STF?', veredito:'DADO',
+  resumo:'Sim. Além do caso Dark Horse, Flávio passou a ser alvo de um segundo inquérito no STF, pedido pela PF, sobre suspeitas de lavagem envolvendo o advogado Willer Tomaz.',
+  dado:'O relator sorteado é o ministro Alexandre de Moraes. As defesas não se manifestaram até a publicação.',
+  fonte:'Estadão, via Folha Vitória', link:'https://www.folhavitoria.com.br/politica/flavio-bolsonaro-e-investigado-em-2o-inquerito-no-stf-para-apurar-suspeitas-de-lavagem-com-advogado/', ref:'out/2026',
+  termos:'inquerito stf flavio investigado lavagem willer tomaz moraes' },
+
+{ id:'cor-golpe', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'Não houve tentativa de golpe; foram senhorinhas com bíblia em prédios vazios.', veredito:'FALSO',
+  resumo:'Para a PF, a PGR e o STF, o 8 de janeiro foi desdobramento de uma trama iniciada em 2022 para impedir a posse de Lula, com minuta de decreto de exceção, pressão sobre comandantes militares e planos de assassinato de autoridades.',
+  dado:'Em setembro de 2025 o STF condenou Jair Bolsonaro a 27 anos de prisão por organização criminosa armada, tentativa de golpe e abolição violenta do Estado Democrático de Direito, entre outros crimes.',
+  fonte:'Aos Fatos, com decisões do STF', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2022 a 2025',
+  termos:'golpe 8 de janeiro bolsonaro condenado 27 anos stf trama golpista anistia' },
+
+{ id:'cor-eduardo', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'Eduardo está exilado, é um perseguido político.', veredito:'EXAGERADO',
+  resumo:'Eduardo foi para os EUA por decisão própria em março de 2025, antes de ser investigado. Em junho de 2026 foi condenado pelo STF a 4 anos e 2 meses por tentar interferir no processo do golpe.',
+  dado:'Perdeu o mandato de deputado em dezembro de 2025 por faltas e foi demitido da PF em setembro de 2026 por abandono de cargo. Recebeu green card dos EUA em julho de 2026.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2025 e 2026',
+  termos:'eduardo bolsonaro exilado perseguido estados unidos condenado' },
+
+// ---------------- TRAJETÓRIA DE FLÁVIO ----------------
+{ id:'fla-faltas', tema:'Trajetória de Flávio', quem:'Dado oficial', frase:'Flávio falta às votações do Senado?', veredito:'DADO',
+  resumo:'De janeiro a julho de 2026, Flávio faltou sem justificativa a 15 das 54 votações nominais do Senado, o maior número entre os senadores, segundo levantamento do SBT News.',
+  dado:'A assessoria diz que ele registrou só três faltas e que o mandato inclui atividades fora do plenário.',
+  fonte:'SBT News', link:'https://sbtnews.sbt.com.br/colunas/coluna-do-ranier/flavio-bolsonaro-lidera-faltas-a-votacoes-no-senado-em-2026', ref:'jan a jul/2026',
+  termos:'faltas senado votacoes ausencias flavio senador trabalho' },
+
+{ id:'fla-licenca-maternidade', tema:'Trajetória de Flávio', quem:'Lula', frase:'Em 2009, Flávio foi o único dos 49 deputados que votou contra ampliar a licença-maternidade.', veredito:'VERDADEIRO',
+  resumo:'Na Alerj, em 2009, Flávio foi o único voto contra a proposta que ampliava de quatro para seis meses a licença-maternidade das servidoras estaduais.',
+  dado:'Na época, alegou impactos no mercado de trabalho. Foi deputado estadual de 2003 a 2019.',
+  fonte:'Lupa e Estadão Verifica', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2009',
+  termos:'licenca maternidade mulheres alerj votou contra 2009 gestantes' },
+
+{ id:'fla-6x1', tema:'Trajetória de Flávio', quem:'Dado oficial', frase:'Qual a posição de Flávio sobre o fim da escala 6x1?', veredito:'DADO',
+  resumo:'Flávio foi contrário de início, mas votou a favor da emenda que acabou com a escala 6x1, promulgada em outubro de 2026. Diz que não vai tentar revertê-la.',
+  dado:'Seu plano de governo defende o negociado sobre o legislado e jornada flexível. Aliados no Congresso falam em retomar a proposta do PL de pagamento proporcional às horas.',
+  fonte:'Entrevista à TV Globo, transcrita pelo Aos Fatos; plano de governo registrado no TSE', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'out/2026',
+  termos:'6x1 escala jornada folga reducao da jornada trabalho' },
+
+{ id:'fla-privatizacao', tema:'Trajetória de Flávio', quem:'Flávio Bolsonaro', frase:'É terrorismo dizer que vou privatizar Petrobras, Caixa e Banco do Brasil.', veredito:'FALTA_CONTEXTO',
+  resumo:'Flávio disse em fevereiro de 2026, em evento do BTG, que pretende privatizar 95% das estatais. Em 2025 defendeu privatizar os Correios e partes da Petrobras.',
+  dado:'Em setembro, a coordenadora econômica Daniella Marques citou o Banco do Brasil como possível desestatização. Depois a campanha passou a negar planos para Petrobras, BB e Caixa. O plano registrado no TSE retoma o Programa Nacional de Desestatização, caso a caso.',
+  fonte:'Aos Fatos e Estadão Verifica', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2025 e 2026',
+  termos:'privatizacao privatizar estatais petrobras caixa banco do brasil correios 95%' },
+
+{ id:'fla-pt-20anos', tema:'Trajetória de Flávio', quem:'Flávio Bolsonaro', frase:'O PT governou o país em 20 dos últimos 24 anos.', veredito:'EXAGERADO',
+  resumo:'Somando os mandatos, o PT terá governado cerca de 17 anos e 4 meses no período de 24 anos.',
+  dado:'Lula de 2003 a 2010, Dilma de 2011 até o impeachment em 2016 e Lula de 2023 a 2026.',
+  fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2003 a 2026',
+  termos:'pt governou 20 anos 24 anos' },
+
+{ id:'fla-tarifaco', tema:'Política externa e comércio', quem:'Flávio Bolsonaro', frase:'Eu fui aos EUA defender as empresas e o governo não mandou ninguém; Lula não fez nada sobre o tarifaço.', veredito:'FALSO',
+  resumo:'Diplomatas da embaixada acompanharam a audiência de 7 de julho em Washington. O MDIC fez quatro reuniões de alto nível com o representante comercial dos EUA entre maio e julho.',
+  dado:'As tarifas somaram 37,5% sobre parte das exportações (25% mais 12,5%) em julho de 2026. Em 30 de setembro, os ministros Mauro Vieira e Márcio Elias Rosa se reuniram com Jamieson Greer e criaram um grupo de trabalho.',
+  fonte:'Lupa e Aos Fatos', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2026',
+  termos:'tarifaco tarifas estados unidos trump exportacoes 37,5 eua comercio' },
+
+{ id:'fla-resultado-1turno', tema:'Eleição', quem:'Dado oficial', frase:'Qual foi o resultado do primeiro turno?', veredito:'DADO',
+  resumo:'Flávio Bolsonaro teve 47,03% dos votos válidos (56,1 milhões) e Lula 45,16% (53,9 milhões). O segundo turno é em 25 de outubro.',
+  dado:'', fonte:'TSE', link:'https://acritica.net/eleicoes-2026/debates-segundo-turno-flavio-lula-datas-horarios-onde-assistir/', ref:'04/10/2026',
+  termos:'primeiro turno resultado votos tse segundo turno' },
+
+// ---------------- PLANO DE GOVERNO DE FLÁVIO ----------------
+{ id:'pla-ausencias', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O plano de Flávio garante Bolsa Família, BPC, Farmácia Popular e Mais Médicos?', veredito:'DADO',
+  resumo:'O plano registrado no TSE não cita Bolsa Família, BPC, Farmácia Popular, Mais Médicos, Pé-de-Meia nem Mercosul em suas páginas.',
+  dado:'O texto promete manter programas sociais de forma genérica. Na entrevista à Globo, Flávio prometeu manter reajustes do mínimo acima da inflação e não desvincular aposentadorias do mínimo, compromissos que não aparecem no plano.',
+  fonte:'Plano de governo "Para o Brasil vencer o atraso", registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
+  termos:'plano de governo flavio bolsa familia bpc farmacia popular mais medicos mercosul programas sociais' },
+
+{ id:'pla-voucher', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio propõe para creches e escolas?', veredito:'DADO',
+  resumo:'Onde faltar vaga, o plano propõe voucher para pagar creche ou escola privada (voucher-creche e voucher educacional).',
+  dado:'O plano não traz meta, prazo ou custeio para ampliar a rede pública de creches.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
+  termos:'voucher creche escola privada educacao vaga' },
+
+{ id:'pla-ensino-superior', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que muda nas universidades com Flávio?', veredito:'DADO',
+  resumo:'O plano transfere o ensino superior do MEC para o Ministério da Ciência e Tecnologia e manda CAPES e CNPq priorizarem impacto produtivo, inovação e transferência de tecnologia.',
+  dado:'O documento não menciona Fundeb, ProUni, cotas ou pesquisa básica.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
+  termos:'universidade ensino superior mec mcti capes cnpq pesquisa ciencia' },
+
+{ id:'pla-seguranca', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio propõe para segurança?', veredito:'DADO',
+  resumo:'Reduzir a maioridade penal para 16 anos, punir maiores de 14 por crimes graves, criar meio milhão de vagas prisionais em 4 anos e instalar mais de 1 milhão de câmeras.',
+  dado:'Na entrevista à Globo, Flávio prometeu tratar CV, PCC e milícias como organizações narcoterroristas e usar as Forças Armadas nas fronteiras e no porto de Santos.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
+  termos:'maioridade penal vagas prisionais cameras narcoterroristas forcas armadas seguranca plano' },
+
+{ id:'pla-trabalho', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio diz sobre direitos trabalhistas?', veredito:'DADO',
+  resumo:'O plano defende o negociado sobre o legislado, ou seja, permitir que trabalhador e empresa combinem condições diretamente, e jornada flexível.',
+  dado:'Críticos apontam que a prevalência do negociado enfraquece a proteção legal de quem tem menos poder de barganha.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
+  termos:'negociado sobre legislado clt direitos trabalhistas reforma trabalhista' },
+
+{ id:'pla-judiciario', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio propõe para o STF e a reeleição?', veredito:'DADO',
+  resumo:'Propõe acabar com as competências criminais originárias do STF, limitar decisões individuais dos ministros e acabar com a reeleição para presidente (PEC já apresentada por Flávio).',
+  dado:'Flávio disse à Globo que abriria mão de um segundo mandato mesmo sem aprovação da PEC. Defende impeachment do ministro Alexandre de Moraes.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE e entrevista à Globo', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
+  termos:'stf supremo judiciario reeleicao mandato moraes impeachment reforma do judiciario' },
+
+// ---------------- MEIO AMBIENTE ----------------
+{ id:'amb-desmatamento', tema:'Meio ambiente', quem:'Dado oficial', frase:'O desmatamento na Amazônia caiu?', veredito:'DADO',
+  resumo:'O desmatamento na Amazônia foi de 3.335 km² entre agosto de 2025 e julho de 2026, o menor desde 1988. A queda foi de 41,8% em um ano e de 71,2% desde 2022.',
+  dado:'Em 2022 foram 11.594 km². No Cerrado, foram 5.516,69 km², também o menor da série iniciada em 2001. O PPCDAm foi relançado em 2023.',
+  fonte:'Inpe, Prodes 2026', link:'https://www.poder360.com.br/poder-sustentavel/desmatamento-cai-na-amazonia-e-no-cerrado-em-2026/', ref:'ago/2025 a jul/2026',
+  termos:'desmatamento amazonia cerrado meio ambiente floresta prodes inpe queimadas' },
+
+// ---------------- INDÚSTRIA, CIÊNCIA E TECNOLOGIA ----------------
+{ id:'ind-nib', tema:'Indústria e tecnologia', quem:'Dado oficial', frase:'O que é a Nova Indústria Brasil e quanto já investiu?', veredito:'DADO',
+  resumo:'A política industrial lançada em 2024 soma mais de R$ 750 bilhões em recursos disponíveis de 2023 a 2026, com R$ 140 bilhões anunciados para 2026 (BNDES e Finep).',
+  dado:'O Plano Mais Produção, do BNDES, disponibilizou R$ 330 bilhões em 218,4 mil aprovações desde 2023. Recursos disponíveis não são o mesmo que dinheiro já desembolsado. A indústria cresceu 1,4% em 2025 e 0,1% no 2º trimestre de 2026.',
+  fonte:'BNDES e Finep', link:'https://movimentoeconomico.com.br/economia/industria-empresas/politica-industrial/2026/06/22/nova-industria-brasil-ganha-mais-r-140-bilhoes-para-investimentos-neste-ano/', ref:'2023 a 2026',
+  termos:'nova industria brasil nib politica industrial bndes finep reindustrializacao inovacao ciencia tecnologia' },
+
+{ id:'ind-ia-flavio', tema:'Indústria e tecnologia', quem:'Plano de Flávio', frase:'O que Flávio propõe em inteligência artificial e governo digital?', veredito:'DADO',
+  resumo:'O plano promete usar inteligência artificial na gestão pública, câmeras com reconhecimento facial ligadas a bancos de dados criminais e um prontuário único de saúde, e quer atrair data centers com energia barata.',
+  dado:'O prontuário integrado já existe (RNDS, desde 2020). O plano trata data centers e minerais críticos como oportunidade de atrair investimento, e trata soberania sobretudo como abertura de mercados e presença do Estado na Amazônia.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE; Aos Fatos', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
+  termos:'inteligencia artificial ia governo digital tecnologia dados nuvem reconhecimento facial soberania digital' },
+
+];
