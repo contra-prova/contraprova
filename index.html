@@ -205,7 +205,7 @@ footer p{margin:0;max-width:70ch}
 
   function cartao(f){
     var ehPergunta = f.quem==='Dado oficial' || f.quem==='Plano de Flávio';
-    var quem = f.quem==='Dado oficial' ? 'Dado oficial' : (f.quem==='Plano de Flávio' ? 'Plano de Flávio Bolsonaro' : 'Frase de '+f.quem);
+    var quem = f.quem==='Dado oficial' ? 'Dado oficial' : (f.quem==='Plano de Flávio' ? 'Plano de Flávio Bolsonaro' : (f.quem==='Boato' ? 'Boato que circula' : 'Frase de '+f.quem));
     var a = document.createElement('article');
     a.className = 'ficha' + (ehPergunta ? ' e-pergunta' : '');
     a.id = 'f-'+f.id;
@@ -224,6 +224,7 @@ footer p{margin:0;max-width:70ch}
     var base = FICHAS.filter(function(f){
       if(estado.quem!=='Todos'){
         if(estado.quem==='Dados e planos'){ if(!(f.quem==='Dado oficial'||f.quem==='Plano de Flávio')) return false; }
+        else if(estado.quem==='Boatos'){ if(f.quem!=='Boato') return false; }
         else if(f.quem!==estado.quem) return false;
       }
       if(estado.tema!=='Todos' && f.tema!==estado.tema) return false;
@@ -316,7 +317,7 @@ footer p{margin:0;max-width:70ch}
   });
 
   var temas = ['Todos'].concat(FICHAS.map(function(f){return f.tema;}).filter(function(t,i,a){ return a.indexOf(t)===i; }));
-  chips(el('filtros-quem'), ['Todos','Flávio Bolsonaro','Lula','Dados e planos'], 'quem');
+  chips(el('filtros-quem'), ['Todos','Flávio Bolsonaro','Lula','Boatos','Dados e planos'], 'quem');
   chips(el('filtros-tema'), temas, 'tema');
   el('atualizado').textContent = 'Dados atualizados em '+(window.FICHAS_ATUALIZADAS_EM||'');
   el('legenda').innerHTML = Object.keys(EXPLICA).map(function(k){ return '<div><span class="carimbo v-'+k+'">'+ROTULO[k]+'</span><span>'+EXPLICA[k]+'</span></div>'; }).join('');

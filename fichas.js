@@ -554,4 +554,124 @@ window.FICHAS = [
   fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE; Aos Fatos', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
   termos:'inteligencia artificial ia governo digital tecnologia dados nuvem reconhecimento facial soberania digital' },
 
+
+// ---------------- COSTUMES, RELIGIÃO E BOATOS RECORRENTES ----------------
+{ id:'cos-aborto-lula', tema:'Costumes e religião', quem:'Boato', frase:'Lula é a favor do aborto.', veredito:'FALTA_CONTEXTO',
+  resumo:'Lula declarou várias vezes ser pessoalmente contra o aborto e defende que o tema seja decidido pelo Congresso. Seu governo não mudou a lei, que só permite o aborto em caso de estupro, risco de vida da gestante e anencefalia.',
+  dado:'Em abril de 2022 Lula disse que o aborto deveria ser tratado como questão de saúde pública, fala que gerou críticas; depois, em carta a evangélicos, reafirmou ser contra. Na Constituinte de 1988 apoiou manter a criminalização. Críticos citam atos do governo, como a saída do Consenso de Genebra (2023), uma nota técnica do Ministério da Saúde sobre prazos do aborto legal revogada dois dias depois (2024) e informações sobre aborto legal na Caderneta da Gestante (2026). Os planos de governo de Lula não propõem legalizar o aborto. O plano de Flávio Bolsonaro defende a vida desde a concepção.',
+  fonte:'Aos Fatos, Comprova (CNN Brasil) e Poder360', link:'https://www.poder360.com.br/governo/lula-disse-em-2022-que-era-contra-o-aborto-relembre/', ref:'1988 a 2026',
+  termos:'aborto abortista legalizar aborto pro aborto vida desde a concepcao nascituro gravidez feto' },
+
+{ id:'cos-igrejas', tema:'Costumes e religião', quem:'Boato', frase:'Se Lula ganhar, vai fechar as igrejas.', veredito:'FALSO',
+  resumo:'Lula não fechou nenhuma igreja em dez anos de governo e nunca propôs isso. O boato circula desde 2022 e já foi desmentido por várias agências.',
+  dado:'Os planos de governo de Lula defendem a liberdade religiosa e o combate à intolerância. Foi Lula quem sancionou em 2009 a lei que criou o Dia Nacional da Marcha para Jesus (Lei 12.025). A reforma tributária aprovada em 2023 (EC 132) manteve a imunidade de impostos dos templos e a ampliou para as organizações assistenciais das igrejas.',
+  fonte:'Aos Fatos e SBT News', link:'https://www.aosfatos.org/noticias/tuites-atribuidos-a-lula-sobre-fechamento-de-igrejas-sao-falsos/', ref:'2009 a 2026',
+  termos:'igreja igrejas fechar igrejas evangelicos cristaos perseguicao religiosa culto pastor templo liberdade religiosa' },
+
+{ id:'cos-taxar-igrejas', tema:'Costumes e religião', quem:'Boato', frase:'O governo Lula vai cobrar imposto das igrejas.', veredito:'FALSO',
+  resumo:'A reforma tributária de 2023 manteve a imunidade dos templos de qualquer culto e a estendeu às entidades religiosas e às suas obras assistenciais e beneficentes.',
+  dado:'A imunidade está no artigo 150 da Constituição e foi reforçada pela Emenda Constitucional 132/2023.',
+  fonte:'Emenda Constitucional 132/2023', link:'https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm', ref:'2023',
+  termos:'imposto igreja taxar igrejas imunidade templos dizimo reforma tributaria' },
+
+{ id:'cos-banheiro', tema:'Costumes e religião', quem:'Boato', frase:'Lula obrigou as escolas a terem banheiro unissex.', veredito:'FALSO',
+  resumo:'Não existe lei nem decreto do governo que obrigue banheiros unissex em escolas.',
+  dado:'O boato se baseou numa resolução de um conselho consultivo (CNLGBTQIA+), que faz recomendações e não tem força de lei. A AGU foi acionada contra parlamentares que divulgaram a informação falsa.',
+  fonte:'Aos Fatos e Comprova', link:'https://www.aosfatos.org/noticias/falso-banheiros-unissex-escolas/', ref:'2023 a 2026',
+  termos:'banheiro unissex ideologia de genero escola criancas kit gay genero lgbt' },
+
+{ id:'cos-drogas', tema:'Costumes e religião', quem:'Boato', frase:'Lula liberou as drogas.', veredito:'FALSO',
+  resumo:'Nenhuma lei ou decreto de Lula liberou drogas. Em 2024 foi o STF que fixou 40 gramas de maconha como limite para diferenciar usuário de traficante, e Lula criticou a Corte por decidir o tema.',
+  dado:'Lula disse que a quantidade não deveria ser definida por juízes e que o assunto cabia ao Congresso. Desde a lei de 2006 o usuário já não é preso, mas o porte continua proibido. Os planos de governo de Lula falam em prevenção, tratamento e combate ao crime organizado, sem liberação.',
+  fonte:'Itatiaia e Aos Fatos', link:'https://www.itatiaia.com.br/politica/discutir-quantos-gramas-nao-e-problema-de-juiz-diz-lula-em-relacao-a-decisao-do-stf-sobre-maconha/', ref:'2024',
+  termos:'drogas maconha liberou drogas descriminalizacao 40 gramas stf usuario traficante' },
+
+{ id:'cos-pix', tema:'Costumes e religião', quem:'Boato', frase:'O governo vai taxar o Pix.', veredito:'FALSO',
+  resumo:'Não existe imposto sobre o Pix. A Receita Federal desmentiu o boato em janeiro de 2025 e de novo em janeiro de 2026.',
+  dado:'A norma citada nos boatos só estende às fintechs regras de informação que os bancos cumprem desde 2015 contra lavagem de dinheiro, sem acesso ao valor de cada compra. O Pix é só um meio de pagamento, como dinheiro ou cartão. Golpistas usam o boato para cobrar taxas falsas.',
+  fonte:'Receita Federal', link:'https://www.diariodepernambuco.com.br/economia/2026/01/11705186-receita-federal-volta-a-negar-taxacao-do-pix-e-alerta-para-golpes.html', ref:'2025 e 2026',
+  termos:'pix taxa do pix taxar pix imposto pix receita monitorar pix fintech' },
+
+{ id:'cos-venezuela', tema:'Política externa e comércio', quem:'Boato', frase:'Lula é aliado de Maduro e quer transformar o Brasil numa Venezuela.', veredito:'FALTA_CONTEXTO',
+  resumo:'Lula não reconheceu a reeleição de Maduro em 2024 e cobrou a divulgação das atas eleitorais. Em janeiro de 2026, condenou a operação militar dos EUA que capturou Maduro, por violar a soberania venezuelana e o direito internacional.',
+  dado:'Lula tem histórico de proximidade com o chavismo e foi criticado por receber Maduro em 2023. A relação entre os dois se desgastou depois da eleição venezuelana de 2024. O Brasil segue sob a mesma Constituição, com eleições periódicas e alternância de poder.',
+  fonte:'Band e Agência Brasil', link:'https://www.band.com.br/noticias/lula-ataques-na-venezuela-e-captura-de-maduro-ultrapassam-o-inaceitavel-202601031011', ref:'2023 a 2026',
+  termos:'venezuela maduro comunismo comunista ditadura virar venezuela chavismo cuba socialismo' },
+
+{ id:'cos-urnas', tema:'Eleição', quem:'Boato', frase:'As urnas eletrônicas foram fraudadas e roubaram milhões de votos.', veredito:'FALSO',
+  resumo:'Desde 1996 nunca se comprovou fraude nas urnas eletrônicas. Auditorias do TCU, testes de integridade e as Forças Armadas, em 2022, não encontraram divergências.',
+  dado:'Em 2022 o TCU comparou mais de 4 mil boletins de urna em papel com os dados do TSE sem achar diferenças, e 641 urnas sorteadas passaram por teste de integridade. Os programas são lacrados em cerimônia pública com PF, Ministério Público, TCU e partidos. Em agosto de 2026 o TSE desmentiu a alegação de que 5,1 milhões de votos teriam sido retirados de um candidato.',
+  fonte:'TSE', link:'https://www.tse.jus.br/comunicacao/noticias/2026/Agosto/viralizou-e-falso-que-5-1-milhoes-de-votos-foram-retirados-de-candidato-a-presidencia', ref:'1996 a 2026',
+  termos:'urna urnas eletronicas fraude eleicao roubada voto impresso tse auditoria' },
+
+{ id:'cos-flavio-respeitar', tema:'Eleição', quem:'Dado oficial', frase:'Flávio vai respeitar o resultado das urnas?', veredito:'DADO',
+  resumo:'Na entrevista à TV Globo, em 16 de outubro, Flávio afirmou que vai respeitar o resultado qualquer que seja.',
+  dado:'No mesmo programa, chamou de farsa a condenação de Jair Bolsonaro por tentativa de golpe e disse que espera vê-la anulada.',
+  fonte:'Entrevista à TV Globo, transcrita pelo Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'16/10/2026',
+  termos:'respeitar resultado urnas aceitar derrota flavio golpe' },
+
+{ id:'cos-censura', tema:'Indústria e tecnologia', quem:'Flávio Bolsonaro', frase:'O governo Lula censura a internet e quer calar a direita.', veredito:'FALTA_CONTEXTO',
+  resumo:'Não há lei de censura aprovada no governo Lula. O que mudou foi a responsabilidade das plataformas, definida pelo STF em 2025, e a proteção de crianças na internet, aprovada pelo Congresso.',
+  dado:'Em junho de 2025 o STF considerou parcialmente inconstitucional o artigo 19 do Marco Civil da Internet e ampliou os casos em que as plataformas respondem por conteúdo ilegal que não removem. Em setembro de 2025 foi sancionado o ECA Digital (Lei 15.211), com regras de proteção a crianças e adolescentes on-line. O PL das Fake News (2630) não foi votado. Críticos veem risco de remoção excessiva de conteúdo; o plano de Flávio propõe extinguir o que chama de Ministério da Verdade.',
+  fonte:'STF e Planalto', link:'https://portaldeprefeitura.com.br/noticia/detalhe/gilmar-mendes-diz-que-julgamento-do-marco-civil-no-stf-pode-ser/596179/', ref:'2025',
+  termos:'censura liberdade de expressao redes sociais regulacao das redes marco civil artigo 19 eca digital big techs fake news calar a direita ministerio da verdade' },
+
+// ---------------- CAMPO E AGRO ----------------
+{ id:'agr-mst', tema:'Campo e agro', quem:'Boato', frase:'No governo Lula as invasões de terra explodiram.', veredito:'FALTA_CONTEXTO',
+  resumo:'A Comissão Pastoral da Terra registrou 100 ocupações, retomadas e acampamentos em 2025, cerca de 6% dos 1.593 conflitos no campo, que caíram 28% em relação a 2024.',
+  dado:'O MST fez 72 ocupações e 9 acampamentos em 2025. O Abril Vermelho de 2024 teve 35 ocupações, segundo levantamento do jornal O Globo. Em 2025 os assassinatos no campo dobraram (26 vítimas) e os resgates de trabalho escravo subiram 23% (1.991 pessoas).',
+  fonte:'Comissão Pastoral da Terra, Conflitos no Campo 2025', link:'https://cptnacional.org.br/wp-content/uploads/2026/04/Release-Geral-Conflitos-no-Campo-2025-CPT.pdf', ref:'2025',
+  termos:'mst invasao invasoes de terra sem terra ocupacao propriedade privada fazenda abril vermelho reforma agraria' },
+
+{ id:'agr-safra', tema:'Campo e agro', quem:'Boato', frase:'Lula é inimigo do agro e o setor está quebrando.', veredito:'FALTA_CONTEXTO',
+  resumo:'A safra de grãos 2025/26 foi recorde, estimada pela Conab em cerca de 358,6 milhões de toneladas. A agropecuária puxou o PIB no 2º trimestre de 2026, com alta de 6,8% sobre um ano antes.',
+  dado:'Parte do setor critica juros altos, endividamento rural e a política ambiental. As tarifas dos EUA atingiram exportações como café e carne.',
+  fonte:'Conab e IBGE', link:'https://www.cnnbrasil.com.br/agro/safra-2025-26-termina-com-colheita-recorde-aponta-conab/', ref:'safra 2025/26',
+  termos:'agro agronegocio safra recorde graos soja produtor rural inimigo do agro fazendeiros' },
+
+{ id:'amb-queimadas', tema:'Meio ambiente', quem:'Flávio Bolsonaro', frase:'É um governo recordista em queimadas na Amazônia.', veredito:'FALTA_CONTEXTO',
+  resumo:'Os focos de incêndio no Amazonas cresceram 116% em 2026 até 12 de outubro (7.815 focos), mas ficaram 12% abaixo da média histórica e 67% abaixo de 2024, ano de seca extrema.',
+  dado:'Seca, calor e incêndios criminosos para abrir área explicam as altas. O desmatamento, medido pelo Prodes, caiu ao menor nível desde 1988.',
+  fonte:'Inpe, via Correio da Manhã', link:'https://www.correiodamanha.com.br/nacional/norte/2026/10/327414-incendios-dobram-no-amazonas-mas-seguem-abaixo-da-media.html', ref:'jan a out/2026',
+  termos:'queimadas incendios fogo amazonia focos fumaca seca' },
+
+// ---------------- IMPOSTOS E ESTATAIS ----------------
+{ id:'fis-carga', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'Lula não para de criar e aumentar impostos.', veredito:'FALTA_CONTEXTO',
+  resumo:'A carga tributária bateu recorde em 2025, com 32,4% do PIB, segundo o Tesouro. Ao mesmo tempo, quem ganha até R$ 5 mil deixou de pagar imposto de renda em 2026.',
+  dado:'A alta veio de medidas como a volta de tributos federais sobre combustíveis, a taxação de fundos exclusivos e de apostas on-line, mudanças no IOF e a taxa sobre compras internacionais. O cálculo inclui impostos de estados e municípios. A reforma tributária do consumo (IBS e CBS) começa a valer gradualmente a partir de 2026.',
+  fonte:'Tesouro Nacional', link:'https://www.contabeis.com.br/noticias/76330/carga-tributaria-do-brasil-atinge-recorde-de-32-4-do-pib-em-2025/', ref:'2025',
+  termos:'impostos carga tributaria aumento de impostos taxa das blusinhas iof taxacao' },
+
+{ id:'fis-estatais', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'As estatais davam lucro com Bolsonaro e hoje dão prejuízo.', veredito:'FALTA_CONTEXTO',
+  resumo:'As estatais federais sem Petrobras e bancos tiveram déficit de R$ 2,2 bilhões em 2023, R$ 8,07 bilhões em 2024 e R$ 8,3 bilhões de janeiro a agosto de 2025, puxado sobretudo pelos Correios.',
+  dado:'Os Correios perderam R$ 3,2 bilhões só no 1º trimestre de 2026. A conta do Banco Central exclui Petrobras, Caixa, Banco do Brasil e BNDES, que seguem lucrativos e pagam dividendos à União. Os números citados por Flávio (lucro de R$ 18 bilhões contra prejuízo de R$ 36 bilhões) não foram encontrados nas séries oficiais consultadas.',
+  fonte:'Banco Central, via CNN Money; Agência Brasil', link:'https://agenciabrasil.ebc.com.br/economia/noticia/2026-06/correios-ampliam-prejuizo-para-r-32-bilhoes-no-1o-trimestre', ref:'2023 a 2026',
+  termos:'estatais prejuizo correios lucro estatais deficit das estatais empresas publicas' },
+
+// ---------------- O QUE FLÁVIO FARIA ----------------
+{ id:'fla-aposentadoria-70', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio vai aumentar a idade da aposentadoria para 70 anos.', veredito:'FALSO',
+  resumo:'A imagem que circula simula uma notícia de O Globo que não existe e foi feita com inteligência artificial. O plano de Flávio não fala em mudar as regras da aposentadoria.',
+  dado:'Na entrevista à Globo, Flávio disse que não vai desvincular as aposentadorias do salário mínimo. Reuters e Boatos.org também desmentiram a imagem.',
+  fonte:'Lupa', link:'https://www.agencialupa.org/verificacao/2026/10/20/e-falso-que-flavio-bolsonaro-propos-elevar-idade-minima-da-aposentadoria-para-70-anos/', ref:'20/10/2026',
+  termos:'aposentadoria 70 anos idade minima previdencia reforma da previdencia flavio aposentados inss' },
+
+{ id:'fla-bolsa-familia', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio vai acabar com o Bolsa Família.', veredito:'FALTA_CONTEXTO',
+  resumo:'Flávio diz que vai manter os programas sociais e lembra que o pai elevou o benefício a R$ 600. Mas o plano registrado no TSE não cita o Bolsa Família nem o BPC pelo nome.',
+  dado:'O plano fala em manter programas e em combater fraudes e distorções, sem metas nem valores. Flávio criticou o reajuste de 15% feito em setembro por ter vindo perto da eleição.',
+  fonte:'Plano de governo de Flávio Bolsonaro e entrevista à Globo', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2026',
+  termos:'acabar com bolsa familia cortar bolsa familia programas sociais flavio bpc' },
+
+{ id:'fla-sus', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio vai privatizar o SUS e acabar com o piso da saúde e da educação.', veredito:'FALTA_CONTEXTO',
+  resumo:'O plano não propõe extinguir o SUS. Ele aposta em comprar vagas ociosas da rede privada, telessaúde e prontuário único. Na Globo, Flávio disse que não vai mudar a Constituição para eliminar os pisos de saúde e educação.',
+  dado:'O plano não prevê construção de unidades, novos leitos ou concurso. Não menciona Mais Médicos nem Farmácia Popular. O futuro ministro da Saúde anunciado é o médico Cláudio Lottenberg, ex-presidente do hospital Albert Einstein.',
+  fonte:'Plano de governo de Flávio Bolsonaro e entrevista à Globo', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2026',
+  termos:'sus privatizar sus saude publica piso saude educacao lottenberg einstein' },
+
+{ id:'fla-armas-plano', tema:'Armas', quem:'Dado oficial', frase:'Flávio vai liberar as armas de novo?', veredito:'DADO',
+  resumo:'O plano registrado no TSE quase não fala de armas. Na Globo, Flávio defendeu o acesso de quem cumprir requisitos e disse que o Estatuto do Desarmamento precisa ser melhorado, sem dizer se vai revogá-lo.',
+  dado:'Deputados aliados defendem revogar o Estatuto e retomar as regras do governo Bolsonaro. Pesquisa Quaest de setembro de 2026 mostra que a maioria acha que limitar o acesso a armas melhora a segurança. Clubes de tiro fizeram promoções em apoio à candidatura, segundo o Aos Fatos.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/clubes-de-tiro-ignoram-proibicao-e-promovem-descontos-em-armas-para-apoiar-flavio-bolsonaro/', ref:'2026',
+  termos:'armas liberar armas estatuto do desarmamento cac porte de arma flavio armamento' },
+
+
 ];
