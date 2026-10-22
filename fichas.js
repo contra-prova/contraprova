@@ -1,5 +1,5 @@
 // Base de fichas do Contraprova. Coleta encerrada em 21/10/2026.
-// Cada ficha: id, tema, quem (autor da frase ou "Dado oficial"/"Plano de Flávio"), frase (afirmação típica),
+// Cada ficha: id, tema, quem (autor da frase ou "Dado oficial"/"Plano de Flávio Bolsonaro"), frase (afirmação típica),
 // veredito, resumo (resposta em uma linha), dado (detalhe), fonte, link, ref (período do dado), termos (sinônimos para a busca).
 // Para incluir uma ficha nova, copie um bloco, troque o id e preencha os campos.
 window.FICHAS_ATUALIZADAS_EM = '21/10/2026';
@@ -85,7 +85,7 @@ window.FICHAS = [
   unidade:'km² desmatados na Amazônia (Prodes)', serie:[[2018,7536,'T'],[2019,10129,'B'],[2020,10851,'B'],[2021,13038,'B'],[2022,11594,'B'],[2023,9064,'L'],[2024,6518,'L'],[2025,5731,'L'],[2026,3335,'L']],
   nota:'',
   fonte:'Inpe, Prodes', link:'https://www.gov.br/mma/pt-br/noticias-defeso-eleitoral/apresentacao-coletiva-prodes-2026_inpe.pdf/', ref:'2018 a 2026',
-  termos:'desmatamento amazonia floresta meio ambiente devastacao aumentou' },
+  termos:'desmatamento amazonia floresta meio ambiente desmatou aumentou' },
 
 { id:'ind-violencia', tipo:'indicador', tema:'Segurança', quem:'Dado oficial', frase:'A violência aumentou no governo Lula?', veredito:'FALSO',
   resumo:'Não, pelo principal indicador. As mortes violentas intencionais caíram de 47.950 em 2022 para 40.775 em 2025, taxa de 19,1 por 100 mil, a menor desde 2012.',
@@ -331,7 +331,7 @@ window.FICHAS = [
   termos:'irmao de lula frei chico sindnapi sindicato aposentados' },
 
 { id:'inss-careca', tema:'INSS', quem:'Flávio Bolsonaro', frase:'O Careca do INSS fazia parte do governo Lula, e eu não tenho escritório com ele.', veredito:'FALSO',
-  resumo:'O Aos Fatos concluiu que é falso que o chamado Careca do INSS tenha feito parte do governo Lula, e que registros contradizem a negativa de Flávio sobre manter escritório com ele.',
+  resumo:'O Aos Fatos concluiu que é falso que o chamado Careca do INSS tenha feito parte do governo Lula, e que registros contradizem a negativa de Flávio Bolsonaro sobre manter escritório com ele.',
   dado:'Os detalhes de cada ponto estão na checagem completa.',
   fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-lula-flavio-bolsonaro-debate-band/', ref:'18/10/2026',
   termos:'careca do inss escritorio antonio camilo' },
@@ -412,7 +412,7 @@ window.FICHAS = [
 
 { id:'seg-maioridade-lula', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Na proposta de Lula, traficante e ladrão de celular ficam fora da redução da maioridade.', veredito:'ENGANOSO',
   resumo:'A proposta defendida pelo PT reduz a maioridade para 16 anos apenas para crimes hediondos. O tráfico de drogas é equiparado a crime hediondo pela Constituição.',
-  dado:'O plano de Flávio propõe reduzir a maioridade penal para 16 anos e punir maiores de 14 por crimes graves.',
+  dado:'O plano de Flávio Bolsonaro propõe reduzir a maioridade penal para 16 anos e punir maiores de 14 por crimes graves.',
   fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'out/2026',
   termos:'maioridade penal 16 anos menor infrator hediondo trafico' },
 
@@ -453,7 +453,7 @@ window.FICHAS = [
   termos:'armas traficantes fronteira arma ilegal contrabando fuzil apreensao liberou armas para bandido bandidos criminosos faccoes' },
 
 { id:'arm-marcacao', tema:'Armas', quem:'Flávio Bolsonaro', frase:'Nunca quis tirar a marcação das munições.', veredito:'FALSO',
-  resumo:'Flávio apoiou o PL 3.723/2019, do governo Bolsonaro, que revogaria a exigência de código de rastreio nas embalagens de munição e de identificação nas armas.',
+  resumo:'Flávio Bolsonaro apoiou o PL 3.723/2019, do governo Bolsonaro, que revogaria a exigência de código de rastreio nas embalagens de munição e de identificação nas armas.',
   dado:'Na entrevista à Globo ele chamou o tema de detalhe. A marcação ajuda a rastrear desvios de munição das forças de segurança para o crime.',
   fonte:'Estadão Verifica e Aos Fatos', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2019 a 2026',
   termos:'marcacao municao rastreio pl 3723 numeracao capsulas' },
@@ -479,13 +479,13 @@ window.FICHAS = [
 
 { id:'cor-dark-horse', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'O dinheiro do Vorcaro para o filme do meu pai é lícito e a produtora prestou contas.', veredito:'FALSO',
   resumo:'A PF investiga lavagem, evasão de divisas, organização criminosa e corrupção no financiamento. A produtora não apresentou notas e extratos; o perito contratado por ela não teve acesso a dados do fundo que bancou cerca de 70% das despesas.',
-  dado:'Vorcaro se comprometeu com US$ 24 milhões (cerca de R$ 134 milhões) e repassou quase R$ 70 milhões. Mensagens mostram Flávio cobrando os pagamentos. O dinheiro passou por um fundo no Texas (Havengate) ligado a um advogado próximo de Eduardo Bolsonaro. A PF pediu mais 90 dias de investigação.',
+  dado:'Vorcaro se comprometeu com US$ 24 milhões (cerca de R$ 134 milhões) e repassou quase R$ 70 milhões. Mensagens mostram Flávio Bolsonaro cobrando os pagamentos. O dinheiro passou por um fundo no Texas (Havengate) ligado a um advogado próximo de Eduardo Bolsonaro. A PF pediu mais 90 dias de investigação.',
   fonte:'Aos Fatos, com O Globo, G1 e Metrópoles', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2026',
   termos:'dark horse filme bolsonaro vorcaro master havengate fundo texas patrocinio 134 milhoes' },
 
-{ id:'cor-43-mentiras', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio contou 43 mentiras sobre a relação dele com Vorcaro.', veredito:'VERDADEIRO',
-  resumo:'O Aos Fatos contou ao menos 43 declarações falsas de Flávio sobre o envolvimento com Vorcaro até setembro de 2026.',
-  dado:'Flávio negou ter trocado mensagens com o banqueiro e depois admitiu ter falado com ele.',
+{ id:'cor-43-mentiras', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio Bolsonaro contou 43 mentiras sobre a relação dele com Vorcaro.', veredito:'VERDADEIRO',
+  resumo:'O Aos Fatos contou ao menos 43 declarações falsas de Flávio Bolsonaro sobre o envolvimento com Vorcaro até setembro de 2026.',
+  dado:'Flávio Bolsonaro negou ter trocado mensagens com o banqueiro e depois admitiu ter falado com ele.',
   fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/flavio-mentiu-ao-menos-43-vezes-sobre-envolvimento-com-vorcaro/', ref:'set/2026',
   termos:'43 mentiras vorcaro flavio mentiu' },
 
@@ -495,9 +495,9 @@ window.FICHAS = [
   fonte:'Estadão Verifica e Aos Fatos', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2024 a 2026',
   termos:'reuniao lula vorcaro galipolo banco central master brb prendeu vorcaro' },
 
-{ id:'cor-casa-flavio', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio comprou uma casa de R$ 10 milhões com dinheiro do BRB.', veredito:'EXAGERADO',
+{ id:'cor-casa-flavio', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio Bolsonaro comprou uma casa de R$ 10 milhões com dinheiro do BRB.', veredito:'EXAGERADO',
   resumo:'A mansão no Lago Sul (Brasília) custou cerca de R$ 6 milhões, dos quais há suspeita de que R$ 3,1 milhões foram pagos com recursos ligados ao BRB.',
-  dado:'Flávio declarou ao TSE patrimônio de R$ 8,1 milhões. O valor de R$ 10 milhões pode vir de outra denúncia, a do jogador Richarlison sobre uma ilha em Angra dos Reis.',
+  dado:'Flávio Bolsonaro declarou ao TSE patrimônio de R$ 8,1 milhões. O valor de R$ 10 milhões pode vir de outra denúncia, a do jogador Richarlison sobre uma ilha em Angra dos Reis.',
   fonte:'Aos Fatos e Estadão Verifica', link:'https://www.aosfatos.org/noticias/checamos-lula-flavio-bolsonaro-debate-band/', ref:'2026',
   termos:'mansao casa flavio lago sul brb 10 milhoes 6 milhoes patrimonio richarlison ilha' },
 
@@ -509,9 +509,9 @@ window.FICHAS = [
 
 { id:'cor-lulinha', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O filho de Lula é investigado?', veredito:'DADO',
   resumo:'Sim. A Polícia Federal investiga Fábio Luís Lula da Silva, o Lulinha, em três inquéritos sobre suposto tráfico de influência e corrupção.',
-  dado:'A lobista Roberta Luchsinger, também investigada, disse à CNN que Lula sabia de reuniões do filho com ministros. Não há acusação na Justiça contra o presidente.',
+  dado:'A lobista Roberta Luchsinger, também investigada, disse à CNN que Lula sabia de reuniões do filho com ministros. Lulinha também é investigado no caso do INSS por uma viagem a Portugal paga pelo Careca do INSS; a quebra de sigilo não encontrou a mesada de R$ 300 mil citada por um ex-funcionário. Ele mora em Madri desde 2024 ou início de 2025, segundo a defesa por mudança planejada antes das operações; a PF apontou possível evasão. A defesa diz que ele volta se for chamado a depor. Não há acusação na Justiça contra o presidente.',
   fonte:'Lupa e Aos Fatos', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'out/2026',
-  termos:'lulinha filho de lula investigado pf roberta luchsinger trafico de influencia' },
+  termos:'lulinha filho de lula investigado pf roberta luchsinger trafico de influencia espanha madri fugiu mora fora careca do inss' },
 
 { id:'cor-filho-agressao', tema:'Corrupção e investigações', quem:'Flávio Bolsonaro', frase:'O filho do Lula bateu na própria mulher.', veredito:'INSUSTENTAVEL',
   resumo:'A ex-companheira de Luís Cláudio Lula da Silva registrou ocorrência em 2024, mas a Polícia Civil de São Paulo concluiu o inquérito sem indiciá-lo, por falta de provas.',
@@ -519,20 +519,20 @@ window.FICHAS = [
   fonte:'Lupa', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2024',
   termos:'filho de lula agressao luis claudio bateu mulher violencia domestica' },
 
-{ id:'cor-rachadinha', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O que aconteceu com o caso da rachadinha de Flávio?', veredito:'DADO',
-  resumo:'O MP do Rio denunciou Flávio por suposto esquema de devolução de salários no gabinete da Alerj. O STJ anulou as quebras de sigilo em 2021 e o caso foi arquivado sem análise do mérito das provas.',
-  dado:'A defesa obteve o foro especial e a anulação das decisões do juiz de 1ª instância. O ministro Gilmar Mendes negou recurso do MP-RJ para reabrir o caso. Flávio sempre negou as acusações.',
+{ id:'cor-rachadinha', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O que aconteceu com o caso da rachadinha de Flávio Bolsonaro?', veredito:'DADO',
+  resumo:'O MP do Rio denunciou Flávio Bolsonaro por suposto esquema de devolução de salários no gabinete da Alerj. O STJ anulou as quebras de sigilo em 2021 e o caso foi arquivado sem análise do mérito das provas.',
+  dado:'A defesa obteve o foro especial e a anulação das decisões do juiz de 1ª instância. O ministro Gilmar Mendes negou recurso do MP-RJ para reabrir o caso. Flávio Bolsonaro sempre negou as acusações.',
   fonte:'Correio Braziliense e CartaCapital', link:'https://www.correiobraziliense.com.br/politica/2022/10/5043990-rachadinha-o-que-aconteceu-com-caso-que-envolve-filho-de-bolsonaro.html', ref:'2018 a 2024',
   termos:'rachadinha queiroz alerj gabinete salarios flavio denuncia arquivado' },
 
-{ id:'cor-escritorio-crime', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio deu emprego a parentes do chefe do Escritório do Crime.', veredito:'VERDADEIRO',
-  resumo:'Flávio empregou em seu gabinete, até novembro de 2018, a mãe e a mulher do ex-capitão Adriano da Nóbrega, apontado como chefe do Escritório do Crime.',
-  dado:'Adriano e outro integrante do grupo foram homenageados por Flávio na Alerj em 2003 e 2004. Lula falou em irmã e mulher; os registros falam em mãe e mulher.',
+{ id:'cor-escritorio-crime', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio Bolsonaro deu emprego a parentes do chefe do Escritório do Crime.', veredito:'VERDADEIRO',
+  resumo:'Flávio Bolsonaro empregou em seu gabinete, até novembro de 2018, a mãe e a mulher do ex-capitão Adriano da Nóbrega, apontado como chefe do Escritório do Crime.',
+  dado:'Adriano e outro integrante do grupo foram homenageados por Flávio Bolsonaro na Alerj em 2003 e 2004. Lula falou em irmã e mulher; os registros falam em mãe e mulher.',
   fonte:'Lupa, com reportagem de O Globo', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2003 a 2018',
   termos:'escritorio do crime adriano da nobrega milicia marielle gabinete homenagem' },
 
-{ id:'cor-inquerito-stf', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio é investigado no STF?', veredito:'DADO',
-  resumo:'Sim. Além do caso Dark Horse, Flávio passou a ser alvo de um segundo inquérito no STF, pedido pela PF, sobre suspeitas de lavagem envolvendo o advogado Willer Tomaz.',
+{ id:'cor-inquerito-stf', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio Bolsonaro é investigado no STF?', veredito:'DADO',
+  resumo:'Sim. Além do caso Dark Horse, Flávio Bolsonaro passou a ser alvo de um segundo inquérito no STF, pedido pela PF, sobre suspeitas de lavagem envolvendo o advogado Willer Tomaz.',
   dado:'O relator sorteado é o ministro Alexandre de Moraes. As defesas não se manifestaram até a publicação.',
   fonte:'Estadão, via Folha Vitória', link:'https://www.folhavitoria.com.br/politica/flavio-bolsonaro-e-investigado-em-2o-inquerito-no-stf-para-apurar-suspeitas-de-lavagem-com-advogado/', ref:'out/2026',
   termos:'inquerito stf flavio investigado lavagem willer tomaz moraes' },
@@ -550,31 +550,31 @@ window.FICHAS = [
   termos:'eduardo bolsonaro exilado perseguido estados unidos condenado' },
 
 // ---------------- TRAJETÓRIA DE FLÁVIO ----------------
-{ id:'fla-faltas', tema:'Trajetória de Flávio', quem:'Dado oficial', frase:'Flávio falta às votações do Senado?', veredito:'DADO',
-  resumo:'De janeiro a julho de 2026, Flávio faltou sem justificativa a 15 das 54 votações nominais do Senado, o maior número entre os senadores, segundo levantamento do SBT News.',
+{ id:'fla-faltas', tema:'Trajetória de Flávio Bolsonaro', quem:'Dado oficial', frase:'Flávio Bolsonaro falta às votações do Senado?', veredito:'DADO',
+  resumo:'De janeiro a julho de 2026, Flávio Bolsonaro faltou sem justificativa a 15 das 54 votações nominais do Senado, o maior número entre os senadores, segundo levantamento do SBT News.',
   dado:'A assessoria diz que ele registrou só três faltas e que o mandato inclui atividades fora do plenário.',
   fonte:'SBT News', link:'https://sbtnews.sbt.com.br/colunas/coluna-do-ranier/flavio-bolsonaro-lidera-faltas-a-votacoes-no-senado-em-2026', ref:'jan a jul/2026',
   termos:'faltas senado votacoes ausencias flavio senador trabalho' },
 
-{ id:'fla-licenca-maternidade', tema:'Trajetória de Flávio', quem:'Lula', frase:'Em 2009, Flávio foi o único dos 49 deputados que votou contra ampliar a licença-maternidade.', veredito:'VERDADEIRO',
-  resumo:'Na Alerj, em 2009, Flávio foi o único voto contra a proposta que ampliava de quatro para seis meses a licença-maternidade das servidoras estaduais.',
+{ id:'fla-licenca-maternidade', tema:'Trajetória de Flávio Bolsonaro', quem:'Lula', frase:'Em 2009, Flávio Bolsonaro foi o único dos 49 deputados que votou contra ampliar a licença-maternidade.', veredito:'VERDADEIRO',
+  resumo:'Na Alerj, em 2009, Flávio Bolsonaro foi o único voto contra a proposta que ampliava de quatro para seis meses a licença-maternidade das servidoras estaduais.',
   dado:'Na época, alegou impactos no mercado de trabalho. Foi deputado estadual de 2003 a 2019.',
   fonte:'Lupa e Estadão Verifica', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2009',
   termos:'licenca maternidade mulheres alerj votou contra 2009 gestantes' },
 
-{ id:'fla-6x1', tema:'Trajetória de Flávio', quem:'Dado oficial', frase:'Qual a posição de Flávio sobre o fim da escala 6x1?', veredito:'DADO',
-  resumo:'Flávio foi contrário de início, mas votou a favor da emenda que acabou com a escala 6x1, promulgada em outubro de 2026. Diz que não vai tentar revertê-la.',
+{ id:'fla-6x1', tema:'Trajetória de Flávio Bolsonaro', quem:'Dado oficial', frase:'Qual a posição de Flávio Bolsonaro sobre o fim da escala 6x1?', veredito:'DADO',
+  resumo:'Flávio Bolsonaro foi contrário de início, mas votou a favor da emenda que acabou com a escala 6x1, promulgada em outubro de 2026. Diz que não vai tentar revertê-la.',
   dado:'Seu plano de governo defende o negociado sobre o legislado e jornada flexível. Aliados no Congresso falam em retomar a proposta do PL de pagamento proporcional às horas.',
   fonte:'Entrevista à TV Globo, transcrita pelo Aos Fatos; plano de governo registrado no TSE', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'out/2026',
   termos:'6x1 escala jornada folga reducao da jornada trabalho' },
 
-{ id:'fla-privatizacao', tema:'Trajetória de Flávio', quem:'Flávio Bolsonaro', frase:'É terrorismo dizer que vou privatizar Petrobras, Caixa e Banco do Brasil.', veredito:'FALTA_CONTEXTO',
-  resumo:'Flávio disse em fevereiro de 2026, em evento do BTG, que pretende privatizar 95% das estatais. Em 2025 defendeu privatizar os Correios e partes da Petrobras.',
+{ id:'fla-privatizacao', tema:'Trajetória de Flávio Bolsonaro', quem:'Flávio Bolsonaro', frase:'É terrorismo dizer que vou privatizar Petrobras, Caixa e Banco do Brasil.', veredito:'FALTA_CONTEXTO',
+  resumo:'Flávio Bolsonaro disse em fevereiro de 2026, em evento do BTG, que pretende privatizar 95% das estatais. Em 2025 defendeu privatizar os Correios e partes da Petrobras.',
   dado:'Em setembro, a coordenadora econômica Daniella Marques citou o Banco do Brasil como possível desestatização. Depois a campanha passou a negar planos para Petrobras, BB e Caixa. O plano registrado no TSE retoma o Programa Nacional de Desestatização, caso a caso.',
   fonte:'Aos Fatos e Estadão Verifica', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2025 e 2026',
   termos:'privatizacao privatizar estatais petrobras caixa banco do brasil correios 95%' },
 
-{ id:'fla-pt-20anos', tema:'Trajetória de Flávio', quem:'Flávio Bolsonaro', frase:'O PT governou o país em 20 dos últimos 24 anos.', veredito:'EXAGERADO',
+{ id:'fla-pt-20anos', tema:'Trajetória de Flávio Bolsonaro', quem:'Flávio Bolsonaro', frase:'O PT governou o país em 20 dos últimos 24 anos.', veredito:'EXAGERADO',
   resumo:'Somando os mandatos, o PT terá governado cerca de 17 anos e 4 meses no período de 24 anos.',
   dado:'Lula de 2003 a 2010, Dilma de 2011 até o impeachment em 2016 e Lula de 2023 a 2026.',
   fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2003 a 2026',
@@ -592,39 +592,39 @@ window.FICHAS = [
   termos:'primeiro turno resultado votos tse segundo turno' },
 
 // ---------------- PLANO DE GOVERNO DE FLÁVIO ----------------
-{ id:'pla-ausencias', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O plano de Flávio garante Bolsa Família, BPC, Farmácia Popular e Mais Médicos?', veredito:'DADO',
+{ id:'pla-ausencias', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O plano de Flávio Bolsonaro garante Bolsa Família, BPC, Farmácia Popular e Mais Médicos?', veredito:'DADO',
   resumo:'O plano registrado no TSE não cita Bolsa Família, BPC, Farmácia Popular, Mais Médicos, Pé-de-Meia nem Mercosul em suas páginas.',
-  dado:'O texto promete manter programas sociais de forma genérica. Na entrevista à Globo, Flávio prometeu manter reajustes do mínimo acima da inflação e não desvincular aposentadorias do mínimo, compromissos que não aparecem no plano.',
+  dado:'O texto promete manter programas sociais de forma genérica. Na entrevista à Globo, Flávio Bolsonaro prometeu manter reajustes do mínimo acima da inflação e não desvincular aposentadorias do mínimo, compromissos que não aparecem no plano.',
   fonte:'Plano de governo "Para o Brasil vencer o atraso", registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
   termos:'plano de governo flavio bolsa familia bpc farmacia popular mais medicos mercosul programas sociais' },
 
-{ id:'pla-voucher', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio propõe para creches e escolas?', veredito:'DADO',
+{ id:'pla-voucher', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio Bolsonaro propõe para creches e escolas?', veredito:'DADO',
   resumo:'Onde faltar vaga, o plano propõe voucher para pagar creche ou escola privada (voucher-creche e voucher educacional).',
   dado:'O plano não traz meta, prazo ou custeio para ampliar a rede pública de creches.',
   fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
   termos:'voucher creche escola privada educacao vaga' },
 
-{ id:'pla-ensino-superior', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que muda nas universidades com Flávio?', veredito:'DADO',
+{ id:'pla-ensino-superior', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que muda nas universidades com Flávio Bolsonaro?', veredito:'DADO',
   resumo:'O plano transfere o ensino superior do MEC para o Ministério da Ciência e Tecnologia e manda CAPES e CNPq priorizarem impacto produtivo, inovação e transferência de tecnologia.',
   dado:'O documento não menciona Fundeb, ProUni, cotas ou pesquisa básica.',
   fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
   termos:'universidade ensino superior mec mcti capes cnpq pesquisa ciencia' },
 
-{ id:'pla-seguranca', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio propõe para segurança?', veredito:'DADO',
+{ id:'pla-seguranca', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio Bolsonaro propõe para segurança?', veredito:'DADO',
   resumo:'Reduzir a maioridade penal para 16 anos, punir maiores de 14 por crimes graves, criar meio milhão de vagas prisionais em 4 anos e instalar mais de 1 milhão de câmeras.',
-  dado:'Na entrevista à Globo, Flávio prometeu tratar CV, PCC e milícias como organizações narcoterroristas e usar as Forças Armadas nas fronteiras e no porto de Santos.',
+  dado:'Na entrevista à Globo, Flávio Bolsonaro prometeu tratar CV, PCC e milícias como organizações narcoterroristas e usar as Forças Armadas nas fronteiras e no porto de Santos.',
   fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
   termos:'maioridade penal vagas prisionais cameras narcoterroristas forcas armadas seguranca plano' },
 
-{ id:'pla-trabalho', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio diz sobre direitos trabalhistas?', veredito:'DADO',
+{ id:'pla-trabalho', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio Bolsonaro diz sobre direitos trabalhistas?', veredito:'DADO',
   resumo:'O plano defende o negociado sobre o legislado, ou seja, permitir que trabalhador e empresa combinem condições diretamente, e jornada flexível.',
   dado:'Críticos apontam que a prevalência do negociado enfraquece a proteção legal de quem tem menos poder de barganha.',
   fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
   termos:'negociado sobre legislado clt direitos trabalhistas reforma trabalhista' },
 
-{ id:'pla-judiciario', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio propõe para o STF e a reeleição?', veredito:'DADO',
-  resumo:'Propõe acabar com as competências criminais originárias do STF, limitar decisões individuais dos ministros e acabar com a reeleição para presidente (PEC já apresentada por Flávio).',
-  dado:'Flávio disse à Globo que abriria mão de um segundo mandato mesmo sem aprovação da PEC. Defende impeachment do ministro Alexandre de Moraes.',
+{ id:'pla-judiciario', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio Bolsonaro propõe para o STF e a reeleição?', veredito:'DADO',
+  resumo:'Propõe acabar com as competências criminais originárias do STF, limitar decisões individuais dos ministros e acabar com a reeleição para presidente (PEC já apresentada por Flávio Bolsonaro).',
+  dado:'Flávio Bolsonaro disse à Globo que abriria mão de um segundo mandato mesmo sem aprovação da PEC. Defende impeachment do ministro Alexandre de Moraes.',
   fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE e entrevista à Globo', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
   termos:'stf supremo judiciario reeleicao mandato moraes impeachment reforma do judiciario' },
 
@@ -642,7 +642,7 @@ window.FICHAS = [
   fonte:'BNDES e Finep', link:'https://movimentoeconomico.com.br/economia/industria-empresas/politica-industrial/2026/06/22/nova-industria-brasil-ganha-mais-r-140-bilhoes-para-investimentos-neste-ano/', ref:'2023 a 2026',
   termos:'nova industria brasil nib politica industrial bndes finep reindustrializacao inovacao ciencia tecnologia' },
 
-{ id:'ind-ia-flavio', tema:'Indústria e tecnologia', quem:'Plano de Flávio', frase:'O que Flávio propõe em inteligência artificial e governo digital?', veredito:'DADO',
+{ id:'ind-ia-flavio', tema:'Indústria e tecnologia', quem:'Plano de Flávio', frase:'O que Flávio Bolsonaro propõe em inteligência artificial e governo digital?', veredito:'DADO',
   resumo:'O plano promete usar inteligência artificial na gestão pública, câmeras com reconhecimento facial ligadas a bancos de dados criminais e um prontuário único de saúde, e quer atrair data centers com energia barata.',
   dado:'O prontuário integrado já existe (RNDS, desde 2020). O plano trata data centers e minerais críticos como oportunidade de atrair investimento, e trata soberania sobretudo como abertura de mercados e presença do Estado na Amazônia.',
   fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE; Aos Fatos', link:'https://divulgacandcontas.tse.jus.br/', ref:'ago/2026',
@@ -698,15 +698,15 @@ window.FICHAS = [
   fonte:'TSE', link:'https://www.tse.jus.br/comunicacao/noticias/2026/Agosto/viralizou-e-falso-que-5-1-milhoes-de-votos-foram-retirados-de-candidato-a-presidencia', ref:'1996 a 2026',
   termos:'urna urnas eletronicas fraude eleicao roubada voto impresso tse auditoria' },
 
-{ id:'cos-flavio-respeitar', tema:'Eleição', quem:'Dado oficial', frase:'Flávio vai respeitar o resultado das urnas?', veredito:'DADO',
-  resumo:'Na entrevista à TV Globo, em 16 de outubro, Flávio afirmou que vai respeitar o resultado qualquer que seja.',
+{ id:'cos-flavio-respeitar', tema:'Eleição', quem:'Dado oficial', frase:'Flávio Bolsonaro vai respeitar o resultado das urnas?', veredito:'DADO',
+  resumo:'Na entrevista à TV Globo, em 16 de outubro, Flávio Bolsonaro afirmou que vai respeitar o resultado qualquer que seja.',
   dado:'No mesmo programa, chamou de farsa a condenação de Jair Bolsonaro por tentativa de golpe e disse que espera vê-la anulada.',
   fonte:'Entrevista à TV Globo, transcrita pelo Aos Fatos', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'16/10/2026',
   termos:'respeitar resultado urnas aceitar derrota flavio golpe' },
 
 { id:'cos-censura', tema:'Indústria e tecnologia', quem:'Flávio Bolsonaro', frase:'O governo Lula censura a internet e quer calar a direita.', veredito:'FALTA_CONTEXTO',
   resumo:'Não há lei de censura aprovada no governo Lula. O que mudou foi a responsabilidade das plataformas, definida pelo STF em 2025, e a proteção de crianças na internet, aprovada pelo Congresso.',
-  dado:'Em junho de 2025 o STF considerou parcialmente inconstitucional o artigo 19 do Marco Civil da Internet e ampliou os casos em que as plataformas respondem por conteúdo ilegal que não removem. Em setembro de 2025 foi sancionado o ECA Digital (Lei 15.211), com regras de proteção a crianças e adolescentes on-line. O PL das Fake News (2630) não foi votado. Críticos veem risco de remoção excessiva de conteúdo; o plano de Flávio propõe extinguir o que chama de Ministério da Verdade.',
+  dado:'Em junho de 2025 o STF considerou parcialmente inconstitucional o artigo 19 do Marco Civil da Internet e ampliou os casos em que as plataformas respondem por conteúdo ilegal que não removem. Em setembro de 2025 foi sancionado o ECA Digital (Lei 15.211), com regras de proteção a crianças e adolescentes on-line. O PL das Fake News (2630) não foi votado. Críticos veem risco de remoção excessiva de conteúdo; o plano de Flávio Bolsonaro propõe extinguir o que chama de Ministério da Verdade.',
   fonte:'STF e Planalto', link:'https://portaldeprefeitura.com.br/noticia/detalhe/gilmar-mendes-diz-que-julgamento-do-marco-civil-no-stf-pode-ser/596179/', ref:'2025',
   termos:'censura liberdade de expressao redes sociais regulacao das redes marco civil artigo 19 eca digital big techs fake news calar a direita ministerio da verdade' },
 
@@ -738,31 +738,31 @@ window.FICHAS = [
 
 { id:'fis-estatais', tema:'Contas públicas', quem:'Flávio Bolsonaro', frase:'As estatais davam lucro com Bolsonaro e hoje dão prejuízo.', veredito:'FALTA_CONTEXTO',
   resumo:'As estatais federais sem Petrobras e bancos tiveram déficit de R$ 2,2 bilhões em 2023, R$ 8,07 bilhões em 2024 e R$ 8,3 bilhões de janeiro a agosto de 2025, puxado sobretudo pelos Correios.',
-  dado:'Os Correios perderam R$ 3,2 bilhões só no 1º trimestre de 2026. A conta do Banco Central exclui Petrobras, Caixa, Banco do Brasil e BNDES, que seguem lucrativos e pagam dividendos à União. Os números citados por Flávio (lucro de R$ 18 bilhões contra prejuízo de R$ 36 bilhões) não foram encontrados nas séries oficiais consultadas.',
+  dado:'Os Correios perderam R$ 3,2 bilhões só no 1º trimestre de 2026. A conta do Banco Central exclui Petrobras, Caixa, Banco do Brasil e BNDES, que seguem lucrativos e pagam dividendos à União. Os números citados por Flávio Bolsonaro (lucro de R$ 18 bilhões contra prejuízo de R$ 36 bilhões) não foram encontrados nas séries oficiais consultadas.',
   fonte:'Banco Central, via CNN Money; Agência Brasil', link:'https://agenciabrasil.ebc.com.br/economia/noticia/2026-06/correios-ampliam-prejuizo-para-r-32-bilhoes-no-1o-trimestre', ref:'2023 a 2026',
   termos:'estatais prejuizo correios lucro estatais deficit das estatais empresas publicas' },
 
 // ---------------- O QUE FLÁVIO FARIA ----------------
-{ id:'fla-aposentadoria-70', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio vai aumentar a idade da aposentadoria para 70 anos.', veredito:'FALSO',
-  resumo:'A imagem que circula simula uma notícia de O Globo que não existe e foi feita com inteligência artificial. O plano de Flávio não fala em mudar as regras da aposentadoria.',
-  dado:'Na entrevista à Globo, Flávio disse que não vai desvincular as aposentadorias do salário mínimo. Reuters e Boatos.org também desmentiram a imagem.',
+{ id:'fla-aposentadoria-70', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio Bolsonaro vai aumentar a idade da aposentadoria para 70 anos.', veredito:'FALSO',
+  resumo:'A imagem que circula simula uma notícia de O Globo que não existe e foi feita com inteligência artificial. O plano de Flávio Bolsonaro não fala em mudar as regras da aposentadoria.',
+  dado:'Na entrevista à Globo, Flávio Bolsonaro disse que não vai desvincular as aposentadorias do salário mínimo. Reuters e Boatos.org também desmentiram a imagem.',
   fonte:'Lupa', link:'https://www.agencialupa.org/verificacao/2026/10/20/e-falso-que-flavio-bolsonaro-propos-elevar-idade-minima-da-aposentadoria-para-70-anos/', ref:'20/10/2026',
   termos:'aposentadoria 70 anos idade minima previdencia reforma da previdencia flavio aposentados inss' },
 
-{ id:'fla-bolsa-familia', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio vai acabar com o Bolsa Família.', veredito:'FALTA_CONTEXTO',
-  resumo:'Flávio diz que vai manter os programas sociais e lembra que o pai elevou o benefício a R$ 600. Mas o plano registrado no TSE não cita o Bolsa Família nem o BPC pelo nome.',
-  dado:'O plano fala em manter programas e em combater fraudes e distorções, sem metas nem valores. Flávio criticou o reajuste de 15% feito em setembro por ter vindo perto da eleição.',
+{ id:'fla-bolsa-familia', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio Bolsonaro vai acabar com o Bolsa Família.', veredito:'FALTA_CONTEXTO',
+  resumo:'Flávio Bolsonaro diz que vai manter os programas sociais e lembra que o pai elevou o benefício a R$ 600. Mas o plano registrado no TSE não cita o Bolsa Família nem o BPC pelo nome.',
+  dado:'O plano fala em manter programas e em combater fraudes e distorções, sem metas nem valores. Flávio Bolsonaro criticou o reajuste de 15% feito em setembro por ter vindo perto da eleição.',
   fonte:'Plano de governo de Flávio Bolsonaro e entrevista à Globo', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2026',
   termos:'acabar com bolsa familia cortar bolsa familia programas sociais flavio bpc' },
 
-{ id:'fla-sus', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio vai privatizar o SUS e acabar com o piso da saúde e da educação.', veredito:'FALTA_CONTEXTO',
-  resumo:'O plano não propõe extinguir o SUS. Ele aposta em comprar vagas ociosas da rede privada, telessaúde e prontuário único. Na Globo, Flávio disse que não vai mudar a Constituição para eliminar os pisos de saúde e educação.',
+{ id:'fla-sus', tema:'Plano de Flávio', quem:'Boato', frase:'Flávio Bolsonaro vai privatizar o SUS e acabar com o piso da saúde e da educação.', veredito:'FALTA_CONTEXTO',
+  resumo:'O plano não propõe extinguir o SUS. Ele aposta em comprar vagas ociosas da rede privada, telessaúde e prontuário único. Na Globo, Flávio Bolsonaro disse que não vai mudar a Constituição para eliminar os pisos de saúde e educação.',
   dado:'O plano não prevê construção de unidades, novos leitos ou concurso. Não menciona Mais Médicos nem Farmácia Popular. O futuro ministro da Saúde anunciado é o médico Cláudio Lottenberg, ex-presidente do hospital Albert Einstein.',
   fonte:'Plano de governo de Flávio Bolsonaro e entrevista à Globo', link:'https://www.aosfatos.org/noticias/checamos-flavio-bolsonaro-globo-segundo-turno/', ref:'2026',
   termos:'sus privatizar sus saude publica piso saude educacao lottenberg einstein' },
 
-{ id:'fla-armas-plano', tema:'Armas', quem:'Dado oficial', frase:'Flávio vai liberar as armas de novo?', veredito:'DADO',
-  resumo:'O plano registrado no TSE quase não fala de armas. Na Globo, Flávio defendeu o acesso de quem cumprir requisitos e disse que o Estatuto do Desarmamento precisa ser melhorado, sem dizer se vai revogá-lo.',
+{ id:'fla-armas-plano', tema:'Armas', quem:'Dado oficial', frase:'Flávio Bolsonaro vai liberar as armas de novo?', veredito:'DADO',
+  resumo:'O plano registrado no TSE quase não fala de armas. Na Globo, Flávio Bolsonaro defendeu o acesso de quem cumprir requisitos e disse que o Estatuto do Desarmamento precisa ser melhorado, sem dizer se vai revogá-lo.',
   dado:'Deputados aliados defendem revogar o Estatuto e retomar as regras do governo Bolsonaro. Pesquisa Quaest de setembro de 2026 mostra que a maioria acha que limitar o acesso a armas melhora a segurança. Clubes de tiro fizeram promoções em apoio à candidatura, segundo o Aos Fatos.',
   fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/clubes-de-tiro-ignoram-proibicao-e-promovem-descontos-em-armas-para-apoiar-flavio-bolsonaro/', ref:'2026',
   termos:'armas liberar armas estatuto do desarmamento cac porte de arma flavio armamento' },
@@ -815,13 +815,13 @@ window.FICHAS = [
 // ---------------- CONTROVÉRSIAS DA CAMPANHA ----------------
 { id:'cor-cartao', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Lula gasta muito com cartão corporativo e esconde em sigilo.', veredito:'FALTA_CONTEXTO',
   resumo:'O governo federal inteiro gastou cerca de R$ 430 milhões com cartões corporativos em 2023, R$ 584 milhões em 2024 e R$ 423 milhões em 2025. Só a Presidência gastou R$ 55 milhões em 2025, e grande parte das despesas segue sob sigilo.',
-  dado:'O sigilo sobre gastos de segurança do presidente existe em todos os governos; no governo Bolsonaro também houve sigilo e Flávio justificou os gastos do pai como despesas de segurança. Em outubro de 2026, Lula pediu ao TSE a quebra de seus sigilos bancário, fiscal e telefônico e dos familiares, desde que Flávio fizesse o mesmo.',
+  dado:'O sigilo sobre gastos de segurança do presidente existe em todos os governos; no governo Bolsonaro também houve sigilo e Flávio Bolsonaro justificou os gastos do pai como despesas de segurança. Em outubro de 2026, Lula pediu ao TSE a quebra de seus sigilos bancário, fiscal e telefônico e dos familiares, desde que Flávio Bolsonaro fizesse o mesmo.',
   fonte:'Portal da Transparência, via Gazeta do Povo e Portal de Prefeitura; O Tempo', link:'https://www.otempo.com.br/eleicoes/2026/presidentes/2026/10/20/campanha-de-lula-pede-checagem-de-fatos-em-tempo-real-em-debate-da-globo-com-flavio-bolsonaro', ref:'2023 a 2026',
   termos:'cartao corporativo sigilo gastos presidencia janja sigilo de 100 anos quebra de sigilo' },
 
-{ id:'cor-anistia', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio vai anistiar os condenados do 8 de janeiro e o pai?', veredito:'DADO',
-  resumo:'Em julho de 2026, Flávio disse acreditar na anistia aos condenados pelo 8 de janeiro e que alguns subiriam a rampa do Planalto com ele. Na Globo, disse que o pai foi condenado numa farsa e que espera a anulação.',
-  dado:'Jair Bolsonaro foi condenado pelo STF a 27 anos de prisão em setembro de 2025. O Congresso discutiu um projeto de redução de penas (dosimetria), que Flávio criticou e disse que precisaria ser corrigido. Uma eventual anistia aprovada pelo Congresso poderia ser contestada no STF.',
+{ id:'cor-anistia', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio Bolsonaro vai anistiar os condenados do 8 de janeiro e o pai?', veredito:'DADO',
+  resumo:'Em julho de 2026, Flávio Bolsonaro disse acreditar na anistia aos condenados pelo 8 de janeiro e que alguns subiriam a rampa do Planalto com ele. Na Globo, disse que o pai foi condenado numa farsa e que espera a anulação.',
+  dado:'Jair Bolsonaro foi condenado pelo STF a 27 anos de prisão em setembro de 2025. O Congresso discutiu um projeto de redução de penas (dosimetria), que Flávio Bolsonaro criticou e disse que precisaria ser corrigido. Uma eventual anistia aprovada pelo Congresso poderia ser contestada no STF.',
   fonte:'Portal de Prefeitura; Aos Fatos', link:'https://portaldeprefeitura.com.br/bastidores-da-politica/flavio-bolsonaro-diz-que-vai-subir-rampa-do-planalto-com-anistiados/627327/', ref:'2025 e 2026',
   termos:'anistia anistiado anistiados perdao 8 de janeiro anistiar golpistas dosimetria indulto bolsonaro preso liberdade' },
 
@@ -837,7 +837,7 @@ window.FICHAS = [
 
 { id:'bets', tema:'Economia', quem:'Dado oficial', frase:'Quem liberou as bets?', veredito:'DADO',
   resumo:'As apostas esportivas foram legalizadas em 2018 (Lei 13.756, governo Temer) e ficaram sem regulamentação no governo Bolsonaro. O governo Lula regulamentou o setor em 2023 (Lei 14.790) e, em 25 de setembro de 2026, anunciou medida provisória e projeto para proibir as bets.',
-  dado:'O projeto prevê de 4 a 6 anos de prisão para quem operar apostas on-line. Flávio chamou a medida de estelionato eleitoral e disse que proibiria jogos como o Tigrinho, mas manteria as apostas esportivas. Pesquisa Atlas indica que três em cada quatro brasileiros apoiam a proibição. Estimativas citadas pela imprensa apontam R$ 62,5 bilhões gastos pelas famílias com apostas em 2025.',
+  dado:'O projeto prevê de 4 a 6 anos de prisão para quem operar apostas on-line. Flávio Bolsonaro chamou a medida de estelionato eleitoral e disse que proibiria jogos como o Tigrinho, mas manteria as apostas esportivas. Pesquisa Atlas indica que três em cada quatro brasileiros apoiam a proibição. Estimativas citadas pela imprensa apontam R$ 62,5 bilhões gastos pelas famílias com apostas em 2025.',
   fonte:'Tribuna PR; legislação federal', link:'https://www.tribunapr.com.br/noticias/economia/lula-anuncia-proibicao-de-bets-e-pena-de-prisao-para-operadores/', ref:'2018 a 2026',
   termos:'bets apostas tigrinho cassino online jogo de azar apostas esportivas liberou as bets proibir bets' },
 
@@ -869,19 +869,19 @@ window.FICHAS = [
 // ---------------- LOTE 5: PANORAMAS DE CORRUPÇÃO E ESCÂNDALOS ----------------
 { id:'esc-inss', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'O que foi o escândalo do INSS? Foi no governo Lula?', veredito:'FALTA_CONTEXTO',
   resumo:'Entidades associativas descontaram sem autorização mensalidades de aposentados e pensionistas. A CGU calcula R$ 6,3 bilhões em descontos entre 2019 e 2024, em esquema que atravessou os governos Bolsonaro e Lula e cresceu muito a partir de 2023.',
-  dado:'Os descontos somaram R$ 536 milhões em 2021 e R$ 1,3 bilhão em 2023, com projeção de até R$ 2,6 bilhões em 2024. Acordos com entidades foram assinados nos dois governos (cinco em 2021-2022 e quatro no governo Lula). A Operação Sem Desconto, da PF e da CGU, foi deflagrada em abril de 2025; o ministro da Previdência, Carlos Lupi, deixou o cargo em seguida e o presidente do INSS foi afastado. O governo devolveu R$ 3,5 bilhões a cerca de 5 milhões de pessoas. As investigações seguem e alcançam também o entorno de Flávio (veja a ficha sobre o Careca do INSS).',
+  dado:'Os descontos somaram R$ 536 milhões em 2021 e R$ 1,3 bilhão em 2023, com projeção de até R$ 2,6 bilhões em 2024. Acordos com entidades foram assinados nos dois governos (cinco em 2021-2022 e quatro no governo Lula). A Operação Sem Desconto, da PF e da CGU, foi deflagrada em abril de 2025; o ministro da Previdência, Carlos Lupi, deixou o cargo em seguida e o presidente do INSS foi afastado. O governo devolveu R$ 3,5 bilhões a cerca de 5 milhões de pessoas. As investigações seguem e alcançam também o entorno de Flávio Bolsonaro (veja a ficha sobre o Careca do INSS).',
   fonte:'CGU, via Congresso em Foco e Jornal Grande Bahia', link:'https://www.congressoemfoco.com.br/noticia/108480/lula-ou-bolsonaro-descontos-no-inss-antecedem-dois-ultimos-governos', ref:'2019 a 2026',
   termos:'escandalo do inss fraude do inss roubo dos aposentados descontos indevidos sem desconto lupi careca do inss farra do inss' },
 
 { id:'esc-cpmi-inss', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Como terminou a CPMI do INSS?', veredito:'DADO',
-  resumo:'A CPMI terminou em 28 de março de 2026 sem relatório aprovado. O relatório de Alfredo Gaspar (PL), hoje vice de Flávio, pedia o indiciamento de 216 pessoas, entre elas Lulinha e Vorcaro, e foi rejeitado por 19 a 12.',
-  dado:'O relatório alternativo da base do governo, de Paulo Pimenta (PT), pedia o indiciamento de 131 pessoas, entre elas Flávio e Jair Bolsonaro, mas não chegou a ser votado. O presidente da comissão encerrou os trabalhos depois que o STF negou, por 8 a 2, a prorrogação. Nenhum dos relatórios tem efeito formal; as investigações da PF e do Ministério Público continuam.',
+  resumo:'A CPMI terminou em 28 de março de 2026 sem relatório aprovado. O relatório de Alfredo Gaspar (PL), hoje vice de Flávio Bolsonaro, pedia o indiciamento de 216 pessoas, entre elas Lulinha e Vorcaro, e foi rejeitado por 19 a 12.',
+  dado:'O relatório alternativo da base do governo, de Paulo Pimenta (PT), pedia o indiciamento de 131 pessoas, entre elas Flávio Bolsonaro e Jair Bolsonaro, mas não chegou a ser votado. O presidente da comissão encerrou os trabalhos depois que o STF negou, por 8 a 2, a prorrogação. Nenhum dos relatórios tem efeito formal; as investigações da PF e do Ministério Público continuam.',
   fonte:'Movimento Econômico; Congresso em Foco', link:'https://movimentoeconomico.com.br/politica/2026/03/28/cpmi-do-inss-rejeita-216-indiciamentos-e-termina-com-dois-relatorios-na-gaveta/', ref:'mar/2026',
   termos:'cpmi cpmi do inss relatorio indiciamento alfredo gaspar paulo pimenta comissao parlamentar' },
 
-{ id:'esc-flavio-careca', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio tem ligação com o Careca do INSS?', veredito:'DADO',
-  resumo:'Há conexões em investigação, mas nenhuma prova pública de que Flávio tenha recebido dinheiro dos aposentados. Uma empresa ligada a Flávio e Carlos Bolsonaro dividia endereço com 16 empresas do Careca do INSS, e a administradora do escritório de advocacia de Flávio é irmã de um contador ligado ao lobista.',
-  dado:'O advogado Willer Tomaz, próximo de Flávio, foi alvo de busca da PF numa fase da Operação Sem Desconto, e documentos bancários apontaram uma conta em nome de Flávio ligada a uma estrutura associada a Tomaz. Flávio e Tomaz negam irregularidades. Flávio também é alvo de inquérito no STF sobre suspeitas de lavagem com o advogado. O Aos Fatos considerou falsa a negativa de Flávio, no debate da Band, de que mantinha escritório com o lobista.',
+{ id:'esc-flavio-careca', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio Bolsonaro tem ligação com o Careca do INSS?', veredito:'DADO',
+  resumo:'Há conexões em investigação, mas nenhuma prova pública de que Flávio Bolsonaro tenha recebido dinheiro dos aposentados. Uma empresa ligada a Flávio Bolsonaro e Carlos Bolsonaro dividia endereço com 16 empresas do Careca do INSS, e a administradora do escritório de advocacia de Flávio Bolsonaro é irmã de um contador ligado ao lobista.',
+  dado:'O advogado Willer Tomaz, próximo de Flávio Bolsonaro, foi alvo de busca da PF numa fase da Operação Sem Desconto, e documentos bancários apontaram uma conta em nome de Flávio Bolsonaro ligada a uma estrutura associada a Tomaz. Flávio Bolsonaro e Tomaz negam irregularidades. Flávio Bolsonaro também é alvo de inquérito no STF sobre suspeitas de lavagem com o advogado. O Aos Fatos considerou falsa a negativa de Flávio Bolsonaro, no debate da Band, de que mantinha escritório com o lobista.',
   fonte:'Jornal Grande Bahia; Aos Fatos', link:'https://jornalgrandebahia.com.br/2026/10/caso-inss-r-63-bilhoes-em-descontos-milhoes-de-contestacoes-e-conexoes-investigadas-alcancam-entorno-de-flavio-bolsonaro/', ref:'2026',
   termos:'careca do inss flavio escritorio bravo grafeno willer tomaz antonio camilo antunes flavio inss' },
 
@@ -892,20 +892,20 @@ window.FICHAS = [
   termos:'banco master master vorcaro brb fraude bancaria fgc escandalo do master liquidacao' },
 
 { id:'esc-master-politicos', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Quais políticos estão ligados ao Banco Master?', veredito:'DADO',
-  resumo:'As ligações relatadas atravessam partidos, mas se concentram na direita e no Centrão. Flávio pediu e recebeu de Vorcaro quase R$ 70 milhões para o filme sobre o pai. Ciro Nogueira (PP) propôs a emenda que ampliaria a garantia do FGC e aparece em mensagens sobre pagamentos. Ibaneis Rocha comandava o governo dono do BRB e Cláudio Castro, o Rio, cuja previdência comprou papéis do banco.',
+  resumo:'As ligações relatadas atravessam partidos, mas se concentram na direita e no Centrão. Flávio Bolsonaro pediu e recebeu de Vorcaro quase R$ 70 milhões para o filme sobre o pai. Ciro Nogueira (PP) propôs a emenda que ampliaria a garantia do FGC e aparece em mensagens sobre pagamentos. Ibaneis Rocha comandava o governo dono do BRB e Cláudio Castro, o Rio, cuja previdência comprou papéis do banco.',
   dado:'Também são citados Arthur Lira, Davi Alcolumbre e Hugo Motta como próximos de Vorcaro. O cunhado de Vorcaro doou R$ 3 milhões à campanha de Jair Bolsonaro em 2022. Do lado do governo, Lula teve um encontro fora da agenda com Vorcaro em dezembro de 2024, sem acusação de irregularidade. Diretores do Banco Central nomeados na gestão Campos Neto são suspeitos de receber mesada do banqueiro. Quase todos negam irregularidades.',
   fonte:'Agência Pública; Aos Fatos', link:'https://apublica.org/2026/01/a-bancada-do-master-e-de-direita/', ref:'2024 a 2026',
   termos:'politicos master vorcaro ciro nogueira ibaneis claudio castro lira alcolumbre campos neto bancada do master' },
 
 { id:'esc-moraes-master', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Alexandre de Moraes está envolvido com o Banco Master?', veredito:'DADO',
   resumo:'O escritório da mulher de Moraes, Viviane Barci, tinha contrato de cerca de R$ 130 milhões com o Master, assinado em janeiro de 2024. Mensagens no celular de Vorcaro, divulgadas em setembro de 2026, mostram cobranças desses pagamentos e um pedido para que Moraes interferisse junto à PF e à PGR.',
-  dado:'Não se sabe se o ministro respondeu. O escritório diz que nunca atuou para o Master no STF e que Moraes jamais julgou causa do banco; a PGR não viu irregularidade no contrato. O ministro Dias Toffoli deixou a relatoria do caso após revelações sobre negócios da família com fundos ligados ao Master. Flávio defende o impeachment de Moraes.',
+  dado:'Não se sabe se o ministro respondeu. O escritório diz que nunca atuou para o Master no STF e que Moraes jamais julgou causa do banco; a PGR não viu irregularidade no contrato. O ministro Dias Toffoli deixou a relatoria do caso após revelações sobre negócios da família com fundos ligados ao Master. Flávio Bolsonaro defende o impeachment de Moraes.',
   fonte:'A Gazeta, com O Estado de S. Paulo; Agência Pública', link:'https://www.agazeta.com.br/mundo/moraes-no-caso-master-o-que-mostram-as-mensagens-entre-o-ministro-do-stf-e-daniel-vorcaro-0926', ref:'2024 a 2026',
   termos:'moraes master viviane barci escritorio contrato toffoli stf vorcaro ministro' },
 
-{ id:'esc-aliados-rj', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Aliados de Flávio no Rio foram presos?', veredito:'DADO',
-  resumo:'Sim. O ex-presidente da Alerj Rodrigo Bacellar, que chegou a ser cotado como candidato de Flávio ao governo do Rio, foi preso pela PF por suspeita de comandar o braço político do Comando Vermelho. O deputado estadual eleito Márcio Canella, que teve vídeos de apoio de Flávio, foi preso em outubro de 2026 por suspeita de lavagem ligada a milícia e tráfico.',
-  dado:'O ex-governador Cláudio Castro foi tornado inelegível e é citado no caso Master. Na entrevista à Globo, Flávio disse ter se surpreendido e que os acusados devem responder se tiverem culpa. Todos negam as acusações.',
+{ id:'esc-aliados-rj', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Aliados de Flávio Bolsonaro no Rio foram presos?', veredito:'DADO',
+  resumo:'Sim. O ex-presidente da Alerj Rodrigo Bacellar, que chegou a ser cotado como candidato de Flávio Bolsonaro ao governo do Rio, foi preso pela PF por suspeita de comandar o braço político do Comando Vermelho. O deputado estadual eleito Márcio Canella, que teve vídeos de apoio de Flávio Bolsonaro, foi preso em outubro de 2026 por suspeita de lavagem ligada a milícia e tráfico.',
+  dado:'O ex-governador Cláudio Castro foi tornado inelegível e é citado no caso Master. Na entrevista à Globo, Flávio Bolsonaro disse ter se surpreendido e que os acusados devem responder se tiverem culpa. Todos negam as acusações.',
   fonte:'Poder360; entrevista à TV Globo transcrita pelo Aos Fatos', link:'https://www.poder360.com.br/poder-justica/pf-prende-rodrigo-bacellar-ex-presidente-da-alerj-pela-2a-vez/', ref:'2026',
   termos:'bacellar canella claudio castro alerj rio de janeiro comando vermelho milicia aliados de flavio presos' },
 
@@ -917,13 +917,13 @@ window.FICHAS = [
 
 { id:'esc-mais-corrupto', tema:'Corrupção e investigações', quem:'Boato', frase:'O governo Lula é o mais corrupto da história; o PT é o partido mais corrupto.', veredito:'FALTA_CONTEXTO',
   resumo:'Não existe medida oficial que permita ranquear governos ou partidos por corrupção. Os grandes casos em investigação hoje atravessam partidos e governos.',
-  dado:'As condenações de Lula na Lava Jato foram anuladas pelo STF, sem julgamento do mérito. A fraude do INSS começou antes de 2023 e cresceu no governo Lula; Lupi deixou o ministério. O caso Master tem ligações mais diretas com políticos da direita e do Centrão, incluindo Flávio. Lulinha é investigado em três inquéritos. Jair Bolsonaro foi condenado por golpe e indiciado nos casos das joias e do cartão de vacina. No índice da Transparência Internacional, que mede percepção, o Brasil está mal colocado há anos, em todos os governos.',
+  dado:'As condenações de Lula na Lava Jato foram anuladas pelo STF, sem julgamento do mérito. A fraude do INSS começou antes de 2023 e cresceu no governo Lula; Lupi deixou o ministério. O caso Master tem ligações mais diretas com políticos da direita e do Centrão, incluindo Flávio Bolsonaro. Lulinha é investigado em três inquéritos. Jair Bolsonaro foi condenado por golpe e indiciado nos casos das joias e do cartão de vacina. No índice da Transparência Internacional, que mede percepção, o Brasil está mal colocado há anos, em todos os governos.',
   fonte:'Fichas desta base, com Lupa, Aos Fatos, CGU e Agência Pública', link:'https://www.agencialupa.org/checagem/2026/10/18/ao-vivo-checagem-do-debate-entre-lula-e-flavio-bolsonaro-na-band/', ref:'2014 a 2026',
   termos:'corrupcao corrupto mais corrupto pt corrupto ladroes governo corrupto roubalheira mensalao petrolao lava jato' },
 
 // ---------------- LOTE 5: OUTROS TEMAS ----------------
 { id:'ele-vices', tema:'Eleição', quem:'Dado oficial', frase:'Quem são os vices?', veredito:'DADO',
-  resumo:'O vice de Lula é Geraldo Alckmin (PSB), atual vice-presidente e ministro do Desenvolvimento até 2026. O de Flávio é o deputado federal Alfredo Gaspar (PL-AL), ex-procurador-geral de Justiça de Alagoas e relator da CPMI do INSS.',
+  resumo:'O vice de Lula é Geraldo Alckmin (PSB), atual vice-presidente e ministro do Desenvolvimento até 2026. O de Flávio Bolsonaro é o deputado federal Alfredo Gaspar (PL-AL), ex-procurador-geral de Justiça de Alagoas e relator da CPMI do INSS.',
   dado:'Gaspar foi anunciado em 5 de agosto de 2026, depois que PP e Republicanos não aceitaram indicar nomes como Tereza Cristina. Seu relatório na CPMI, que pedia a prisão de Lulinha, foi rejeitado pela comissão.',
   fonte:'BBC Brasil, via O Povo', link:'https://www.opovo.com.br/agencia/bbc/2026/08/05/quem-e-alfredo-gaspar-anunciado-como-vice-de-flavio-bolsonaro-nas-eleicoes-2026.html', ref:'2026',
   termos:'vice vice-presidente alckmin alfredo gaspar chapa companheiro de chapa' },
@@ -954,7 +954,7 @@ window.FICHAS = [
 
 { id:'tec-soberania', tipo:'panorama', tema:'Indústria e tecnologia', quem:'Dado oficial', frase:'O que o governo Lula fez em inteligência artificial e soberania digital?', veredito:'DADO',
   resumo:'O governo lançou o Plano Brasileiro de Inteligência Artificial, com cerca de R$ 23 bilhões previstos até 2028, e em setembro de 2025 o Redata, regime tributário para atrair data centers ao país.',
-  dado:'O Redata isenta equipamentos de data center de tributos federais e exige em troca investimento de 2% em pesquisa e inovação e a reserva de ao menos 10% da capacidade ao mercado nacional. Hoje só cerca de 40% do processamento de dados de brasileiros ocorre no país. As medidas integram a Nova Indústria Brasil. O plano de Flávio também quer atrair data centers, com foco em energia barata, mas não fala em contrapartidas nem em soberania de dados.',
+  dado:'O Redata isenta equipamentos de data center de tributos federais e exige em troca investimento de 2% em pesquisa e inovação e a reserva de ao menos 10% da capacidade ao mercado nacional. Hoje só cerca de 40% do processamento de dados de brasileiros ocorre no país. As medidas integram a Nova Indústria Brasil. O plano de Flávio Bolsonaro também quer atrair data centers, com foco em energia barata, mas não fala em contrapartidas nem em soberania de dados.',
   fonte:'Itatiaia; Fast Company Brasil', link:'https://www.itatiaia.com.br/politica/lula-lanca-programa-para-atrair-datacenters-e-reforcar-soberania-digital/', ref:'2024 a 2026',
   termos:'inteligencia artificial ia data center datacenter redata pbia soberania digital nuvem big techs tecnologia' },
 
@@ -1095,5 +1095,139 @@ window.FICHAS = [
   dado:'O Bolsa Família é pago preferencialmente à mãe, e o adicional por criança e gestante foi recriado em 2023. As fichas sobre aborto, igrejas, imposto de igrejas e banheiro unissex detalham os boatos mais comuns.',
   fonte:'Poder360; Correio Braziliense', link:'https://www.poder360.com.br/eleicoes/em-carta-aos-evangelicos-lula-defende-liberdade-de-culto/', ref:'2022 a 2026',
   termos:'contra a familia destruir a familia cristaos evangelicos catolicos valores cristaos fe religiao perseguicao religiosa familia tradicional' },
+
+
+// ---------------- LOTE 8: TEMAS DO DEBATE DA BAND, PLANO DE FLÁVIO BOLSONARO, BOATOS E DIREITOS ----------------
+{ id:'pla-tesouraco', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'Flávio Bolsonaro vai fazer um tesouraço nos gastos, como Milei?', veredito:'DADO',
+  resumo:'O plano de Flávio Bolsonaro usa a palavra Tesouraço para prometer equilíbrio fiscal, reforma do Estado e menos impostos. Propõe substituir o arcabouço fiscal por regras focadas em reduzir a dívida, entregar superávits primários e criar um limite para gastos discricionários dos três Poderes.',
+  dado:'O plano não diz quais despesas seriam cortadas nem quanto. Gastos discricionários são justamente os que sustentam investimentos, custeio da saúde e da educação e programas sociais não obrigatórios. Ao mesmo tempo, o plano promete manter programas sociais e reduzir impostos. Na Band, perguntado se seguiria o modelo de Javier Milei, Flávio Bolsonaro não respondeu.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE; O Povo', link:'https://mais.opovo.com.br/jornal/politica/2026/10/19/1-debate-de-lula-e-flavio-bolsonaro-tem-ataques-poucas-propostas-e-escandalos-sem-respostas.html', ref:'2026',
+  termos:'tesouraco tesourada corte de gastos cortar gastos ajuste fiscal motosserra milei arcabouco regra fiscal teto de gastos austeridade' },
+
+{ id:'eco-milei', tema:'Política externa e comércio', quem:'Dado oficial', frase:'Como está a Argentina de Milei?', veredito:'DADO',
+  resumo:'A inflação anual caiu de mais de 200% em 2023 para 31,5% em 2025, a menor em oito anos. A pobreza subiu para quase 53% no primeiro semestre de 2024, depois do choque de cortes e desvalorização, caiu para 28,2% no fim de 2025 e voltou a subir para 32,3% no primeiro semestre de 2026, segundo o Indec.',
+  dado:'O desemprego chegou a 7,9% no segundo trimestre de 2026, o maior desde 2021, e os salários médios seguem abaixo do nível real de dezembro de 2023. Para comparar, a inflação brasileira de 2025 foi de 4,3% e o desemprego, o menor da série.',
+  fonte:'Buenos Aires Herald; Al Jazeera, com dados do Indec', link:'https://www.aljazeera.com/news/2026/9/25/argentinas-poverty-rises-to-32-percent-under-milei-with-more-pain-forecast', ref:'2023 a 2026',
+  termos:'milei argentina motosserra modelo argentino ajuste argentina pobreza argentina' },
+
+{ id:'ext-nicaragua', tema:'Política externa e comércio', quem:'Flávio Bolsonaro', frase:'Os amigos de Lula são ditadores como Ortega e Maduro.', veredito:'FALTA_CONTEXTO',
+  resumo:'Lula rompeu com Daniel Ortega. Em 2024, depois de o ditador nicaraguense ignorar seu pedido, feito a pedido do papa Francisco, pela libertação de um bispo preso, Lula disse que não falava mais com ele. A Nicarágua expulsou o embaixador brasileiro e o Brasil respondeu expulsando a embaixadora nicaraguense, em agosto de 2024.',
+  dado:'Com a Venezuela, Lula recebeu Maduro em 2023, mas o Brasil não reconheceu a vitória dele na eleição de 2024 por falta de atas. A ficha sobre Venezuela traz os detalhes. Bolsonaro, por sua vez, visitou Putin dias antes da invasão da Ucrânia e manteve boas relações com governos autoritários como o da Arábia Saudita.',
+  fonte:'Brasil de Fato; Correio Braziliense', link:'https://www.brasildefato.com.br/2024/08/08/brasil-responde-nicaragua-e-anuncia-expulsao-da-embaixadora-no-pais/', ref:'2023 a 2026',
+  termos:'ortega nicaragua ditador ditadores amigos de lula ditaduras comunistas cuba maduro' },
+
+{ id:'ele-bondades', tema:'Eleição', quem:'Flávio Bolsonaro', frase:'Lula está gastando dinheiro público para comprar votos e se reeleger.', veredito:'FALTA_CONTEXTO',
+  resumo:'O governo ampliou programas em 2026, como a isenção do IR até R$ 5 mil, o Gás do Povo e a liberação de FGTS. Um levantamento do Poder360 somou ao menos R$ 403 bilhões em programas sociais em 2026, mas quase 40% desse total é o Bolsa Família, que já existia e é pago todo ano.',
+  dado:'A isenção do IR foi aprovada pelo Congresso com apoio de quase todos os partidos, inclusive o de Flávio Bolsonaro, e é compensada por imposto mínimo sobre altas rendas. Em 2022, Bolsonaro aprovou a PEC Kamikaze a três meses da eleição, liberando cerca de R$ 41 bilhões fora do teto para Auxílio Brasil de R$ 600, auxílio a caminhoneiros e vale-gás, que acabavam em dezembro. Em 2024 o STF considerou a emenda inconstitucional.',
+  fonte:'Poder360; Congresso em Foco', link:'https://www.poder360.com.br/poder-economia/pacote-de-bondades-de-lula-soma-r-4032-bi-em-ano-eleitoral/', ref:'2022 e 2026',
+  termos:'eleitoreiro gasto eleitoral comprar votos pacote de bondades bondades gastanca medidas eleitorais pec kamikaze uso da maquina' },
+
+{ id:'seg-ana-clara', tema:'Segurança', quem:'Dado oficial', frase:'O que é o caso Ana Clara citado por Lula?', veredito:'DADO',
+  resumo:'Ana Clara Gomes Machado, de 5 anos, morreu em fevereiro de 2021 atingida por tiro de fuzil enquanto brincava na porta de casa, em Niterói (RJ). O Ministério Público denunciou um cabo da PM por atirar em área residencial mesmo após alertas de moradores. A Justiça mandou o caso a júri popular, ainda sem data.',
+  dado:'O PM responde em liberdade desde novembro de 2021. Flávio Bolsonaro assinou, como um dos advogados, recurso da defesa ao STJ para evitar o júri; o pedido foi negado. Questionado por Lula na Band, Flávio Bolsonaro não respondeu sobre o caso.',
+  fonte:'Gazeta SP', link:'https://www.gazetasp.com.br/cotidiano/o-que-e-o-caso-ana-clara-menina-de-cinco-anos-morta-por-pm-no-rio-de-janeiro-e-defendido-por-flavio-bolsonaro-citado-no-debate-da-tv-band/', ref:'2021 a 2026',
+  termos:'ana clara niteroi menina morta policial pm advogado flavio defendeu policial bala perdida crianca' },
+
+{ id:'ele-propaganda-tse', tema:'Eleição', quem:'Dado oficial', frase:'O TSE mandou tirar do ar a propaganda de Lula sobre Flávio Bolsonaro e o Banco Master.', veredito:'VERDADEIRO',
+  resumo:'Em 10 de outubro, o ministro Nunes Marques suspendeu em decisão liminar uma peça que chamava Flávio Bolsonaro e seu vice de dupla dos escândalos e dizia que Flávio Bolsonaro era investigado por corrupção e lavagem no caso Master. Para o ministro, a peça usava acusações criminais sem comprovação suficiente.',
+  dado:'A decisão tratou da propaganda, não dos fatos do caso. Seguem documentados, por exemplo, o pedido de Flávio Bolsonaro a Daniel Vorcaro para financiar o filme Dark Horse, que ele próprio admitiu. O TSE também mandou apagar publicações de outros lados ao longo da campanha.',
+  fonte:'Congresso em Foco', link:'https://www.congressoemfoco.com.br/noticia/123163/nunes-manda-apagar-peca-eleitoral-de-lula-que-associa-flavio-ao-master', ref:'out/2026',
+  termos:'tse propaganda tirada do ar censurada mentira de lula nunes marques propaganda master direito de resposta' },
+
+{ id:'trb-aplicativos', tema:'Emprego e renda', quem:'Dado oficial', frase:'O que Lula fez pelos motoristas e entregadores de aplicativo?', veredito:'DADO',
+  resumo:'O governo enviou em 2024 um projeto para motoristas e depois negociou um texto que inclui entregadores, com previdência, seguro e remuneração mínima. O governo defende piso de R$ 10 por entrega mais R$ 2,50 por km; o relator propôs R$ 8,50. O projeto não foi votado e o líder do governo defendeu adiar a votação para depois da eleição.',
+  dado:'As empresas são contra o valor mínimo, e pesquisa Quaest de março de 2026 mostrou 71% contra a taxa mínima proposta. Há cerca de 2,2 milhões de trabalhadores por aplicativo. O plano de Flávio Bolsonaro não trata da regulamentação do trabalho por aplicativo.',
+  fonte:'SBT News; Portal de Prefeitura', link:'https://sbtnews.sbt.com.br/noticia/politica/lider-do-governo-na-camara-defende-adiar-projeto-dos-entregadores-por-aplicativo-para-depois-das-eleicoes', ref:'2024 a 2026',
+  termos:'aplicativo uber ifood motorista de aplicativo entregador entregadores motoboy plataformas regulamentacao' },
+
+{ id:'trb-pejotizacao', tema:'Emprego e renda', quem:'Dado oficial', frase:'O STF vai liberar a pejotização?', veredito:'DADO',
+  resumo:'O STF ainda vai decidir, no Tema 1389, relatado por Gilmar Mendes, se é válido contratar trabalhadores como pessoa jurídica em vez de carteira assinada. Em junho de 2026 o ministro liberou os processos trabalhistas que estavam parados, menos os do TST, e disse que quer julgar ainda neste ano.',
+  dado:'Se o STF validar a prática de forma ampla, empresas poderão substituir empregos com carteira por contratos de PJ, sem férias, 13º e FGTS, e a Previdência perde arrecadação. Defensores dizem que dá liberdade de contratação.',
+  fonte:'Poder360', link:'https://www.poder360.com.br/poder-justica/gilmar-mendes-retira-suspensao-dos-processos-sobre-pejotizacao/', ref:'2025 e 2026',
+  termos:'pejotizacao pj pessoa juridica carteira assinada clt vinculo empregaticio direitos trabalhistas' },
+
+{ id:'sau-dengue', tema:'Saúde', quem:'Dado oficial', frase:'A dengue explodiu no governo Lula.', veredito:'FALTA_CONTEXTO',
+  resumo:'2024 foi o pior ano de dengue da história, com 6,6 milhões de casos prováveis e 6.321 mortes, numa epidemia que atingiu toda a América Latina, ligada ao calor recorde e ao El Niño. Em 2025 os casos caíram 75%, para 1,66 milhão, e as mortes 71%, para 1.793.',
+  dado:'O Ministério da Saúde cortou 61% do gasto com campanhas de prevenção entre 2022 e 2023, o que a oposição critica. Em 2024 o SUS passou a vacinar adolescentes com a vacina japonesa, e em janeiro de 2026 começou a aplicar a vacina de dose única do Butantan, suspensa em junho de 2026 para investigar eventos raros em 42 vacinados.',
+  fonte:'Poder360; O Povo', link:'https://www.poder360.com.br/poder-saude/brasil-fecha-2025-com-166-mi-de-casos-e-1-793-mortes-por-dengue/', ref:'2024 a 2026',
+  termos:'dengue epidemia mosquito aedes chikungunya vacina da dengue butantan' },
+
+{ id:'amb-licenciamento', tema:'Meio ambiente', quem:'Dado oficial', frase:'O que aconteceu com a lei do licenciamento ambiental, o PL da devastação?', veredito:'DADO',
+  resumo:'O Congresso aprovou em 2025 a lei geral do licenciamento, chamada por críticos de PL da devastação. Lula vetou dezenas de trechos, e em novembro de 2025, logo depois da COP30, o Congresso derrubou quase todos os vetos, restabelecendo a licença por adesão e compromisso, uma espécie de autodeclaração, também para empreendimentos de médio impacto.',
+  dado:'A lei dispensa licença para obras de manutenção, deixa estados e municípios definirem o que precisa ser licenciado e limita a consulta à Funai e a órgãos de quilombolas a terras já homologadas ou tituladas. O plano de Flávio Bolsonaro promete licenciamento ágil, com prazos definidos.',
+  fonte:'Agência Câmara', link:'https://www.camara.leg.br/noticias/1227650-congresso-derruba-vetos-de-lula-ao-licenciamento-ambiental/', ref:'2025',
+  termos:'licenciamento ambiental pl da devastacao licenca ambiental autolicenciamento ibama vetos obras paradas' },
+
+{ id:'ele-reeleicao', tema:'Eleição', quem:'Dado oficial', frase:'Lula prometeu que governaria só um mandato.', veredito:'VERDADEIRO',
+  resumo:'Em 25 de outubro de 2022, Lula escreveu nas redes que, se eleito, seria presidente de um mandato só. Em 2025 ele anunciou que disputaria a reeleição.',
+  dado:'O plano de Flávio Bolsonaro propõe acabar com a reeleição para presidente e cita uma PEC de autoria do próprio candidato no Senado. A reeleição foi criada em 1997, no governo Fernando Henrique Cardoso, e Bolsonaro disputou a reeleição em 2022 depois de ter defendido, em 2018, o fim dela.',
+  fonte:'Jornal Opção; Portal Tela', link:'https://www.jornalopcao.com.br/eleicoes-2022/lula-diz-que-nao-buscara-reeleicao-caso-venca-no-domingo-436673/', ref:'2022 a 2026',
+  termos:'reeleicao fim da reeleicao mandato so um mandato promessa quebrada lula prometeu' },
+
+{ id:'sau-autismo-mental', tema:'Saúde', quem:'Dado oficial', frase:'O que cada um propõe para autismo e saúde mental?', veredito:'DADO',
+  resumo:'Os atendimentos a pessoas com autismo no SUS cresceram 84% entre 2022 e 2025, de 12 para 22 milhões, e o gasto passou de R$ 119 milhões para R$ 222 milhões. Em abril de 2026 o governo anunciou R$ 83 milhões para 59 novos serviços, levando a rede a 361 centros especializados em reabilitação.',
+  dado:'O plano de Lula propõe ampliar a rede de atenção psicossocial e os CAPS, citando autismo e apostas. O plano de Flávio Bolsonaro promete centros de referência em autismo e diagnóstico precoce de TDAH, depressão e ansiedade, sem dizer onde o atendimento seria feito nem citar a rede de CAPS.',
+  fonte:'Ministério da Saúde, via BNews; Outras Palavras', link:'https://www.bnewssaopaulo.com.br/noticias/politica/governo-anuncia-r-83-milhoes-para-ampliar-atendimento-a-pessoas-com-autismo.html', ref:'2022 a 2026',
+  termos:'autismo autista tea tdah saude mental caps depressao ansiedade neurodivergentes terapias' },
+
+{ id:'dir-racismo', tema:'Segurança', quem:'Dado oficial', frase:'Os negros são as maiores vítimas da violência no Brasil?', veredito:'VERDADEIRO',
+  resumo:'Sim. Pessoas negras foram 77% das vítimas de homicídio em 2024, 32.820 mortes, segundo o Atlas da Violência de 2026. A taxa foi de 27,3 por 100 mil entre negros e 10,1 entre não negros, um risco 170% maior.',
+  dado:'Desde 2023 a injúria racial é equiparada ao racismo, crime inafiançável e imprescritível, por lei sancionada por Lula. O governo recriou o Ministério da Igualdade Racial e renovou a Lei de Cotas. O plano de Flávio Bolsonaro não menciona racismo.',
+  fonte:'Atlas da Violência 2026 (Ipea e FBSP), via BNews', link:'https://www.bnewssaopaulo.com.br/noticias/politica/atlas-da-violencia-mostra-que-populacao-negra-concentra-77-dos-homicidios-no-brasil.html', ref:'2024',
+  termos:'racismo negros pretos pardos igualdade racial injuria racial violencia contra negros discriminacao' },
+
+{ id:'dir-lgbt', tema:'Segurança', quem:'Dado oficial', frase:'Quantas pessoas LGBT são mortas no Brasil?', veredito:'DADO',
+  resumo:'O Grupo Gay da Bahia contou 257 mortes violentas de pessoas LGBT+ em 2025, uma a cada 34 horas, contra 291 em 2024. A ONG diz que o número é subestimado porque se baseia em notícias.',
+  dado:'Desde 2019, por decisão do STF, a homofobia e a transfobia são punidas como crime de racismo. O casamento entre pessoas do mesmo sexo é garantido pelo STF desde 2011 e por resolução do CNJ desde 2013. O plano de Flávio Bolsonaro não menciona a população LGBT.',
+  fonte:'Grupo Gay da Bahia, via Correio Braziliense', link:'https://www.correiobraziliense.com.br/brasil/2026/01/7335680-levantamento-mapeia-mortes-de-pessoas-lgbt-no-brasil-iceberg-de-odio.html', ref:'2024 e 2025',
+  termos:'lgbt gays lesbicas trans travestis homofobia transfobia casamento gay homossexuais' },
+
+{ id:'soc-cuidados', tema:'Fome e pobreza', quem:'Dado oficial', frase:'O que cada um propõe para os idosos e para quem cuida deles?', veredito:'DADO',
+  resumo:'Lula sancionou em dezembro de 2024 a Política Nacional de Cuidados (Lei 15.069), que divide a responsabilidade do cuidado de crianças, idosos e pessoas com deficiência entre Estado, famílias, empresas e sociedade e prevê um plano nacional com metas. As mulheres dedicam o dobro do tempo dos homens a cuidar de outras pessoas, segundo o IBGE.',
+  dado:'O plano de Flávio Bolsonaro propõe o Casa Segura para Envelhecer, com subsídio para adaptar casas de idosos de baixa renda, um aplicativo de companhia com alertas e a ampliação de instituições de longa permanência. Nenhum dos dois detalha valores.',
+  fonte:'CNN Brasil; plano de governo de Flávio Bolsonaro', link:'https://www.cnnbrasil.com.br/politica/lei-que-cria-politica-nacional-de-cuidados-entra-em-vigor/', ref:'2024 a 2026',
+  termos:'idosos cuidadores cuidado cuidadoras asilo terceira idade envelhecimento alzheimer pessoas com deficiencia' },
+
+{ id:'boa-poupanca', tema:'Economia', quem:'Boato', frase:'Lula vai confiscar a poupança.', veredito:'FALSO',
+  resumo:'Não existe nenhuma proposta nesse sentido. Desde 2001 a Constituição proíbe o presidente de usar medida provisória para reter bens, poupança ou aplicações financeiras. O confisco de 1990 foi feito por Fernando Collor.',
+  dado:'Boatos anteriores confundiram o bloqueio de verbas do Orçamento, o contingenciamento, com dinheiro de poupadores. Aos Fatos e Comprova já desmentiram versões que atribuíam o confisco a Lula e a Haddad.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/falso-haddad-confisco-poupancas/', ref:'2023 a 2026',
+  termos:'confiscar poupanca confisco poupanca collor bloquear contas dinheiro do banco' },
+
+{ id:'boa-heranca', tema:'Economia', quem:'Boato', frase:'Lula vai taxar a herança em 40%.', veredito:'FALSO',
+  resumo:'O imposto sobre herança, o ITCMD, é estadual, e a alíquota máxima continua sendo 8%, fixada pelo Senado. A reforma tributária apenas tornou obrigatório que ele seja progressivo, cobrando mais de heranças maiores, como vários estados já faziam.',
+  dado:'O número de 40% vem do imposto federal dos Estados Unidos, que só atinge heranças acima de cerca de US$ 13 milhões.',
+  fonte:'Aos Fatos', link:'https://www.aosfatos.org/noticias/falso-governo-lula-imposto-sobre-heranca-40-porcento/', ref:'2024 a 2026',
+  termos:'heranca imposto sobre heranca itcmd taxar heranca inventario' },
+
+{ id:'boa-brics', tema:'Política externa e comércio', quem:'Boato', frase:'Lula vai trocar o real pela moeda do BRICS.', veredito:'FALSO',
+  resumo:'Não há moeda do BRICS. Em 2023 Lula defendeu estudar uma moeda de referência para o comércio entre os países do bloco, para reduzir a dependência do dólar, que conviveria com as moedas nacionais. A ideia não avançou e o real não seria substituído.',
+  dado:'O Brasil já faz parte do comércio em moedas locais com alguns parceiros, como a Argentina e a China, sem deixar de usar o real.',
+  fonte:'CNN Brasil', link:'https://www.cnnbrasil.com.br/economia/lula-confirma-criacao-de-uma-moeda-comum-do-brics-para-facilitar-trocas-comerciais/', ref:'2023 a 2026',
+  termos:'moeda do brics acabar com o real moeda unica moeda comum trocar o real' },
+
+{ id:'eco-blusinhas', tema:'Contas públicas', quem:'Dado oficial', frase:'Lula criou a taxa das blusinhas.', veredito:'FALTA_CONTEXTO',
+  resumo:'A cobrança de 20% sobre compras internacionais de até US$ 50 foi incluída pela Câmara em outro projeto e sancionada por Lula em 2024, valendo de agosto de 2024. Em maio de 2026 Lula zerou essa taxa por medida provisória, que o Congresso aprovou em setembro.',
+  dado:'Compras acima de US$ 50 seguem com imposto federal de 60%. O ICMS estadual, que subiu de 17% para 20% em vários estados em 2025, continua sendo cobrado. A taxa arrecadou R$ 9,6 bilhões. A indústria e o varejo nacionais defendiam a cobrança.',
+  fonte:'Forbes Brasil; Tribuna do Sertão', link:'https://forbes.com.br/forbes-money/2026/05/lula-derruba-taxa-das-blusinhas/', ref:'2024 a 2026',
+  termos:'taxa das blusinhas blusinhas shein shopee aliexpress compras internacionais importados remessa conforme' },
+
+{ id:'eco-rotativo', tema:'Economia', quem:'Dado oficial', frase:'O que mudou nos juros do cartão de crédito?', veredito:'DADO',
+  resumo:'Desde janeiro de 2024 os juros do rotativo e do parcelamento da fatura não podem passar de 100% da dívida original. A regra veio da lei do Desenrola, sancionada por Lula em 2023, porque bancos não apresentaram alternativa. Antes, a taxa média do rotativo era de 445% ao ano.',
+  dado:'Ou seja, quem deve R$ 1.000 no rotativo não pode acabar devendo mais de R$ 2.000. Os juros seguem muito altos, e o endividamento das famílias continua elevado, como mostra a ficha sobre endividamento.',
+  fonte:'Congresso em Foco', link:'https://congressoemfoco.com.br/noticia/7697/limite-para-cobranca-do-juro-do-cartao-comeca-a-valer-nesta-terca', ref:'2023 a 2026',
+  termos:'cartao de credito rotativo juros do cartao fatura parcelamento juros abusivos' },
+
+{ id:'tec-minerais', tema:'Indústria e tecnologia', quem:'Dado oficial', frase:'O que cada um propõe para minerais críticos e terras raras?', veredito:'DADO',
+  resumo:'Lula sancionou em setembro de 2026 a Política Nacional de Minerais Críticos e Estratégicos, que condiciona incentivos ao processamento no Brasil e cria um conselho ligado à Presidência que pode analisar a venda do controle de minas estratégicas. A lei foi acelerada depois que a mina de terras raras de Minaçu (GO) foi comprada por uma empresa americana com apoio do governo dos EUA.',
+  dado:'O Brasil tem lítio, nióbio, grafite, níquel e uma das maiores reservas de terras raras do mundo. O plano de Flávio Bolsonaro também fala em agregar valor no país, mas com o Estado só como regulador e atração de capital estrangeiro, e Flávio Bolsonaro disse que o Brasil pode ajudar os EUA a reduzir a dependência da China. Lula chama de traidores da pátria quem quer entregar os minerais aos EUA.',
+  fonte:'eixos', link:'https://eixos.com.br/politica/lula-volta-a-atacar-traidores-da-patria-ao-sancionar-politica-de-minerais-criticos/', ref:'2026',
+  termos:'minerais criticos terras raras litio niobio mineracao minaçu serra verde soberania mineral entregar minerais estados unidos' },
+
+{ id:'fam-carlos', tema:'Eleição', quem:'Dado oficial', frase:'Carlos Bolsonaro foi eleito senador?', veredito:'DADO',
+  resumo:'Sim. Carlos Bolsonaro, vereador no Rio de Janeiro de 2001 a 2025, transferiu o domicílio eleitoral para Santa Catarina e foi eleito senador pelo estado em 4 de outubro, com cerca de 1,9 milhão de votos, 25% dos válidos.',
+  dado:'Será seu primeiro mandato no Congresso. Ele coordenava as redes sociais do pai e foi investigado no inquérito sobre o uso da Abin para espionagem ilegal no governo Bolsonaro.',
+  fonte:'TNH1', link:'https://www.tnh1.com.br/noticia/nid/carlos-bolsonaro-do-pl-e-eleito-senador-por-santa-catarina/', ref:'out/2026',
+  termos:'carlos bolsonaro carluxo senador santa catarina filho vereador' },
 
 ];

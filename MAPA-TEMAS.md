@@ -1,6 +1,6 @@
 # Mapa de cobertura do Contraprova
 
-Situação em 21/10/2026, com 172 fichas. "Coberto" significa que a busca por uma frase livre sobre o tema leva a uma resposta direta.
+Situação em 21/10/2026, com 194 fichas. "Coberto" significa que a busca por uma frase livre sobre o tema leva a uma resposta direta.
 
 ## Coberto
 
@@ -25,12 +25,17 @@ Situação em 21/10/2026, com 172 fichas. "Coberto" significa que a busca por um
 | Igualdade | salário das mulheres, cotas e ensino superior |
 | Mundo e defesa | Mercosul e União Europeia, Rússia, Ucrânia, China e BRICS, Porto de Santos |
 | Família Bolsonaro | Michelle, prisão de Jair Bolsonaro |
+| Temas do debate da Band | tesouraço e modelo Milei, Argentina, Ortega e Nicarágua, gasto eleitoral e PEC Kamikaze, caso Ana Clara, Lulinha na Espanha, propaganda barrada pelo TSE |
+| Trabalho | aplicativos, pejotização |
+| Direitos e cuidado | racismo, população LGBT, autismo e saúde mental, idosos e Política Nacional de Cuidados |
+| Boatos econômicos | confisco da poupança, imposto sobre herança, moeda do BRICS |
+| Outros | dengue, licenciamento ambiental, reeleição, taxa das blusinhas, juros do cartão, minerais críticos e terras raras, Carlos Bolsonaro |
 | Candidatos | vices, idade de Lula, faltas e votos de Flávio, privatizações, resultado do 1º turno, plano de Flávio |
 
-## Ainda descoberto (próximos lotes, se houver tempo)
+## Ainda descoberto (sugestões se surgir algo no debate)
 
-1. **Saúde.** Dengue e Mais Médicos.
-2. **Diversidade.** Racismo e população LGBT.
-3. **Infraestrutura.** Ferrovias, rodovias e saneamento em separado do Novo PAC.
-4. **Família Bolsonaro.** Carlos e Eduardo Bolsonaro.
-5. **Número de ministérios.**
+1. **Infraestrutura.** Ferrovias, rodovias e saneamento em separado do Novo PAC.
+2. **Saúde.** Doenças raras e Tabela SUS.
+3. **Esporte e cultura**, além da Lei Rouanet.
+
+Durante o debate, a melhor fonte de novas fichas são as checagens ao vivo da Lupa, Aos Fatos e Estadão Verifica.
