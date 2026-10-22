@@ -62,6 +62,7 @@ header.topo{display:grid;gap:6px;padding-block:8px 18px}
 .situacao{font-size:14px;color:var(--tinta-2);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 .ia{margin-block:16px 4px;border:2px solid var(--acento);border-radius:12px;background:var(--superficie);padding:14px 16px;display:grid;gap:8px}
+[hidden]{display:none !important}
 .ia h2{font-family:var(--fonte-dado);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--acento);margin:0;font-weight:500}
 .ia p{margin:0}
 .ia .frase-ia{font-style:italic;color:var(--tinta-2)}
@@ -87,9 +88,9 @@ header.topo{display:grid;gap:6px;padding-block:8px 18px}
 .serie figcaption{font-size:13px;color:var(--tinta-2);margin-bottom:2px}
 .serie .lin{display:grid;grid-template-columns:3.4em 1fr 6.2em;align-items:center;gap:8px;font-size:14px}
 .serie .ano{font-family:var(--fonte-dado);font-size:12px;color:var(--tinta-2)}
-.serie .trilho{height:12px;background:var(--papel);border-radius:3px;overflow:hidden}
-.serie .barra{display:block;height:100%;border-radius:3px}
-.serie .barra.neg{background-image:repeating-linear-gradient(135deg,transparent 0 3px,var(--superficie) 3px 5px)}
+.serie .trilho{position:relative;height:12px;background:var(--papel);border-radius:3px;overflow:hidden}
+.serie .barra{position:absolute;top:0;bottom:0;border-radius:3px}
+.serie .zero{position:absolute;top:-2px;bottom:-2px;width:2px;margin-left:-1px;background:var(--tinta-2);z-index:1}
 .serie .val{text-align:right;font-family:var(--fonte-dado);font-size:12px}
 .g-B{background:var(--gov-b)} .g-L{background:var(--gov-l)} .g-T{background:var(--gov-t)}
 .serie .leg{display:flex;gap:4px 14px;flex-wrap:wrap;font-size:13px;color:var(--tinta-2);margin-top:4px}
@@ -241,11 +242,15 @@ footer p{margin:0;max-width:70ch}
 
   function fmt(v){ var a=Math.abs(v); var s = a>=1000 ? Math.round(a).toLocaleString('pt-BR') : a.toLocaleString('pt-BR',{maximumFractionDigits:2}); return (v<0?'−':'')+s; }
   function grafico(f){
-    var max = Math.max.apply(null, f.serie.map(function(x){ return Math.abs(x[1]); }));
+    var vals = f.serie.map(function(x){ return x[1]; });
+    var maxPos = Math.max(0, Math.max.apply(null, vals)), maxNeg = Math.max(0, -Math.min.apply(null, vals));
+    var total = maxPos + maxNeg, zero = total ? maxNeg/total*100 : 0;
     var temB = f.serie.some(function(x){return x[2]==='B';}), temL = f.serie.some(function(x){return x[2]==='L';}), temT = f.serie.some(function(x){return x[2]==='T';});
     var linhas = f.serie.map(function(x){
-      var w = max ? Math.max(2, Math.round(Math.abs(x[1])/max*100)) : 0;
-      return '<div class="lin"><span class="ano">'+esc(x[0])+'</span><span class="trilho"><span class="barra g-'+x[2]+(x[1]<0?' neg':'')+'" style="width:'+w+'%"></span></span><span class="val">'+fmt(x[1])+'</span></div>';
+      var w = total ? Math.max(1, Math.abs(x[1])/total*100) : 0;
+      var esq = x[1] < 0 ? zero - w : zero;
+      var eixo = maxNeg ? '<span class="zero" style="left:'+zero+'%"></span>' : '';
+      return '<div class="lin"><span class="ano">'+esc(x[0])+'</span><span class="trilho">'+eixo+'<span class="barra g-'+x[2]+'" style="left:'+esq.toFixed(2)+'%;width:'+w.toFixed(2)+'%"></span></span><span class="val">'+fmt(x[1])+'</span></div>';
     }).join('');
     var leg = (temT?'<span><i class="g-T"></i>Temer</span>':'')+(temB?'<span><i class="g-B"></i>Governo Bolsonaro</span>':'')+(temL?'<span><i class="g-L"></i>Governo Lula</span>':'');
     return '<figure class="serie"><figcaption>'+esc(f.unidade||'')+'</figcaption>'+linhas+'<div class="leg">'+leg+'</div>'+(f.nota?'<p class="nota">'+esc(f.nota)+'</p>':'')+'</figure>';
