@@ -2,7 +2,7 @@
 
 Ferramenta para o eleitor checar, durante o debate da Globo (sexta, 23/10), as frases dos candidatos. Funciona em duas camadas.
 
-1. **Busca nas fichas, sem IA e sem custo.** Roda no celular do eleitor. São 90 fichas com dados oficiais e checagens da Lupa, Aos Fatos e Estadão Verifica (Band, 18/10, e entrevista de Flávio à Globo, 16/10), mais o plano de governo de Flávio registrado no TSE.
+1. **Busca nas fichas, sem IA e sem custo.** Roda no celular do eleitor. São 205 fichas, incluindo 14 painéis de indicador e 12 panoramas de temas complexos (como INSS e Banco Master) com a série histórica de cada indicador por governo, com dados oficiais e checagens da Lupa, Aos Fatos e Estadão Verifica (Band, 18/10, e entrevista de Flávio à Globo, 16/10), mais o plano de governo de Flávio registrado no TSE e os boatos que mais circulam (aborto, igrejas, Pix, urnas, drogas, Venezuela, MST).
 2. **Botão "Checar frase", opcional.** Manda a frase e as 6 fichas mais próximas para o modelo Haiku, que só compara a frase com as fichas. Não pesquisa na internet. Respostas repetidas saem do cache, sem novo gasto.
 
 ## Arquivos
@@ -33,6 +33,12 @@ Ferramenta para o eleitor checar, durante o debate da Globo (sexta, 23/10), as f
 Copie um bloco de `fichas.js`, troque o `id`, preencha os campos e suba o arquivo. A página mostra a ficha na hora para quem recarregar. Campos que mais importam para a busca são `frase` e `termos` (palavras que o eleitor provavelmente vai digitar).
 
 Vereditos aceitos: `VERDADEIRO`, `FALSO`, `ENGANOSO`, `EXAGERADO`, `SUBESTIMADO`, `IMPRECISO`, `FALTA_CONTEXTO`, `INSUSTENTAVEL`, `DADO`.
+
+No campo `quem`, use o nome do candidato, `Dado oficial`, `Plano de Flávio`, `Plano de Lula` ou `Boato` (frases que circulam sem autor definido).
+
+Painéis de indicador têm `tipo:'indicador'` e um campo `serie` com `[ano, valor, governo]`, em que governo é `B` (Bolsonaro), `L` (Lula) ou `T` (Temer). A página desenha as barras sozinha.
+
+Fichas-panorama, que explicam um caso inteiro (por exemplo o escândalo do INSS), levam `tipo:'panorama'` e ganham prioridade na busca. O arquivo `MAPA-TEMAS.md` lista o que está coberto e o que falta.
 
 ## Cuidados
 

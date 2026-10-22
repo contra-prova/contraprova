@@ -308,7 +308,7 @@ window.FICHAS = [
 
 { id:'soc-pe-de-meia', tema:'Educação', quem:'Dado oficial', frase:'O que é o Pé-de-Meia e ele funciona?', veredito:'DADO',
   resumo:'Poupança para estudantes de baixa renda do ensino médio público. Atendeu 5,6 milhões de alunos com R$ 18,6 bilhões em 2024 e 2025.',
-  dado:'Segundo o MEC, o abandono no ensino médio caiu de 6,4% para 3,6%. Estudo independente do Centro de Evidências da Educação Integral estima que o programa evita a evasão de 1 em cada 4 jovens vulneráveis que deixariam a escola. O plano de Flávio Bolsonaro não cita o programa.',
+  dado:'Segundo o MEC, o abandono no ensino médio caiu de 6,4% para 3,6%. Estudo independente do Centro de Evidências da Educação Integral estima que o programa evita a evasão de 1 em cada 4 jovens vulneráveis que deixariam a escola. O plano de Flávio Bolsonaro não cita o programa. O programa de Lula promete manter e aprimorar o Pé-de-Meia.',
   fonte:'MEC e Centro de Evidências da Educação Integral', link:'https://www.poder360.com.br/poder-educacao/pe-de-meia-evita-evasao-escolar-de-1-a-cada-4-alunos-diz-estudo/', ref:'2024 e 2025',
   termos:'pe de meia ensino medio evasao escolar estudantes poupanca educacao' },
 
@@ -339,7 +339,7 @@ window.FICHAS = [
 // ---------------- SAÚDE ----------------
 { id:'sau-mais-medicos', tema:'Saúde', quem:'Lula', frase:'O Mais Médicos tinha 12 mil quando voltei e hoje tem 27 mil.', veredito:'IMPRECISO',
   resumo:'Eram 13,7 mil médicos em 2023, não 12 mil. Em dezembro de 2025 havia 27,3 mil profissionais.',
-  dado:'O pico anterior foi de 18,2 mil em 2015. A meta do governo é chegar a 28 mil. O plano de Flávio Bolsonaro não menciona o programa.',
+  dado:'O pico anterior foi de 18,2 mil em 2015. A meta do governo é chegar a 28 mil. O plano de Flávio Bolsonaro não menciona o programa. O programa de Lula promete manter o Mais Médicos, com foco em fixar profissionais e formar médicos de família.',
   fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'2015 a 2025',
   termos:'mais medicos medicos saude atencao basica posto de saude' },
 
@@ -412,7 +412,7 @@ window.FICHAS = [
 
 { id:'seg-maioridade-lula', tema:'Segurança', quem:'Flávio Bolsonaro', frase:'Na proposta de Lula, traficante e ladrão de celular ficam fora da redução da maioridade.', veredito:'ENGANOSO',
   resumo:'A proposta defendida pelo PT reduz a maioridade para 16 anos apenas para crimes hediondos. O tráfico de drogas é equiparado a crime hediondo pela Constituição.',
-  dado:'O plano de Flávio Bolsonaro propõe reduzir a maioridade penal para 16 anos e punir maiores de 14 por crimes graves.',
+  dado:'O plano de Flávio Bolsonaro propõe reduzir a maioridade penal para 16 anos e punir maiores de 14 por crimes graves. O programa de Lula não trata de maioridade penal.',
   fonte:'Estadão Verifica', link:'https://www.folhavitoria.com.br/eleicoes/lula-e-flavio-bolsonaro-checagem-aponta-o-que-e-falso-e-verdadeiro-no-debate-presidencial/', ref:'out/2026',
   termos:'maioridade penal 16 anos menor infrator hediondo trafico' },
 
@@ -652,7 +652,7 @@ window.FICHAS = [
 // ---------------- COSTUMES, RELIGIÃO E BOATOS RECORRENTES ----------------
 { id:'cos-aborto-lula', tema:'Costumes e religião', quem:'Boato', frase:'Lula é a favor do aborto.', veredito:'FALTA_CONTEXTO',
   resumo:'Lula declarou várias vezes ser pessoalmente contra o aborto e defende que o tema seja decidido pelo Congresso. Seu governo não mudou a lei, que só permite o aborto em caso de estupro, risco de vida da gestante e anencefalia.',
-  dado:'Em abril de 2022 Lula disse que o aborto deveria ser tratado como questão de saúde pública, fala que gerou críticas; depois, em carta a evangélicos, reafirmou ser contra. Na Constituinte de 1988 apoiou manter a criminalização. Críticos citam atos do governo, como a saída do Consenso de Genebra (2023), uma nota técnica do Ministério da Saúde sobre prazos do aborto legal revogada dois dias depois (2024) e informações sobre aborto legal na Caderneta da Gestante (2026). Os planos de governo de Lula não propõem legalizar o aborto. O plano de Flávio Bolsonaro defende a vida desde a concepção.',
+  dado:'Em abril de 2022 Lula disse que o aborto deveria ser tratado como questão de saúde pública, fala que gerou críticas; depois, em carta a evangélicos, reafirmou ser contra. Na Constituinte de 1988 apoiou manter a criminalização. Críticos citam atos do governo, como a saída do Consenso de Genebra (2023), uma nota técnica do Ministério da Saúde sobre prazos do aborto legal revogada dois dias depois (2024) e informações sobre aborto legal na Caderneta da Gestante (2026). Os planos de governo de Lula não propõem legalizar o aborto. O plano de Flávio Bolsonaro defende a vida desde a concepção. O programa de governo de Lula não menciona aborto.',
   fonte:'Aos Fatos, Comprova (CNN Brasil) e Poder360', link:'https://www.poder360.com.br/governo/lula-disse-em-2022-que-era-contra-o-aborto-relembre/', ref:'1988 a 2026',
   termos:'aborto abortista legalizar aborto pro aborto vida desde a concepcao nascituro gravidez feto' },
 
@@ -706,7 +706,7 @@ window.FICHAS = [
 
 { id:'cos-censura', tema:'Indústria e tecnologia', quem:'Flávio Bolsonaro', frase:'O governo Lula censura a internet e quer calar a direita.', veredito:'FALTA_CONTEXTO',
   resumo:'Não há lei de censura aprovada no governo Lula. O que mudou foi a responsabilidade das plataformas, definida pelo STF em 2025, e a proteção de crianças na internet, aprovada pelo Congresso.',
-  dado:'Em junho de 2025 o STF considerou parcialmente inconstitucional o artigo 19 do Marco Civil da Internet e ampliou os casos em que as plataformas respondem por conteúdo ilegal que não removem. Em setembro de 2025 foi sancionado o ECA Digital (Lei 15.211), com regras de proteção a crianças e adolescentes on-line. O PL das Fake News (2630) não foi votado. Críticos veem risco de remoção excessiva de conteúdo; o plano de Flávio Bolsonaro propõe extinguir o que chama de Ministério da Verdade.',
+  dado:'Em junho de 2025 o STF considerou parcialmente inconstitucional o artigo 19 do Marco Civil da Internet e ampliou os casos em que as plataformas respondem por conteúdo ilegal que não removem. Em setembro de 2025 foi sancionado o ECA Digital (Lei 15.211), com regras de proteção a crianças e adolescentes on-line. O PL das Fake News (2630) não foi votado. Críticos veem risco de remoção excessiva de conteúdo; o plano de Flávio Bolsonaro propõe extinguir o que chama de Ministério da Verdade. O programa de Lula defende regular as redes sociais e plataformas para impedir desinformação e campanhas de ódio.',
   fonte:'STF e Planalto', link:'https://portaldeprefeitura.com.br/noticia/detalhe/gilmar-mendes-diz-que-julgamento-do-marco-civil-no-stf-pode-ser/596179/', ref:'2025',
   termos:'censura liberdade de expressao redes sociais regulacao das redes marco civil artigo 19 eca digital big techs fake news calar a direita ministerio da verdade' },
 
@@ -954,7 +954,7 @@ window.FICHAS = [
 
 { id:'tec-soberania', tipo:'panorama', tema:'Indústria e tecnologia', quem:'Dado oficial', frase:'O que o governo Lula fez em inteligência artificial e soberania digital?', veredito:'DADO',
   resumo:'O governo lançou o Plano Brasileiro de Inteligência Artificial, com cerca de R$ 23 bilhões previstos até 2028, e em setembro de 2025 o Redata, regime tributário para atrair data centers ao país.',
-  dado:'O Redata isenta equipamentos de data center de tributos federais e exige em troca investimento de 2% em pesquisa e inovação e a reserva de ao menos 10% da capacidade ao mercado nacional. Hoje só cerca de 40% do processamento de dados de brasileiros ocorre no país. As medidas integram a Nova Indústria Brasil. O plano de Flávio Bolsonaro também quer atrair data centers, com foco em energia barata, mas não fala em contrapartidas nem em soberania de dados.',
+  dado:'O Redata isenta equipamentos de data center de tributos federais e exige em troca investimento de 2% em pesquisa e inovação e a reserva de ao menos 10% da capacidade ao mercado nacional. Hoje só cerca de 40% do processamento de dados de brasileiros ocorre no país. As medidas integram a Nova Indústria Brasil. O plano de Flávio Bolsonaro também quer atrair data centers, com foco em energia barata, mas não fala em contrapartidas nem em soberania de dados. O programa de Lula propõe um Conselho Nacional pela Soberania Digital e fomento a data centers, nuvem e IA de empresas brasileiras.',
   fonte:'Itatiaia; Fast Company Brasil', link:'https://www.itatiaia.com.br/politica/lula-lanca-programa-para-atrair-datacenters-e-reforcar-soberania-digital/', ref:'2024 a 2026',
   termos:'inteligencia artificial ia data center datacenter redata pbia soberania digital nuvem big techs tecnologia' },
 
@@ -962,7 +962,7 @@ window.FICHAS = [
 // ---------------- LOTE 6: SAÚDE, ESTADO, INDÍGENAS, INFRAESTRUTURA, CLIMA, IGUALDADE, ENSINO SUPERIOR, MUNDO, DEFESA, FAMÍLIA BOLSONARO ----------------
 { id:'sau-filas', tipo:'panorama', tema:'Saúde', quem:'Dado oficial', frase:'A fila do SUS para cirurgias e especialistas não anda.', veredito:'FALTA_CONTEXTO',
   resumo:'O SUS fez 14,9 milhões de cirurgias eletivas em 2025 e mais de 7,5 milhões no 1º semestre de 2026, 8% acima do mesmo período de 2025. Mas auditoria do TCU concluiu que o aumento não reduziu de forma consistente as esperas: cerca de um quarto dos pacientes enfrenta filas maiores.',
-  dado:'O programa Agora Tem Especialistas respondeu por 2,92 milhões das cirurgias do semestre e recebeu R$ 3,3 bilhões em 2025. O TCU aponta falta de especialistas, oferta concentrada e ausência de base nacional para acompanhar o paciente na fila; o Ministério da Saúde contesta parte das conclusões. O plano de Flávio Bolsonaro propõe comprar vagas ociosas da rede privada.',
+  dado:'O programa Agora Tem Especialistas respondeu por 2,92 milhões das cirurgias do semestre e recebeu R$ 3,3 bilhões em 2025. O TCU aponta falta de especialistas, oferta concentrada e ausência de base nacional para acompanhar o paciente na fila; o Ministério da Saúde contesta parte das conclusões. O plano de Flávio Bolsonaro propõe comprar vagas ociosas da rede privada. O programa de Lula promete ampliar o Agora Tem Especialistas e criar fila única digital por risco clínico.',
   fonte:'Ministério da Saúde, via JB; TCU, via Jornal de Brasília', link:'https://jornaldebrasilia.com.br/noticias/politica-e-poder/programa-de-lula-amplia-atendimentos-mas-1-4-dos-pacientes-enfrenta-espera-maior-diz-tcu/', ref:'2023 a 2026',
   termos:'fila do sus cirurgia cirurgias eletivas especialistas agora tem especialistas espera exames consulta saude publica hospital' },
 
@@ -981,7 +981,7 @@ window.FICHAS = [
 
 { id:'ind-marco-temporal', tipo:'panorama', tema:'Campo e agro', quem:'Dado oficial', frase:'O que aconteceu com o marco temporal das terras indígenas?', veredito:'DADO',
   resumo:'Em 2023 o STF derrubou a tese de que só têm direito à terra os povos que a ocupavam em 1988. Dias depois o Congresso aprovou lei recriando a tese; Lula vetou trechos e o Congresso derrubou os vetos. Em dezembro de 2025 o STF manteve boa parte da lei, mas derrubou de novo o marco de 1988 e deu dez anos ao governo para concluir as demarcações pendentes.',
-  dado:'Ficaram regras mais amplas de indenização a proprietários, a participação de estados, municípios e fazendeiros desde o início das demarcações e o direito de posseiros permanecerem até serem indenizados. Recursos contra a decisão foram julgados em agosto de 2026. O plano de Flávio Bolsonaro não trata do marco temporal.',
+  dado:'Ficaram regras mais amplas de indenização a proprietários, a participação de estados, municípios e fazendeiros desde o início das demarcações e o direito de posseiros permanecerem até serem indenizados. Recursos contra a decisão foram julgados em agosto de 2026. O plano de Flávio Bolsonaro não trata do marco temporal. O programa de Lula cita 20 terras indígenas homologadas no mandato e reafirma a proteção dos territórios, sem mencionar o marco temporal.',
   fonte:'Diario de Pernambuco', link:'https://www.diariodepernambuco.com.br/brasil/2026/08/11720578-stf-volta-a-julgar-recursos-sobre-lei-do-marco-temporal-nesta-sexta-7.html', ref:'2023 a 2026',
   termos:'marco temporal indigenas terras indigenas demarcacao indios reserva fazendeiros' },
 
@@ -1005,19 +1005,19 @@ window.FICHAS = [
 
 { id:'mul-igualdade', tema:'Emprego e renda', quem:'Dado oficial', frase:'As mulheres ainda ganham menos que os homens?', veredito:'DADO',
   resumo:'Sim. Nas empresas com 100 ou mais empregados, as mulheres ganhavam em média 21,3% menos que os homens em dezembro de 2025, diferença um pouco maior que a de 2023 (20,7%), segundo o relatório exigido pela Lei de Igualdade Salarial (Lei 14.611/2023).',
-  dado:'A lei obriga as empresas a publicar relatórios e corrigir distorções. O emprego de mulheres nessas empresas subiu de 7,2 para 8 milhões, e o de mulheres negras cresceu 29%. O plano de Flávio Bolsonaro não menciona a Lei de Igualdade Salarial.',
+  dado:'A lei obriga as empresas a publicar relatórios e corrigir distorções. O emprego de mulheres nessas empresas subiu de 7,2 para 8 milhões, e o de mulheres negras cresceu 29%. O plano de Flávio Bolsonaro não menciona a Lei de Igualdade Salarial. O programa de Lula promete reforçar a aplicação da Lei de Igualdade Salarial.',
   fonte:'Ministério do Trabalho, 5º Relatório de Transparência Salarial, via IstoÉ Dinheiro', link:'https://istoedinheiro.com.br/mulheres-recebem-menos-homens-27426', ref:'2023 a 2025',
   termos:'mulheres salario das mulheres igualdade salarial desigualdade de genero ganham menos feminismo' },
 
 { id:'edu-cotas', tema:'Educação', quem:'Dado oficial', frase:'O que muda nas cotas e no acesso à universidade?', veredito:'DADO',
   resumo:'Lula sancionou em 2023 a atualização da Lei de Cotas, que vale até 2033 e incluiu estudantes quilombolas. O governo também anunciou 100 novos campi de institutos federais. O plano de Flávio Bolsonaro não menciona cotas, ProUni nem Fies e propõe transferir o ensino superior para o Ministério da Ciência e Tecnologia.',
-  dado:'As cotas reservam 50% das vagas das universidades e institutos federais a alunos de escola pública, com subcotas por renda e para pretos, pardos, indígenas, quilombolas e pessoas com deficiência. Críticos defendem cotas só por renda.',
+  dado:'As cotas reservam 50% das vagas das universidades e institutos federais a alunos de escola pública, com subcotas por renda e para pretos, pardos, indígenas, quilombolas e pessoas com deficiência. Críticos defendem cotas só por renda. O programa de Lula defende a política de cotas e promete expandir os institutos federais.',
   fonte:'Agência Senado; SBT News', link:'https://www12.senado.leg.br/noticias/materias/2023/11/14/sancionada-ampliacao-da-lei-de-cotas', ref:'2023 a 2026',
   termos:'cotas cotas raciais universidade faculdade prouni fies ensino superior institutos federais vestibular enem' },
 
 { id:'ext-mercosul', tema:'Política externa e comércio', quem:'Dado oficial', frase:'E o acordo Mercosul-União Europeia?', veredito:'DADO',
   resumo:'Depois de 26 anos de negociação, o acordo foi assinado em janeiro de 2026 e entrou em vigor em 1º de maio de 2026, de forma provisória do lado europeu. O Mercosul vai zerar tarifas de 91% dos produtos europeus em até 15 anos, e a União Europeia, de 95% dos produtos do Mercosul em até 12 anos.',
-  dado:'Cria uma área de livre comércio com cerca de 720 milhões de pessoas. O Parlamento Europeu pediu parecer da Justiça europeia, e agricultores europeus resistem. O plano de Flávio Bolsonaro prioriza a entrada na OCDE e não menciona o Mercosul.',
+  dado:'Cria uma área de livre comércio com cerca de 720 milhões de pessoas. O Parlamento Europeu pediu parecer da Justiça europeia, e agricultores europeus resistem. O plano de Flávio Bolsonaro prioriza a entrada na OCDE e não menciona o Mercosul. O programa de Lula promete consolidar o Mercosul como principal plataforma de integração da América do Sul.',
   fonte:'eixos', link:'https://eixos.com.br/internacional/lula-assina-decreto-que-promulga-acordo-mercosul-ue/', ref:'2026',
   termos:'mercosul uniao europeia acordo comercial europa exportacoes livre comercio ocde' },
 
@@ -1073,7 +1073,7 @@ window.FICHAS = [
 
 { id:'cos-civico-militares', tema:'Educação', quem:'Dado oficial', frase:'Lula acabou com as escolas cívico-militares.', veredito:'FALTA_CONTEXTO',
   resumo:'Em julho de 2023 o MEC encerrou o programa federal criado por Bolsonaro em 2019, que atendia pouco mais de 200 escolas. As escolas voltaram à rede regular, mas os estados podem manter o modelo com recursos próprios, e pelo menos 11 estados e o Distrito Federal anunciaram que manteriam.',
-  dado:'Em abril de 2026 Lula disse que o país não precisa expandir esse modelo e que o aluno deve aprender o mesmo conteúdo que os demais estudantes. O plano de Flávio Bolsonaro promete ampliar as escolas cívico-militares. Os estudos sobre o desempenho dessas escolas são inconclusivos, porque muitas selecionam alunos e recebem mais recursos.',
+  dado:'Em abril de 2026 Lula disse que o país não precisa expandir esse modelo e que o aluno deve aprender o mesmo conteúdo que os demais estudantes. O plano de Flávio Bolsonaro promete ampliar as escolas cívico-militares. Os estudos sobre o desempenho dessas escolas são inconclusivos, porque muitas selecionam alunos e recebem mais recursos. O programa de Lula não menciona escolas cívico-militares e prioriza a escola em tempo integral.',
   fonte:'Folha de Pernambuco; Portal de Prefeitura', link:'https://www.folhape.com.br/politica/na-contramao-de-lula-doze-governadores-anunciam-continuidade-de/280646/', ref:'2019 a 2026',
   termos:'escolas civico militares escola militar civico-militar pecim disciplina colegio militar' },
 
@@ -1136,7 +1136,7 @@ window.FICHAS = [
 
 { id:'trb-aplicativos', tema:'Emprego e renda', quem:'Dado oficial', frase:'O que Lula fez pelos motoristas e entregadores de aplicativo?', veredito:'DADO',
   resumo:'O governo enviou em 2024 um projeto para motoristas e depois negociou um texto que inclui entregadores, com previdência, seguro e remuneração mínima. O governo defende piso de R$ 10 por entrega mais R$ 2,50 por km; o relator propôs R$ 8,50. O projeto não foi votado e o líder do governo defendeu adiar a votação para depois da eleição.',
-  dado:'As empresas são contra o valor mínimo, e pesquisa Quaest de março de 2026 mostrou 71% contra a taxa mínima proposta. Há cerca de 2,2 milhões de trabalhadores por aplicativo. O plano de Flávio Bolsonaro não trata da regulamentação do trabalho por aplicativo.',
+  dado:'As empresas são contra o valor mínimo, e pesquisa Quaest de março de 2026 mostrou 71% contra a taxa mínima proposta. Há cerca de 2,2 milhões de trabalhadores por aplicativo. O plano de Flávio Bolsonaro não trata da regulamentação do trabalho por aplicativo. O programa de Lula promete incluir na regulação a contribuição previdenciária dos trabalhadores de plataforma.',
   fonte:'SBT News; Portal de Prefeitura', link:'https://sbtnews.sbt.com.br/noticia/politica/lider-do-governo-na-camara-defende-adiar-projeto-dos-entregadores-por-aplicativo-para-depois-das-eleicoes', ref:'2024 a 2026',
   termos:'aplicativo uber ifood motorista de aplicativo entregador entregadores motoboy plataformas regulamentacao' },
 
@@ -1154,13 +1154,13 @@ window.FICHAS = [
 
 { id:'amb-licenciamento', tema:'Meio ambiente', quem:'Dado oficial', frase:'O que aconteceu com a lei do licenciamento ambiental, o PL da devastação?', veredito:'DADO',
   resumo:'O Congresso aprovou em 2025 a lei geral do licenciamento, chamada por críticos de PL da devastação. Lula vetou dezenas de trechos, e em novembro de 2025, logo depois da COP30, o Congresso derrubou quase todos os vetos, restabelecendo a licença por adesão e compromisso, uma espécie de autodeclaração, também para empreendimentos de médio impacto.',
-  dado:'A lei dispensa licença para obras de manutenção, deixa estados e municípios definirem o que precisa ser licenciado e limita a consulta à Funai e a órgãos de quilombolas a terras já homologadas ou tituladas. O plano de Flávio Bolsonaro promete licenciamento ágil, com prazos definidos.',
+  dado:'A lei dispensa licença para obras de manutenção, deixa estados e municípios definirem o que precisa ser licenciado e limita a consulta à Funai e a órgãos de quilombolas a terras já homologadas ou tituladas. O plano de Flávio Bolsonaro promete licenciamento ágil, com prazos definidos. O programa de Lula não trata da lei do licenciamento.',
   fonte:'Agência Câmara', link:'https://www.camara.leg.br/noticias/1227650-congresso-derruba-vetos-de-lula-ao-licenciamento-ambiental/', ref:'2025',
   termos:'licenciamento ambiental pl da devastacao licenca ambiental autolicenciamento ibama vetos obras paradas' },
 
 { id:'ele-reeleicao', tema:'Eleição', quem:'Dado oficial', frase:'Lula prometeu que governaria só um mandato.', veredito:'VERDADEIRO',
   resumo:'Em 25 de outubro de 2022, Lula escreveu nas redes que, se eleito, seria presidente de um mandato só. Em 2025 ele anunciou que disputaria a reeleição.',
-  dado:'O plano de Flávio Bolsonaro propõe acabar com a reeleição para presidente e cita uma PEC de autoria do próprio candidato no Senado. A reeleição foi criada em 1997, no governo Fernando Henrique Cardoso, e Bolsonaro disputou a reeleição em 2022 depois de ter defendido, em 2018, o fim dela.',
+  dado:'O plano de Flávio Bolsonaro propõe acabar com a reeleição para presidente e cita uma PEC de autoria do próprio candidato no Senado. A reeleição foi criada em 1997, no governo Fernando Henrique Cardoso, e Bolsonaro disputou a reeleição em 2022 depois de ter defendido, em 2018, o fim dela. O programa de Lula defende uma reforma política e eleitoral, sem tratar da reeleição.',
   fonte:'Jornal Opção; Portal Tela', link:'https://www.jornalopcao.com.br/eleicoes-2022/lula-diz-que-nao-buscara-reeleicao-caso-venca-no-domingo-436673/', ref:'2022 a 2026',
   termos:'reeleicao fim da reeleicao mandato so um mandato promessa quebrada lula prometeu' },
 
@@ -1172,19 +1172,19 @@ window.FICHAS = [
 
 { id:'dir-racismo', tema:'Segurança', quem:'Dado oficial', frase:'Os negros são as maiores vítimas da violência no Brasil?', veredito:'VERDADEIRO',
   resumo:'Sim. Pessoas negras foram 77% das vítimas de homicídio em 2024, 32.820 mortes, segundo o Atlas da Violência de 2026. A taxa foi de 27,3 por 100 mil entre negros e 10,1 entre não negros, um risco 170% maior.',
-  dado:'Desde 2023 a injúria racial é equiparada ao racismo, crime inafiançável e imprescritível, por lei sancionada por Lula. O governo recriou o Ministério da Igualdade Racial e renovou a Lei de Cotas. O plano de Flávio Bolsonaro não menciona racismo.',
+  dado:'Desde 2023 a injúria racial é equiparada ao racismo, crime inafiançável e imprescritível, por lei sancionada por Lula. O governo recriou o Ministério da Igualdade Racial e renovou a Lei de Cotas. O plano de Flávio Bolsonaro não menciona racismo. O programa de Lula promete manter o combate ao racismo no centro da estratégia de desenvolvimento e regulamentar o Estatuto da Igualdade Racial.',
   fonte:'Atlas da Violência 2026 (Ipea e FBSP), via BNews', link:'https://www.bnewssaopaulo.com.br/noticias/politica/atlas-da-violencia-mostra-que-populacao-negra-concentra-77-dos-homicidios-no-brasil.html', ref:'2024',
   termos:'racismo negros pretos pardos igualdade racial injuria racial violencia contra negros discriminacao' },
 
 { id:'dir-lgbt', tema:'Segurança', quem:'Dado oficial', frase:'Quantas pessoas LGBT são mortas no Brasil?', veredito:'DADO',
   resumo:'O Grupo Gay da Bahia contou 257 mortes violentas de pessoas LGBT+ em 2025, uma a cada 34 horas, contra 291 em 2024. A ONG diz que o número é subestimado porque se baseia em notícias.',
-  dado:'Desde 2019, por decisão do STF, a homofobia e a transfobia são punidas como crime de racismo. O casamento entre pessoas do mesmo sexo é garantido pelo STF desde 2011 e por resolução do CNJ desde 2013. O plano de Flávio Bolsonaro não menciona a população LGBT.',
+  dado:'Desde 2019, por decisão do STF, a homofobia e a transfobia são punidas como crime de racismo. O casamento entre pessoas do mesmo sexo é garantido pelo STF desde 2011 e por resolução do CNJ desde 2013. O plano de Flávio Bolsonaro não menciona a população LGBT. O programa de Lula promete considerar orientação sexual e identidade de gênero nas políticas públicas e combater a violência contra pessoas LGBTQIAP+.',
   fonte:'Grupo Gay da Bahia, via Correio Braziliense', link:'https://www.correiobraziliense.com.br/brasil/2026/01/7335680-levantamento-mapeia-mortes-de-pessoas-lgbt-no-brasil-iceberg-de-odio.html', ref:'2024 e 2025',
   termos:'lgbt gays lesbicas trans travestis homofobia transfobia casamento gay homossexuais' },
 
 { id:'soc-cuidados', tema:'Fome e pobreza', quem:'Dado oficial', frase:'O que cada um propõe para os idosos e para quem cuida deles?', veredito:'DADO',
   resumo:'Lula sancionou em dezembro de 2024 a Política Nacional de Cuidados (Lei 15.069), que divide a responsabilidade do cuidado de crianças, idosos e pessoas com deficiência entre Estado, famílias, empresas e sociedade e prevê um plano nacional com metas. As mulheres dedicam o dobro do tempo dos homens a cuidar de outras pessoas, segundo o IBGE.',
-  dado:'O plano de Flávio Bolsonaro propõe o Casa Segura para Envelhecer, com subsídio para adaptar casas de idosos de baixa renda, um aplicativo de companhia com alertas e a ampliação de instituições de longa permanência. Nenhum dos dois detalha valores.',
+  dado:'O plano de Flávio Bolsonaro propõe o Casa Segura para Envelhecer, com subsídio para adaptar casas de idosos de baixa renda, um aplicativo de companhia com alertas e a ampliação de instituições de longa permanência. Nenhum dos dois detalha valores. O programa de Lula promete ampliar a Política de Cuidados, com Cuidotecas para crianças, atendimento domiciliar a idosos e capacitação de cuidadores.',
   fonte:'CNN Brasil; plano de governo de Flávio Bolsonaro', link:'https://www.cnnbrasil.com.br/politica/lei-que-cria-politica-nacional-de-cuidados-entra-em-vigor/', ref:'2024 a 2026',
   termos:'idosos cuidadores cuidado cuidadoras asilo terceira idade envelhecimento alzheimer pessoas com deficiencia' },
 
@@ -1220,7 +1220,7 @@ window.FICHAS = [
 
 { id:'tec-minerais', tema:'Indústria e tecnologia', quem:'Dado oficial', frase:'O que cada um propõe para minerais críticos e terras raras?', veredito:'DADO',
   resumo:'Lula sancionou em setembro de 2026 a Política Nacional de Minerais Críticos e Estratégicos, que condiciona incentivos ao processamento no Brasil e cria um conselho ligado à Presidência que pode analisar a venda do controle de minas estratégicas. A lei foi acelerada depois que a mina de terras raras de Minaçu (GO) foi comprada por uma empresa americana com apoio do governo dos EUA.',
-  dado:'O Brasil tem lítio, nióbio, grafite, níquel e uma das maiores reservas de terras raras do mundo. O plano de Flávio Bolsonaro também fala em agregar valor no país, mas com o Estado só como regulador e atração de capital estrangeiro, e Flávio Bolsonaro disse que o Brasil pode ajudar os EUA a reduzir a dependência da China. Lula chama de traidores da pátria quem quer entregar os minerais aos EUA.',
+  dado:'O Brasil tem lítio, nióbio, grafite, níquel e uma das maiores reservas de terras raras do mundo. O plano de Flávio Bolsonaro também fala em agregar valor no país, mas com o Estado só como regulador e atração de capital estrangeiro, e Flávio Bolsonaro disse que o Brasil pode ajudar os EUA a reduzir a dependência da China. Lula chama de traidores da pátria quem quer entregar os minerais aos EUA. O programa de Lula promete política específica para minerais críticos e terras raras, com beneficiamento no país.',
   fonte:'eixos', link:'https://eixos.com.br/politica/lula-volta-a-atacar-traidores-da-patria-ao-sancionar-politica-de-minerais-criticos/', ref:'2026',
   termos:'minerais criticos terras raras litio niobio mineracao minaçu serra verde soberania mineral entregar minerais estados unidos' },
 
@@ -1229,5 +1229,73 @@ window.FICHAS = [
   dado:'Será seu primeiro mandato no Congresso. Ele coordenava as redes sociais do pai e foi investigado no inquérito sobre o uso da Abin para espionagem ilegal no governo Bolsonaro.',
   fonte:'TNH1', link:'https://www.tnh1.com.br/noticia/nid/carlos-bolsonaro-do-pl-e-eleito-senador-por-santa-catarina/', ref:'out/2026',
   termos:'carlos bolsonaro carluxo senador santa catarina filho vereador' },
+
+
+// ---------------- LOTE 9: PROGRAMA DE GOVERNO DE LULA (equilíbrio com as fichas do plano de Flávio Bolsonaro) ----------------
+{ id:'lpl-sociais', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O programa de Lula garante Bolsa Família, BPC, Farmácia Popular e Mais Médicos?', veredito:'DADO',
+  resumo:'O programa cita Bolsa Família, BPC e Farmácia Popular como conquistas do mandato atual e se compromete, de forma geral, a manter, aperfeiçoar e ampliar as políticas de proteção social e a valorização do salário mínimo, que reajusta o BPC e as aposentadorias. O Mais Médicos tem compromisso explícito de continuidade, com foco em fixar profissionais e formar médicos de família.',
+  dado:'O texto não traz metas novas de valor ou de cobertura para o Bolsa Família nem para a Farmácia Popular; trata os dois como políticas a manter. A ficha sobre o plano de Flávio Bolsonaro mostra o que ele diz sobre os mesmos programas.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula propostas de lula bolsa familia bpc farmacia popular mais medicos programas sociais vai manter' },
+
+{ id:'lpl-educacao', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para creches e escolas?', veredito:'DADO',
+  resumo:'O programa diz que a expansão da escola em tempo integral terá absoluta prioridade, agora com financiamento pelo Fundeb a partir de 2026, e promete ampliar creches por meio de uma segunda edição do Novo PAC. Também promete manter e aprimorar o Pé-de-Meia, manter o piso do magistério e chegar a 80% das crianças alfabetizadas na idade certa.',
+  dado:'Inclui o Pé-de-Meia Licenciatura e o Bolsa Mais Professores para atrair e fixar docentes, e o cumprimento das metas do novo Plano Nacional de Educação 2026-2036. Não fala em escolas cívico-militares. O plano de Flávio Bolsonaro propõe voucher para creche e ampliação das cívico-militares.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula creche creches escola em tempo integral educacao basica pe-de-meia alfabetizacao professores piso' },
+
+{ id:'lpl-ensino-superior', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para universidades e institutos federais?', veredito:'DADO',
+  resumo:'O programa promete continuar a expansão dos institutos federais, priorizando o interior, as periferias e as cidades com pouca oferta de cursos técnicos, e concluir os novos campi, a unidade do ITA no Ceará, a Universidade Indígena e a Universidade do Esporte. Defende a política de cotas, que segundo o texto mudou o perfil da universidade.',
+  dado:'Cita a recomposição do orçamento das universidades, recordes no ProUni e duas renegociações do Fies como feitos do mandato. O plano de Flávio Bolsonaro propõe passar o ensino superior para o Ministério da Ciência e Tecnologia e não menciona cotas, ProUni nem Fies.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula universidade universidades institutos federais ensino superior ensino tecnico cotas prouni fies' },
+
+{ id:'lpl-seguranca', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para segurança pública?', veredito:'DADO',
+  resumo:'O programa promete criar o Ministério da Segurança Pública depois da aprovação da PEC da Segurança, para coordenar com estados e municípios o Sistema Único de Segurança Pública. As prioridades são combater o tráfico de armas, asfixiar financeiramente facções e milícias, melhorar a investigação de homicídios, retomar territórios e reforçar a segurança nos presídios.',
+  dado:'Mantém o controle de armas e munições, com mais rastreabilidade e fiscalização sobre CACs, e cita a Lei Antifacção, sancionada em 2026. Não trata de maioridade penal nem de novos presídios federais. O plano de Flávio Bolsonaro propõe reduzir a maioridade penal, cinco presídios de segurança máxima e tropas de elite nas fronteiras.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula seguranca publica crime organizado faccoes milicias ministerio da seguranca pec da seguranca armas policia' },
+
+{ id:'lpl-trabalho', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para os trabalhadores?', veredito:'DADO',
+  resumo:'O programa promete trabalhar no Senado pelo fim da escala 6x1 e pela jornada de 40 horas sem redução de salário, nos termos aprovados pela Câmara, e manter a valorização do salário mínimo. Para os trabalhadores de aplicativo, quer incluir na regulação a contribuição para a Previdência, com cobertura para aposentadoria, doença, acidente e maternidade.',
+  dado:'Também promete combater a pejotização fraudulenta com mais fiscalização e aplicar a Lei de Igualdade Salarial entre homens e mulheres. O plano de Flávio Bolsonaro fala em reduzir o custo do trabalho e não trata da escala 6x1 nem do trabalho por aplicativo.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula trabalhadores 6x1 escala jornada 40 horas salario minimo aplicativo pejotizacao direitos trabalhistas' },
+
+{ id:'lpl-instituicoes', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula diz sobre STF, reeleição e redes sociais?', veredito:'DADO',
+  resumo:'Sobre o Judiciário, o programa promete apenas manter o diálogo, respeitando a autonomia dos Poderes. Defende uma reforma política e eleitoral, chamada de inadiável, sem detalhar o conteúdo, e não trata do fim da reeleição. Defende avançar na regulação das redes sociais e plataformas digitais para impedir desinformação e campanhas de ódio.',
+  dado:'Propõe criar um Conselho Nacional pela Soberania Digital, com participação da sociedade, e aprimorar o ECA Digital, de proteção de crianças na internet. O plano de Flávio Bolsonaro propõe acabar com decisões individuais de ministros do STF, fim da reeleição e o fim de qualquer estrutura estatal de controle de conteúdo.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula stf supremo judiciario reeleicao reforma politica regulacao das redes censura redes sociais big techs' },
+
+{ id:'lpl-digital', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para inteligência artificial e tecnologia?', veredito:'DADO',
+  resumo:'O programa propõe garantir soberania digital, para que o país desenvolva e controle tecnologias e infraestruturas críticas, e fomentar toda a cadeia nacional, de data centers a serviços de nuvem, com destaque para a inteligência artificial feita por empresas brasileiras. Exige que novos data centers usem progressivamente energia 100% renovável e avaliem impactos sobre água, energia e populações locais.',
+  dado:'Prevê uso de IA no SUS para organizar uma fila única digital por risco clínico, regulamentação da IA para remunerar artistas quando plataformas usarem conteúdo brasileiro e uma política para minerais críticos e terras raras que evite exportar só matéria-prima. O plano de Flávio Bolsonaro aposta em atrair data centers e capital estrangeiro, com o Estado apenas como regulador.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula inteligencia artificial ia tecnologia data centers soberania digital nuvem big techs' },
+
+{ id:'lpl-defesa', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para as Forças Armadas?', veredito:'DADO',
+  resumo:'O programa diz que a defesa exige Forças Armadas bem equipadas e uma indústria de defesa sólida para proteger o território e os recursos naturais, e trata política externa e defesa como partes da mesma estratégia de soberania. Promete manter as Forças Armadas nas fronteiras amazônicas, com patrulha fluvial e aérea e cooperação com os países vizinhos.',
+  dado:'Como o plano de Flávio Bolsonaro, não informa valores nem metas de gasto com defesa. A ficha sobre o sucateamento das Forças Armadas mostra a evolução do orçamento.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula forcas armadas defesa militares exercito marinha aeronautica fronteiras industria de defesa' },
+
+{ id:'lpl-costumes', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula diz sobre aborto, religião e família?', veredito:'DADO',
+  resumo:'O programa não menciona aborto, religião, igrejas nem drogas. Fala em combater todas as formas de discriminação e garantir direitos de mulheres, população negra, povos indígenas, pessoas com deficiência e população LGBTQIAP+, e em considerar gênero e orientação sexual no desenho de políticas públicas.',
+  dado:'Na família, destaca a proteção da infância, como a proibição de celular nas escolas e o ECA Digital, e a Política Nacional de Cuidados. O plano de Flávio Bolsonaro defende a vida desde a concepção, a liberdade religiosa e uma escola sem doutrinação. As fichas sobre aborto e igrejas tratam dos boatos sobre Lula.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula aborto religiao igrejas familia costumes valores lgbt genero' },
+
+{ id:'lpl-fiscal', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para as contas públicas e os juros?', veredito:'DADO',
+  resumo:'O programa defende o arcabouço fiscal criado em 2023 e promete política fiscal responsável e condições para uma queda sustentada dos juros, com inflação controlada. Diz que o governo fez esforço fiscal de cerca de 2% do PIB entre 2023 e 2026 e projeta déficit de 0,4% do PIB em 2026.',
+  dado:'Na área tributária, promete aprofundar a justiça tributária, com a isenção do IR até R$ 5 mil e o cashback da reforma para os mais pobres, mas não detalha novos impostos nem cortes de gastos. O plano de Flávio Bolsonaro propõe trocar o arcabouço por regras de redução da dívida e limite de gastos dos três Poderes, também sem dizer o que seria cortado.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula contas publicas arcabouco fiscal cortar gastos corte de gastos deficit divida juros impostos justica tributaria' },
+
+{ id:'lpl-saude', tema:'Plano de Lula', quem:'Plano de Lula', frase:'O que o programa de Lula propõe para a saúde e as filas do SUS?', veredito:'DADO',
+  resumo:'O programa promete ampliar o Agora Tem Especialistas, criar uma fila única digital ordenada por risco clínico, com uso de inteligência artificial, abrir novos hospitais universitários e continuar a parceria com hospitais privados que fazem exames e cirurgias para o SUS em troca de abatimento de dívidas.',
+  dado:'Na saúde mental, promete mais CAPS e atenção a autismo e neurodivergências, e mais profissionais para quem tem problemas com apostas. O plano de Flávio Bolsonaro propõe comprar vagas ociosas da rede privada, prontuário eletrônico único e agendamento por inteligência artificial.',
+  fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'programa de lula plano de lula saude sus filas especialistas hospitais agora tem especialistas cirurgias' },
 
 ];

@@ -1,6 +1,6 @@
 # Mapa de cobertura do Contraprova
 
-Situação em 21/10/2026, com 194 fichas. "Coberto" significa que a busca por uma frase livre sobre o tema leva a uma resposta direta.
+Situação em 21/10/2026, com 205 fichas. "Coberto" significa que a busca por uma frase livre sobre o tema leva a uma resposta direta.
 
 ## Coberto
 
@@ -30,6 +30,7 @@ Situação em 21/10/2026, com 194 fichas. "Coberto" significa que a busca por um
 | Direitos e cuidado | racismo, população LGBT, autismo e saúde mental, idosos e Política Nacional de Cuidados |
 | Boatos econômicos | confisco da poupança, imposto sobre herança, moeda do BRICS |
 | Outros | dengue, licenciamento ambiental, reeleição, taxa das blusinhas, juros do cartão, minerais críticos e terras raras, Carlos Bolsonaro |
+| Programas de governo | 11 fichas sobre o plano de Flávio Bolsonaro e 11 sobre o programa de Lula, nos mesmos temas (programas sociais, educação básica, ensino superior, segurança, trabalho, instituições e redes, tecnologia, defesa, costumes, contas públicas, saúde); as fichas temáticas citam a proposta dos dois |
 | Candidatos | vices, idade de Lula, faltas e votos de Flávio, privatizações, resultado do 1º turno, plano de Flávio |
 
 ## Ainda descoberto (sugestões se surgir algo no debate)

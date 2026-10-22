@@ -224,8 +224,8 @@ footer p{margin:0;max-width:70ch}
   function esc(t){ return String(t||'').replace(/[&<>"]/g,function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
 
   function cartao(f){
-    var ehPergunta = f.quem==='Dado oficial' || f.quem==='Plano de Flávio';
-    var quem = f.quem==='Dado oficial' ? 'Dado oficial' : (f.quem==='Plano de Flávio' ? 'Plano de Flávio Bolsonaro' : (f.quem==='Boato' ? 'Boato que circula' : 'Frase de '+f.quem));
+    var ehPergunta = f.quem==='Dado oficial' || f.quem==='Plano de Flávio' || f.quem==='Plano de Lula';
+    var quem = f.quem==='Dado oficial' ? 'Dado oficial' : (f.quem==='Plano de Flávio' ? 'Plano de Flávio Bolsonaro' : (f.quem==='Plano de Lula' ? 'Programa de Lula' : (f.quem==='Boato' ? 'Boato que circula' : 'Frase de '+f.quem)));
     var a = document.createElement('article');
     a.className = 'ficha' + (ehPergunta ? ' e-pergunta' : '');
     a.id = 'f-'+f.id;
@@ -260,7 +260,7 @@ footer p{margin:0;max-width:70ch}
     var q = tokens(estado.q);
     var base = FICHAS.filter(function(f){
       if(estado.quem!=='Todos'){
-        if(estado.quem==='Dados e planos'){ if(!(f.quem==='Dado oficial'||f.quem==='Plano de Flávio')) return false; }
+        if(estado.quem==='Dados e planos'){ if(!(f.quem==='Dado oficial'||f.quem==='Plano de Flávio'||f.quem==='Plano de Lula')) return false; }
         else if(estado.quem==='Boatos'){ if(f.quem!=='Boato') return false; }
         else if(f.quem!==estado.quem) return false;
       }
