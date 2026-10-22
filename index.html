@@ -150,6 +150,17 @@ footer p{margin:0;max-width:70ch}
 <script src="fichas.js"></script>
 <script src="config.js"></script>
 <script>
+  (function(){
+    var tk = window.CF_ANALYTICS_TOKEN;
+    if(!tk) return;
+    var s = document.createElement('script');
+    s.defer = true;
+    s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon', JSON.stringify({ token: tk }));
+    document.head.appendChild(s);
+  })();
+</script>
+<script>
 (function(){
   'use strict';
   var FICHAS = window.FICHAS || [];
