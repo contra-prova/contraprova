@@ -151,6 +151,9 @@ footer p{margin:0;max-width:70ch}
 <script src="config.js"></script>
 <script>
   (function(){
+    if(window.CHECA_PROXY && window.CONTAR_ACESSOS !== false){
+      try { fetch(window.CHECA_PROXY.replace(/\/$/,'') + '/visita', { method:'GET', keepalive:true }).catch(function(){}); } catch(e){}
+    }
     var tk = window.CF_ANALYTICS_TOKEN;
     if(!tk) return;
     var s = document.createElement('script');
