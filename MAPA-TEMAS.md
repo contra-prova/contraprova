@@ -1,6 +1,6 @@
 # Mapa de cobertura do Contraprova
 
-Situação em 21/10/2026, com 164 fichas. "Coberto" significa que a busca por uma frase livre sobre o tema leva a uma resposta direta.
+Situação em 21/10/2026, com 172 fichas. "Coberto" significa que a busca por uma frase livre sobre o tema leva a uma resposta direta.
 
 ## Coberto
 
@@ -13,7 +13,8 @@ Situação em 21/10/2026, com 164 fichas. "Coberto" significa que a busca por um
 | Segurança e armas | violência, feminicídio, letalidade policial, celulares, facções, Lei Antifacção, PEC da Segurança, saidinha, maioridade penal, armas e munições |
 | Corrupção | panorama geral, INSS, Banco Master e políticos ligados, Moraes e o Master, Dark Horse, Vorcaro e o Instituto Lula, Lulinha, rachadinha, Escritório do Crime, aliados presos no Rio, joias e cartão de vacina, condenações de Lula, cartão corporativo |
 | Democracia | golpe e 8 de janeiro, anistia, urnas, censura e regulação das redes, STF e reeleição no plano de Flávio |
-| Costumes e religião | aborto, igrejas, imposto de igrejas, banheiro unissex, drogas, Pix, Lei Rouanet |
+| Costumes e religião | aborto, igrejas, imposto de igrejas, banheiro unissex, kit gay e ideologia de gênero, família e cristãos, escolas cívico-militares, drogas, Pix, Lei Rouanet, propostas de costumes do plano de Flávio Bolsonaro |
+| Forças Armadas | sucateamento e orçamento da Defesa, Novo PAC da Defesa, reajuste e previdência dos militares, generais condenados e perda de patente, militares em cargos civis, propostas do plano de Flávio Bolsonaro |
 | Política externa | EUA, Trump e Magnitsky, tarifaço, Venezuela, Israel e Gaza |
 | Meio ambiente e campo | desmatamento, queimadas, MST, agro e safra, margem equatorial |
 | Tecnologia e indústria | Nova Indústria Brasil, IA, data centers e soberania digital |
@@ -31,6 +32,5 @@ Situação em 21/10/2026, com 164 fichas. "Coberto" significa que a busca por um
 1. **Saúde.** Dengue e Mais Médicos.
 2. **Diversidade.** Racismo e população LGBT.
 3. **Infraestrutura.** Ferrovias, rodovias e saneamento em separado do Novo PAC.
-4. **Defesa.** Orçamento das Forças Armadas e fronteiras.
-5. **Família Bolsonaro.** Carlos e Eduardo Bolsonaro.
-6. **Número de ministérios.**
+4. **Família Bolsonaro.** Carlos e Eduardo Bolsonaro.
+5. **Número de ministérios.**

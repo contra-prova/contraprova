@@ -1045,4 +1045,55 @@ window.FICHAS = [
   fonte:'Portal Tela; Hoje em Dia', link:'https://www.portaltela.com/noticias/politica/2026/06/24/prazo-da-prisao-domiciliar-de-bolsonaro-vence-nesta-quinta/', ref:'2025 e 2026',
   termos:'jair bolsonaro preso prisao cadeia presidio cumprindo pena situacao papuda papudinha domiciliar tornozeleira condenado inelegivel' },
 
+
+// ---------------- LOTE 7: FORÇAS ARMADAS E COSTUMES ----------------
+{ id:'def-sucateamento', tipo:'panorama', tema:'Defesa e Forças Armadas', quem:'Boato', frase:'Lula sucateou as Forças Armadas.', veredito:'FALTA_CONTEXTO',
+  resumo:'A falta de dinheiro para custeio e investimento militar vem de pelo menos uma década e atravessa os governos Dilma, Temer, Bolsonaro e Lula. As despesas discricionárias da Defesa caíram 42% em termos reais entre 2014 e 2025, de R$ 21,3 bilhões para R$ 12,3 bilhões, com o ponto mais baixo em 2024.',
+  dado:'Em 2017, sob Temer, o Alto Comando falou em risco de colapso. Em 2019, Bolsonaro congelou R$ 5,8 bilhões dos R$ 13,1 bilhões da Defesa e adiou o Gripen e o Sisfron. Em 2023 o comandante da Marinha alertou que 40% da frota poderia ser desativada até 2028. Em 2025 o gasto militar teve alta real de 13%, segundo o Sipri, mas segue em cerca de 1,1% do PIB, abaixo da média mundial de 2,5%. O Novo PAC reservou R$ 52,8 bilhões para projetos como o submarino nuclear, os caças Gripen e blindados. Cerca de três quartos do orçamento vão para pessoal, e quase metade para inativos e pensões.',
+  fonte:'Forças Terrestres; Sipri; Poder360; Gazeta do Povo; O Liberal', link:'https://www.forte.jor.br/2025/05/21/despesas-discricionarias-do-ministerio-da-defesa-despencam-42-desde-2014/', ref:'2014 a 2025',
+  termos:'forcas armadas sucateamento sucateou exercito marinha aeronautica fab orcamento da defesa militares navios avioes cacas gripen submarino nuclear defesa nacional' },
+
+{ id:'def-salarios', tema:'Defesa e Forças Armadas', quem:'Dado oficial', frase:'Lula deu aumento aos militares? E a reforma da previdência militar?', veredito:'DADO',
+  resumo:'Sim. Em março de 2025 o governo reajustou o soldo dos militares em 9%, em duas parcelas (abril de 2025 e janeiro de 2026), o mesmo índice dado aos servidores civis, com custo estimado de R$ 3 bilhões. O reajuste vale para ativos, reserva e pensionistas.',
+  dado:'Em contrapartida, o governo enviou em dezembro de 2024 o projeto de lei 4.920/2024, que cria idade mínima de 55 anos para a reserva remunerada e acaba com a chamada morte ficta, a pensão paga à família do militar expulso como se ele tivesse morrido. A economia prevista é de R$ 6 bilhões até 2030. O projeto está parado na Câmara.',
+  fonte:'CNN Brasil; Poder360', link:'https://www.cnnbrasil.com.br/politica/governo-lula-aumenta-em-9-salarios-de-militares-das-forcas-armadas/', ref:'2024 a 2026',
+  termos:'salario dos militares soldo reajuste aumento militares previdencia dos militares aposentadoria militar morte ficta pensao de filhas privilegios' },
+
+{ id:'def-militares-golpe', tema:'Defesa e Forças Armadas', quem:'Dado oficial', frase:'Lula persegue os militares? O que aconteceu com os generais do golpe?', veredito:'FALTA_CONTEXTO',
+  resumo:'A condenação dos generais Braga Netto, Augusto Heleno e Paulo Sérgio Nogueira e do almirante Almir Garnier foi decidida pelo STF, não pelo governo, no processo da trama golpista. O Ministério Público Militar pediu ao Superior Tribunal Militar a perda das patentes deles e de Jair Bolsonaro; o STM prevê julgar no início de 2027.',
+  dado:'No governo Bolsonaro, o número de militares em cargos civis passou de 2.765 em 2018 para 6.157 em 2020, segundo o TCU. Lula voltou a ter um civil no Ministério da Defesa. Uma proposta de emenda constitucional preparada pelo ministro da Defesa com apoio dos comandantes manda para a reserva o militar que disputar eleição; está parada no Senado desde 2024, e Flávio Bolsonaro a chamou de preconceituosa.',
+  fonte:'Revista Sociedade Militar; Poder360; A Crítica', link:'https://www.sociedademilitar.com.br/2026/10/bolsonaro-exercito-capitao-perda-patente-salario-julgamento-stm-2027-fplv.html', ref:'2020 a 2026',
+  termos:'militares perseguicao generais presos condenados general almirante golpe patente stm tribunal militar braga netto heleno garnier militares no governo militares na politica quarteis' },
+
+{ id:'pla-defesa', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio Bolsonaro propõe para as Forças Armadas?', veredito:'DADO',
+  resumo:'O plano propõe uma tropa de elite do Exército, da Marinha e da Aeronáutica para as fronteiras, o Sistema Nacional de Fronteira, e o uso de tropas da Marinha e da Aeronáutica para ocupar portos e aeroportos. Para a defesa nacional, cita drones e inteligência artificial e diz que o investimento militar deve ser condizente com o papel do país no mundo.',
+  dado:'O plano não informa valores, metas de gasto nem a fonte de recursos para a defesa. A lei já permite às Forças Armadas patrulhar a faixa de fronteira. A fiscalização de portos e aeroportos cabe hoje à Receita Federal e à Polícia Federal.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'plano flavio forcas armadas defesa fronteiras tropa de elite exercito marinha aeronautica portos aeroportos militares' },
+
+{ id:'cos-civico-militares', tema:'Educação', quem:'Dado oficial', frase:'Lula acabou com as escolas cívico-militares.', veredito:'FALTA_CONTEXTO',
+  resumo:'Em julho de 2023 o MEC encerrou o programa federal criado por Bolsonaro em 2019, que atendia pouco mais de 200 escolas. As escolas voltaram à rede regular, mas os estados podem manter o modelo com recursos próprios, e pelo menos 11 estados e o Distrito Federal anunciaram que manteriam.',
+  dado:'Em abril de 2026 Lula disse que o país não precisa expandir esse modelo e que o aluno deve aprender o mesmo conteúdo que os demais estudantes. O plano de Flávio Bolsonaro promete ampliar as escolas cívico-militares. Os estudos sobre o desempenho dessas escolas são inconclusivos, porque muitas selecionam alunos e recebem mais recursos.',
+  fonte:'Folha de Pernambuco; Portal de Prefeitura', link:'https://www.folhape.com.br/politica/na-contramao-de-lula-doze-governadores-anunciam-continuidade-de/280646/', ref:'2019 a 2026',
+  termos:'escolas civico militares escola militar civico-militar pecim disciplina colegio militar' },
+
+{ id:'cos-genero-escolas', tema:'Costumes e religião', quem:'Boato', frase:'Lula vai ensinar ideologia de gênero e distribuir kit gay nas escolas.', veredito:'FALSO',
+  resumo:'O chamado kit gay nunca foi distribuído. Era um material do projeto Escola Sem Homofobia, contra o preconceito, que foi vetado pela presidente Dilma em 2011 antes de chegar às escolas. Em 2018 o TSE mandou retirar publicações que diziam o contrário.',
+  dado:'Não há disciplina de ideologia de gênero no currículo nacional. Em 2020 o STF declarou inconstitucionais leis municipais que proibiam falar de gênero nas escolas, por entender que a escola deve combater a discriminação. O plano de Flávio Bolsonaro promete uma escola sem doutrinação em que os pais decidam os valores dos filhos.',
+  fonte:'Aos Fatos; STF', link:'https://aosfatos.org/noticias/desenhamos-fatos-sobre-ideologia-de-genero/', ref:'2011 a 2026',
+  termos:'ideologia de genero kit gay escola sem partido doutrinacao educacao sexual criancas homossexualidade lgbt escolas genero' },
+
+{ id:'pla-costumes', tema:'Plano de Flávio', quem:'Plano de Flávio', frase:'O que o plano de Flávio Bolsonaro diz sobre família, aborto e religião?', veredito:'DADO',
+  resumo:'O plano defende a família, a vida desde a concepção, a propriedade privada, a liberdade de expressão e a liberdade religiosa. Na educação, promete uma escola sem doutrinação político-partidária, em que os pais decidam os valores dos filhos, e a ampliação das escolas cívico-militares.',
+  dado:'O texto não detalha mudanças na lei do aborto, que hoje é permitido em caso de estupro, risco à vida da gestante e anencefalia. Não menciona igualdade salarial, racismo nem população LGBT. As fichas sobre aborto, igrejas e drogas tratam dos boatos que circulam sobre Lula.',
+  fonte:'Plano de governo de Flávio Bolsonaro registrado no TSE', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
+  termos:'plano flavio costumes pautas de costumes pauta moral valores familia conservador aborto vida desde a concepcao religiao cristao liberdade religiosa' },
+
+
+{ id:'cos-familia', tema:'Costumes e religião', quem:'Boato', frase:'Lula é contra a família e contra os cristãos.', veredito:'INSUSTENTAVEL',
+  resumo:'A frase não aponta nenhum fato verificável. Lula é católico e, em carta aos evangélicos em outubro de 2022, disse que a família é sagrada, que é pessoalmente contra o aborto e se comprometeu com a liberdade de culto. Nos três mandatos não houve lei ou decreto que fechasse igrejas ou mudasse a lei do aborto.',
+  dado:'O Bolsa Família é pago preferencialmente à mãe, e o adicional por criança e gestante foi recriado em 2023. As fichas sobre aborto, igrejas, imposto de igrejas e banheiro unissex detalham os boatos mais comuns.',
+  fonte:'Poder360; Correio Braziliense', link:'https://www.poder360.com.br/eleicoes/em-carta-aos-evangelicos-lula-defende-liberdade-de-culto/', ref:'2022 a 2026',
+  termos:'contra a familia destruir a familia cristaos evangelicos catolicos valores cristaos fe religiao perseguicao religiosa familia tradicional' },
+
 ];
