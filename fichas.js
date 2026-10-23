@@ -2,7 +2,7 @@
 // Cada ficha: id, tema, quem (autor da frase ou "Dado oficial"/"Plano de Flávio Bolsonaro"), frase (afirmação típica),
 // veredito, resumo (resposta em uma linha), dado (detalhe), fonte, link, ref (período do dado), termos (sinônimos para a busca).
 // Para incluir uma ficha nova, copie um bloco, troque o id e preencha os campos.
-window.FICHAS_ATUALIZADAS_EM = '21/10/2026';
+window.FICHAS_ATUALIZADAS_EM = '22/10/2026, às 11h';
 window.FICHAS = [
 // ---------------- PAINÉIS DE INDICADORES (série por governo) ----------------
 // Respondem a alegações genéricas do tipo "X disparou", "Y explodiu", "Z nunca esteve tão ruim".
