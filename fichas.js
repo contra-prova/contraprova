@@ -2,7 +2,7 @@
 // Cada ficha: id, tema, quem (autor da frase ou "Dado oficial"/"Plano de Flávio Bolsonaro"), frase (afirmação típica),
 // veredito, resumo (resposta em uma linha), dado (detalhe), fonte, link, ref (período do dado), termos (sinônimos para a busca).
 // Para incluir uma ficha nova, copie um bloco, troque o id e preencha os campos.
-window.FICHAS_ATUALIZADAS_EM = '22/10/2026, às 11h';
+window.FICHAS_ATUALIZADAS_EM = '23/10/2026, às 10h';
 window.FICHAS = [
 // ---------------- PAINÉIS DE INDICADORES (série por governo) ----------------
 // Respondem a alegações genéricas do tipo "X disparou", "Y explodiu", "Z nunca esteve tão ruim".
@@ -881,7 +881,7 @@ window.FICHAS = [
 
 { id:'esc-flavio-careca', tipo:'panorama', tema:'Corrupção e investigações', quem:'Dado oficial', frase:'Flávio Bolsonaro tem ligação com o Careca do INSS?', veredito:'DADO',
   resumo:'Há conexões em investigação, mas nenhuma prova pública de que Flávio Bolsonaro tenha recebido dinheiro dos aposentados. Uma empresa ligada a Flávio Bolsonaro e Carlos Bolsonaro dividia endereço com 16 empresas do Careca do INSS, e a administradora do escritório de advocacia de Flávio Bolsonaro é irmã de um contador ligado ao lobista.',
-  dado:'O advogado Willer Tomaz, próximo de Flávio Bolsonaro, foi alvo de busca da PF numa fase da Operação Sem Desconto, e documentos bancários apontaram uma conta em nome de Flávio Bolsonaro ligada a uma estrutura associada a Tomaz. Flávio Bolsonaro e Tomaz negam irregularidades. Flávio Bolsonaro também é alvo de inquérito no STF sobre suspeitas de lavagem com o advogado. O Aos Fatos considerou falsa a negativa de Flávio Bolsonaro, no debate da Band, de que mantinha escritório com o lobista.',
+  dado:'O advogado Willer Tomaz, próximo de Flávio Bolsonaro, foi alvo de busca da PF numa fase da Operação Sem Desconto, e documentos bancários apontaram uma conta em nome de Flávio Bolsonaro ligada a uma estrutura associada a Tomaz. Flávio Bolsonaro e Tomaz negam irregularidades. Flávio Bolsonaro também é alvo de um inquérito da PF no STF, aberto em outubro de 2026 e relatado por Alexandre de Moraes, sobre suspeita de lavagem de dinheiro com o advogado por meio de empresas de apostas; a defesa diz que a relação é só de amizade e não há acusação formal. O Aos Fatos considerou falsa a negativa de Flávio Bolsonaro, no debate da Band, de que mantinha escritório com o lobista.',
   fonte:'Jornal Grande Bahia; Aos Fatos', link:'https://jornalgrandebahia.com.br/2026/10/caso-inss-r-63-bilhoes-em-descontos-milhoes-de-contestacoes-e-conexoes-investigadas-alcancam-entorno-de-flavio-bolsonaro/', ref:'2026',
   termos:'careca do inss flavio escritorio bravo grafeno willer tomaz antonio camilo antunes flavio inss' },
 
@@ -1160,9 +1160,9 @@ window.FICHAS = [
 
 { id:'ele-reeleicao', tema:'Eleição', quem:'Dado oficial', frase:'Lula prometeu que governaria só um mandato.', veredito:'VERDADEIRO',
   resumo:'Em 25 de outubro de 2022, Lula escreveu nas redes que, se eleito, seria presidente de um mandato só. Em 2025 ele anunciou que disputaria a reeleição.',
-  dado:'O plano de Flávio Bolsonaro propõe acabar com a reeleição para presidente e cita uma PEC de autoria do próprio candidato no Senado. A reeleição foi criada em 1997, no governo Fernando Henrique Cardoso, e Bolsonaro disputou a reeleição em 2022 depois de ter defendido, em 2018, o fim dela. O programa de Lula defende uma reforma política e eleitoral, sem tratar da reeleição.',
+  dado:'O plano de Flávio Bolsonaro propõe acabar com a reeleição para presidente e cita uma PEC de autoria do próprio candidato no Senado. Em entrevista à Globo em 16 de outubro, Flávio Bolsonaro prometeu não disputar a reeleição se for eleito, mesmo que a PEC não seja aprovada. A reeleição foi criada em 1997, no governo Fernando Henrique Cardoso, e Bolsonaro disputou a reeleição em 2022 depois de ter defendido, em 2018, o fim dela. O programa de Lula defende uma reforma política e eleitoral, sem tratar da reeleição.',
   fonte:'Jornal Opção; Portal Tela', link:'https://www.jornalopcao.com.br/eleicoes-2022/lula-diz-que-nao-buscara-reeleicao-caso-venca-no-domingo-436673/', ref:'2022 a 2026',
-  termos:'reeleicao fim da reeleicao mandato so um mandato promessa quebrada lula prometeu' },
+  termos:'reeleicao fim da reeleicao mandato so um mandato promessa quebrada lula prometeu flavio nao vai disputar reeleicao mandato unico' },
 
 { id:'sau-autismo-mental', tema:'Saúde', quem:'Dado oficial', frase:'O que cada um propõe para autismo e saúde mental?', veredito:'DADO',
   resumo:'Os atendimentos a pessoas com autismo no SUS cresceram 84% entre 2022 e 2025, de 12 para 22 milhões, e o gasto passou de R$ 119 milhões para R$ 222 milhões. Em abril de 2026 o governo anunciou R$ 83 milhões para 59 novos serviços, levando a rede a 361 centros especializados em reabilitação.',
@@ -1297,5 +1297,67 @@ window.FICHAS = [
   dado:'Na saúde mental, promete mais CAPS e atenção a autismo e neurodivergências, e mais profissionais para quem tem problemas com apostas. O plano de Flávio Bolsonaro propõe comprar vagas ociosas da rede privada, prontuário eletrônico único e agendamento por inteligência artificial.',
   fonte:'Programa de governo de Lula (PT), Programa de Transformação do Brasil', link:'https://divulgacandcontas.tse.jus.br/', ref:'2026',
   termos:'programa de lula plano de lula saude sus filas especialistas hospitais agora tem especialistas cirurgias' },
+
+
+// ---------------- LOTE 10: NOTÍCIAS DE 20 A 23 DE OUTUBRO ----------------
+{ id:'ele-sigilos', tipo:'panorama', tema:'Eleição', quem:'Dado oficial', frase:'Lula e Flávio Bolsonaro vão abrir os sigilos bancário e fiscal?', veredito:'DADO',
+  resumo:'No debate da Band, em 18 de outubro, Lula desafiou Flávio Bolsonaro a abrir os sigilos bancário, fiscal e telefônico dos dois e das famílias. Em 20 de outubro Lula entregou ao TSE a autorização para os últimos oito anos, condicionada a que Flávio Bolsonaro fizesse o mesmo. Até 22 de outubro Flávio Bolsonaro não havia entregue a sua.',
+  dado:'Em 21 de outubro Flávio Bolsonaro apresentou 19 exigências adicionais, como dados do Instituto Lula, de empresas dos filhos de Lula e da agenda da primeira-dama, e Lula disse aceitá-las. No dia seguinte a equipe de Flávio Bolsonaro foi ao TSE sem as próprias autorizações e condicionou a entrega a uma análise prévia do material de Lula, a cargo do ex-procurador Deltan Dallagnol. Nenhum dado foi divulgado até agora.',
+  fonte:'Revista Fórum; BNews', link:'https://revistaforum.com.br/politica/flavio-bolsonaro-nao-abre-sigilos-convoca-dallagnol/', ref:'18 a 22/10/2026',
+  termos:'sigilo sigilos abrir sigilo quebra de sigilo bancario fiscal telefonico dallagnol nada a esconder desafio 19 exigencias' },
+
+{ id:'ele-miliciano', tema:'Corrupção e investigações', quem:'Lula', frase:'Flávio Bolsonaro é miliciano.', veredito:'INSUSTENTAVEL',
+  resumo:'Não há investigação, denúncia ou condenação que aponte Flávio Bolsonaro como integrante de milícia. O que está documentado é que ele empregou em seu gabinete na Alerj a mãe e a mulher do ex-capitão Adriano da Nóbrega, apontado como chefe do Escritório do Crime, e homenageou Adriano e outro integrante do grupo em 2003 e 2004.',
+  dado:'Lula usou a expressão em ato em Belo Horizonte em 21 de outubro. Em outubro, ao suspender um canal de WhatsApp pró-Lula, o presidente do TSE citou acusações de ligação de Flávio Bolsonaro com milícias entre os conteúdos que a Justiça Eleitoral já havia mandado remover. A ficha sobre o Escritório do Crime traz os detalhes do caso Adriano.',
+  fonte:'DGABC; A Gazeta', link:'https://www.dgabc.com.br/Noticia/4354107/lula-pessoas-podem-ter-direito-de-nao-votar-em-mim-mas-nao-podem-votar-em-miliciano', ref:'out/2026',
+  termos:'miliciano milicia milicias flavio miliciano crime organizado no planalto adriano escritorio do crime' },
+
+{ id:'ele-meta', tema:'Eleição', quem:'Dado oficial', frase:'Lula quer cassar a candidatura de Flávio Bolsonaro por causa da Meta?', veredito:'DADO',
+  resumo:'Em 21 de outubro a campanha de Lula anunciou pedido ao TSE de cassação da chapa de Flávio Bolsonaro por abuso de poder, alegando que as ferramentas de inteligência artificial da Meta geravam imagens a favor de Flávio Bolsonaro e bloqueavam a mesma função para Lula, além de falhas no impulsionamento pago. A Meta nega favorecer candidatos e atribui os problemas a falhas técnicas.',
+  dado:'Não há decisão sobre o pedido. Em live em 22 de outubro, Lula disse que a Meta terá de ser reinventada porque não pode enganar a humanidade e defendeu regras para as plataformas. Pedidos de cassação são comuns nas duas campanhas e raramente são julgados antes da eleição.',
+  fonte:'Jornal de Brasília; Poder360', link:'https://jornaldebrasilia.com.br/noticias/politica-e-poder/lula-pede-cassacao-da-chapa-de-flavio-por-acoes-da-meta/', ref:'21 e 22/10/2026',
+  termos:'meta facebook instagram cassacao cassar chapa abuso de poder inteligencia artificial impulsionamento lula quer cassar flavio censura big techs' },
+
+{ id:'ele-exercito-lula', tipo:'panorama', tema:'Eleição', quem:'Dado oficial', frase:'O TSE tirou do ar o canal Exército do Lula?', veredito:'DADO',
+  resumo:'Sim. O canal de WhatsApp Exército do Lula, administrado pelo deputado André Janones, foi suspenso pelo presidente do TSE, Nunes Marques, a pedido da campanha de Flávio Bolsonaro, que acusou o canal de repetir conteúdos já considerados falsos. O canal cresceu de 55 mil para 3,3 milhões de seguidores em seis dias.',
+  dado:'O relatório técnico do TSE não encontrou republicação das alegações específicas citadas pela campanha de Flávio Bolsonaro entre 2 e 11 de outubro, mas apontou ação coordenada para ampliar o alcance de conteúdos. Para voltar, o canal precisa ser registrado como instrumento oficial de campanha. A campanha de Lula chamou a suspensão de censura e recorreu.',
+  fonte:'A Gazeta; Congresso em Foco', link:'https://www.agazeta.com.br/mundo/exercito-de-lula-no-whatsapp-por-que-nunes-marques-suspendeu-canal-novamente-1026', ref:'out/2026',
+  termos:'exercito do lula janones canal whatsapp suspenso tse nunes marques fake news canal pro lula' },
+
+{ id:'ele-pesquisas', tema:'Eleição', quem:'Dado oficial', frase:'Quem está na frente nas pesquisas?', veredito:'DADO',
+  resumo:'No Datafolha divulgado em 22 de outubro, Lula e Flávio Bolsonaro estão empatados com 50% dos votos válidos cada um. Nos votos totais, Flávio Bolsonaro tem 47% e Lula 46%, com margem de erro de 2 pontos. Na pesquisa anterior, Flávio Bolsonaro tinha 51% dos válidos e Lula 49%.',
+  dado:'O Datafolha ouviu 2.520 eleitores entre 20 e 22 de outubro (registro BR-09709/2026). No primeiro turno, Flávio Bolsonaro teve 47,03% dos votos válidos e Lula 45,16%. Pesquisas são retratos do momento e não previsões do resultado.',
+  fonte:'Datafolha, via Revista Fórum', link:'https://revistaforum.com.br/politica/disputa-lula-flavio-datafolha/', ref:'20 a 22/10/2026',
+  termos:'pesquisa pesquisas datafolha quaest quem esta na frente empate tecnico intencao de voto votos validos' },
+
+{ id:'boa-parana-pesquisas', tema:'Eleição', quem:'Boato', frase:'Pesquisa da Paraná Pesquisas mostra Flávio Bolsonaro vencendo em todos os estados com mais de 70%.', veredito:'FALSO',
+  resumo:'A Paraná Pesquisas não divulgou essa pesquisa. O instituto não publicou levantamento presidencial por estado no período, e a lista que circula reaproveita um formato já usado em boatos com o nome de Jair Bolsonaro.',
+  dado:'As pesquisas registradas mostram disputa equilibrada. A ficha sobre pesquisas traz o Datafolha mais recente.',
+  fonte:'Boatos.org', link:'https://www.boatos.org/politica/pesquisa-parana-pesquisas-mostra-flavio-bolsonaro-vencendo-em-todos-os-estados-e-com-mais-de-70-de-votos-na-maioria.html', ref:'22/10/2026',
+  termos:'parana pesquisas pesquisa falsa 70 por cento todos os estados flavio vence em todos' },
+
+{ id:'boa-prf-6milhoes', tema:'Eleição', quem:'Boato', frase:'A PRF apreendeu R$ 6 milhões que seriam usados para comprar votos para Lula.', veredito:'FALSO',
+  resumo:'As imagens são da Operação Dionísio, do Ministério Público de Alagoas, deflagrada em 24 de setembro contra suspeitas de sonegação no setor de bebidas. Nenhuma informação oficial liga a operação a compra de votos ou ao PT.',
+  dado:'O vídeo usa imagens reais com uma legenda inventada.',
+  fonte:'Boatos.org', link:'https://www.boatos.org/politica/prf-apreende-r-6-milhoes-que-seriam-usados-para-compra-de-votos-para-lula-no-2o-turno-das-eleicoes.html', ref:'22/10/2026',
+  termos:'prf apreende 6 milhoes dinheiro compra de votos lula dinheiro apreendido operacao' },
+
+{ id:'boa-atentado', tema:'Eleição', quem:'Boato', frase:'Lula vai forjar um atentado contra si mesmo antes da eleição.', veredito:'FALSO',
+  resumo:'A história vem de um áudio com vozes não identificadas, sem fonte, documento ou prova. Não há nenhum indício de que isso esteja sendo planejado.',
+  dado:'O boato compara a suposta estratégia à facada sofrida por Jair Bolsonaro em 2018.',
+  fonte:'Boatos.org', link:'https://www.boatos.org/politica/lula-vai-forjar-atentado-contra-si-mesmo-na-vespera-das-eleicoes-2026.html', ref:'17/10/2026',
+  termos:'atentado forjar atentado falso atentado lula facada audio' },
+
+{ id:'boa-aparecida', tema:'Costumes e religião', quem:'Boato', frase:'Flávio Bolsonaro quer tirar o título de padroeira de Nossa Senhora Aparecida.', veredito:'FALTA_CONTEXTO',
+  resumo:'Flávio Bolsonaro nega e não há proposta dele nesse sentido. Mas a ideia circula entre aliados. O bispo J. B. Carvalho, da Comunidade das Nações, igreja em que Flávio Bolsonaro foi batizado em 2024, defendeu no livro A Bomba (2001) que a santa deixasse de ser padroeira do Brasil. E o único projeto de lei sobre o tema, de 2007, foi apresentado por Victório Galli, que depois se aliou ao bolsonarismo e foi assessor especial da Presidência no governo Jair Bolsonaro.',
+  dado:'O projeto de Galli trocava padroeira do Brasil por padroeira dos católicos e foi rejeitado e arquivado em 2008. O TSE mandou remover publicações que diziam que Flávio Bolsonaro apoiava um projeto atual, decisão que passou por disputa entre ministros do STF. Flávio Bolsonaro diz que a acusação é falsa e atribui sua circulação ao PT.',
+  fonte:'Poder360; Brasil de Fato; Agência Pública', link:'https://www.brasildefato.com.br/2026/09/28/caso-nossa-senhora-aparecida-entenda-polemica-com-flavio-bolsonaro-e-projeto-de-lei/', ref:'2001 a 2026',
+  termos:'nossa senhora aparecida padroeira santa catolicos tirar titulo flavio contra a santa bispo jb carvalho comunidade das nacoes destronar' },
+
+{ id:'fla-reajuste-bf', tema:'Fome e pobreza', quem:'Boato', frase:'Flávio Bolsonaro tentou barrar o reajuste do Bolsa Família.', veredito:'FALTA_CONTEXTO',
+  resumo:'Quem entrou com ação no TSE contra o reajuste foi o deputado Zé Trovão, do PL, partido de Flávio Bolsonaro. O ministro André Mendonça rejeitou o pedido. Flávio Bolsonaro disse que não autorizou a ação, que manteria o reajuste e que ampliaria o benefício.',
+  dado:'Flávio Bolsonaro criticou o valor, chamando o aumento de merreca, e a proximidade da eleição. O benefício mínimo passou de R$ 600 para R$ 691 em setembro de 2026, com custo estimado de R$ 5,8 bilhões em 2026.',
+  fonte:'Itatiaia; SBT News', link:'https://www.itatiaia.com.br/politica/flavio-diz-nao-ter-autorizado-acao-de-aliado-contra-reajuste-do-bolsa-familia/', ref:'set/2026',
+  termos:'reajuste bolsa familia ze trovao barrar reajuste merreca flavio contra bolsa familia 691' },
 
 ];
